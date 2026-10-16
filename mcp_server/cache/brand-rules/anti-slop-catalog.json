@@ -1,0 +1,25 @@
+{
+  "category": "anti-slop-catalog",
+  "source": "https://dn-brand-hub.netlify.app/brand/voice/anti-slop-catalog",
+  "patterns": [
+    {"dont": "Contrast framing in prose", "example": "'It's not X, it's Y' / 'most do X, we do Y'", "instead": "We help good people do more with AI."},
+    {"dont": "Significance adjectives", "example": "premier, cutting-edge, world-class, seamless, powerful", "instead": "The fact that earns it: 741 people, 347 organizations."},
+    {"dont": "Abstraction nouns", "example": "'solutions,' 'the future of work,' 'the intersection of innovation and impact'", "instead": "Training, consulting, media, and events."},
+    {"dont": "Throat-clearing openers", "example": "'In an age of AI...', 'Imagine a world where...'", "instead": "AI is rewriting every industry, but it wasn't built for everyone."},
+    {"dont": "Hype verbs", "example": "unlock, supercharge, leverage, harness, transform", "instead": "The three returns: ROI, return on time, decision velocity."},
+    {"dont": "Hollow triads", "example": "three words only for rhythm", "instead": "Pain, Play, Practice."},
+    {"dont": "Generic cliches", "example": "'in the same room,' 'move the needle,' 'take it to the next level'", "instead": "A 90-day path from first audit to running it on your own."},
+    {"dont": "Vibe-phrases", "example": "'so it clicks,' 'just works,' 'next-level,' 'game-changer'", "instead": "Every time AI touches your work, we tell you where, why, and how."},
+    {"dont": "Filler intensifiers", "example": "'real' work, 'actual' results, 'genuine,' 'truly'", "instead": "The work. The results."},
+    {"dont": "Empty abstractions", "example": "'decisions that matter,' 'real impact,' 'make a difference'", "instead": "A hiring decision."},
+    {"dont": "Spatial metaphors", "example": "'tables,' 'rooms,' 'in the same place'", "instead": "Founders and funders together."},
+    {"dont": "Jargon-flexing", "example": "'human in the loop,' the latest technical term", "instead": "AI is a sharp junior employee with no common sense."},
+    {"dont": "Manufactured lines", "example": "a snappy tagline invented to sound good", "instead": "A real line from the source: 'We built our whole company with AI, and none of us were developers.'"}
+  ],
+  "tone_rules": [
+    {"name": "Accessible and professional", "rule": "Plain is the goal, but not at the cost of credibility."},
+    {"name": "Radical AI transparency", "rule": "Always say when we are using AI, and why and how."},
+    {"name": "Accuracy tolerance", "rule": "Brand and marketing copy right about 90% is fine to refine. Financial, CRM, and data claims must be exact."},
+    {"name": "Real people, not AI images", "rule": "Show actual photographs of people building, over AI-generated graphics."}
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "category": "voice-principles",
+  "source": "https://dn-brand-hub.netlify.app/brand/voice",
+  "voice_in_one_sentence": "Our voice is plain, concrete, and human. We say what we mean, we show (don't tell), and we refuse to sound like everyone else. That is how Disruption Now sounds.",
+  "the_rule_under_every_rule": "Be disruptive. Generic is the opposite of disruptive. The test above all others: does this line sound like everyone else, or like us?",
+  "principles": [
+    {"name": "Disruptive", "rule": "Refuse the generic. If a competitor could paste the exact line and it would be true for them, it is slop. Rewrite it until only we could have written it."},
+    {"name": "Plain", "rule": "A beginner can act on it. No jargon, no flexing the latest term. Every idea gets a literal example beside it."},
+    {"name": "Concrete", "rule": "Name the exact, picturable instance, never a category. 'The small business,' 'a hiring decision,' not 'the people it skips.' If you cannot name the specific instance, cut it."},
+    {"name": "Human", "rule": "A person helping a person. Coach, not consultant; we will not even use the word 'consultant.' Lead with a human story before credentials. Use 'we' and 'you'."},
+    {"name": "Honest", "rule": "Keep the real reason behind a claim (carry the because). Say plainly when and how we use AI. Do not overclaim. Never end up vaguer than the source you started from."},
+    {"name": "Memorable", "rule": "Build language people repeat."}
+  ],
+  "three_speakers": {
+    "Disruption Now": "The tech-savvy coworker. Explains tech in plain words, shows you on your own screen, stays until you can run it yourself.",
+    "MidwestCon": "The host who's also your coach. Homegrown and interactive, opens with a question for you to answer.",
+    "Rob Richardson": "The disruptor who became the coach. Human story first, wordplay and metaphor, pop-culture bridges, deep-tech substance said in plain words."
+  }
+}

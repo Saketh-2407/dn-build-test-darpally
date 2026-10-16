@@ -1,0 +1,21 @@
+{
+  "category": "mechanics",
+  "source": "https://dn-brand-hub.netlify.app/brand/voice/mechanics",
+  "sentence_rules": [
+    "Person: write 'we' and 'you,' not 'Disruption Now provides.'",
+    "Verbs over nouns: show people doing the work; active voice by default.",
+    "One idea per sentence: if a sentence holds two ideas, make it two sentences.",
+    "Lead with the point, then the detail.",
+    "Contractions are fine (we'll, you're, it's).",
+    "Plain American English: no insider word without a plain explanation next to it.",
+    "Numbers earn trust: use the real figure over 'many' or 'lots.'",
+    "Verify the number first: check any stat against the authoritative source before it goes out."
+  ],
+  "punctuation": {
+    "em_dashes": "NONE. Zero em dashes in any copy, titles included. The em dash is the clearest AI tell. Use a period, comma, colon, or parentheses instead.",
+    "en_dash_and_hyphen": "En dash in number ranges (10-20) and hyphen in compound words (real-time) are fine.",
+    "colon_semicolon": "A colon introduces a genuine list, used sparingly. Do not bolt an explanation on with a colon. Use semicolons sparingly.",
+    "no_spatial_metaphors": "No 'tables / rooms / in the same place' metaphors. Name the literal action."
+  },
+  "jargon_avoid_list": ["solutions", "needs", "integrated", "seamless", "robust", "leverage", "complex challenges", "ecosystem"]
+}

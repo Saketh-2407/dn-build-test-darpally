@@ -1,0 +1,16 @@
+{
+  "category": "say-this-not-that",
+  "source": "https://dn-brand-hub.netlify.app/brand/voice/say-this-not-that",
+  "pairs": [
+    {"dont": "Leverage cutting-edge AI to unlock transformative synergies.", "say": "AI is a sharp junior employee with no common sense. It needs your direction."},
+    {"dont": "Join us at the premier nexus of innovation and impact.", "say": "You'll build a working AI tool with your own hands, coached by people who do it for a living."},
+    {"dont": "Let's operationalize human-in-the-loop synergies.", "say": "AI is a genius with no common sense or context."},
+    {"dont": "We deliver bespoke AI solutions tailored to your needs.", "say": "Your team builds one working AI tool on your own work, and keeps it."},
+    {"dont": "Empowering organizations to thrive in the age of AI.", "say": "We help good people do more with AI."}
+  ],
+  "brand_vocabulary": {
+    "frameworks": ["Pain/Play/Practice", "the 4 Ds", "SAT", "the three returns", "ARC", "past the chatbot", "MRP", "the three Fs", "the three truths", "convergence", "Abundant Intelligence"],
+    "canon_lines": ["coach, not consultant", "fear is not a strategy", "from AI consumers to AI producers", "show, don't tell", "no one gets to define you"]
+  },
+  "avoid": "The business-jargon list, plus any line you would find on a generic AI company's homepage. NOTE: the frameworks and canon lines above are earned brand voice; never flag them as slop."
+}

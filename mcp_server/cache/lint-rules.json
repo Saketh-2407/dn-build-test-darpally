@@ -1,0 +1,20 @@
+{
+  "note": "Literal, mechanical checks the Reviewer runs with code, not judgment. Case-insensitive whole-word matching. hard_fail = automatic violation. soft_flag = send to the AI reviewer to judge in context (may be legitimate).",
+  "hard_fail": {
+    "em_dash_char": "—",
+    "jargon_avoid_list": ["solutions", "integrated", "seamless", "robust", "leverage", "complex challenges", "ecosystem", "leverages", "leveraged", "leveraging", "seamlessly", "robustly", "solution", "ecosystems"],
+    "hype_verbs": ["unlock", "unlocks", "unlocked", "unlocking", "supercharge", "supercharges", "supercharged", "supercharging", "harness", "harnesses", "harnessed", "harnessing", "transform", "transforms", "transformed", "transforming", "transformative", "transformation", "transformational"],
+    "significance_adjectives": ["premier", "cutting-edge", "world-class", "powerful"],
+    "vibe_phrases": ["so it clicks", "just works", "next-level", "game-changer"],
+    "generic_cliches": ["in the same room", "move the needle", "take it to the next level"],
+    "throat_clearing": ["in an age of ai", "imagine a world where"]
+  },
+  "soft_flag": {
+    "filler_intensifiers": ["real", "actual", "genuine", "truly"],
+    "consultant_word": ["consultant"],
+    "note_on_consultant": "Flag 'consultant' EXCEPT inside the canon line 'coach, not consultant.'",
+    "corporate_needs": ["needs"],
+    "note_on_needs": "Flag the corporate noun 'needs' (e.g. 'tailored to your needs'), NOT the everyday verb 'your team needs a plan'. The AI reviewer judges in context."
+  },
+  "allowlist_earned_phrases": ["Pain/Play/Practice", "the 4 Ds", "the three returns", "the three Fs", "the three truths", "past the chatbot", "coach, not consultant", "fear is not a strategy", "from AI consumers to AI producers", "show, don't tell", "no one gets to define you", "Abundant Intelligence", "convergence", "ARC", "SAT", "MRP"]
+}

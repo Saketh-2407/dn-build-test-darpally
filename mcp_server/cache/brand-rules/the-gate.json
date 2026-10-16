@@ -1,0 +1,23 @@
+{
+  "category": "the-gate",
+  "source": "https://dn-brand-hub.netlify.app/brand/voice/the-gate",
+  "lead_structure": "Lead with what the reader is feeling. Then say what we do about it. Then say what they get.",
+  "four_questions": [
+    "Could a competitor paste this and have it be true? If yes, it is empty. Make it ours.",
+    "Can a real person picture exactly what happens, or is it a vibe-word?",
+    "Does this sentence say something the next sentence needs, and does it advance the story? If no, cut it.",
+    "Does it sound like us, or like any company?"
+  ],
+  "two_more_checks": [
+    {"name": "Carry the because", "rule": "If the source gives the reason a claim is true, keep it. The same line without the reason is a bare assertion anyone could make."},
+    {"name": "Clearer than the source", "rule": "Hold your line against the quote it came from. If yours is vaguer or harder to picture, you went backwards."}
+  ],
+  "opener_catalog": [
+    {"type": "Fortune teller", "use": "where this is going"},
+    {"type": "Experimenter", "use": "I tried it, here is what happened"},
+    {"type": "Teacher", "use": "here is how it works"},
+    {"type": "Magician", "use": "the surprising result"},
+    {"type": "Investigator", "use": "what is really going on"},
+    {"type": "Contrarian", "use": "everyone says X; here is why that's wrong"}
+  ]
+}

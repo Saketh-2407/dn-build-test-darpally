@@ -1,0 +1,10 @@
+{
+  "category": "where-the-brand-speaks",
+  "source": "https://dn-brand-hub.netlify.app/brand/voice/where-the-brand-speaks",
+  "registers": [
+    {"name": "Emotional", "desc": "Speaking AS the brand. Confident, direct, peer-to-peer, crescendo cadence (short punch, then build). Carries a claim, position, or promise."},
+    {"name": "Receipts", "desc": "Proof FOR the brand. Cold fact, specifically named, sourced or dated. Numbers, credentials, signed partnerships."},
+    {"name": "Informational", "desc": "Reporting ABOUT the brand. Plain, third-person, factual. Documents how something works."}
+  ],
+  "note": "A post can mix registers, but each sentence should know which one it is in. When precision and voice conflict on an earned brand phrase, voice wins; do not strip an earned phrase to pass a literal slop check."
+}

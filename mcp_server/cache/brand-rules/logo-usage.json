@@ -1,0 +1,14 @@
+{
+  "category": "logo-usage",
+  "source": "https://dn-brand-hub.netlify.app/guide/basics/logo-files",
+  "note": "Text output does not render logos, but visual guidance can accompany an Instagram post.",
+  "rules": [
+    "White logo on dark backgrounds; dark logo on light. Never place a logo on a background that hides it.",
+    "The purple 'Now' (#C74FFF) is fixed; never recolor it, never rotate it, never separate 'Now' from 'DISRUPTION.'",
+    "Clear space of half the DISRUPTION cap-height on all sides; minimum about 220px wide or switch to the square monogram.",
+    "No effects (shadows, glows, outlines); no stretching or squeezing.",
+    "Co-branding: Disruption Now leads; partner marks stay smaller and subordinate.",
+    "Social platform icons keep their own colors; size 48 to 56px.",
+    "Prefer real photographs of people building over AI-generated images."
+  ]
+}
