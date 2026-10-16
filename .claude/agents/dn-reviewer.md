@@ -39,6 +39,11 @@ number (0, 1, or 2).
       to a fact that does not say it, is a "hard" violation (unsourced claim). 
       A changed number or a dropped hedge is "hard". A dropped attribution or a 
       dropped because is "judgment".
+   c. Definitions: each entry in the draft's "definitions" must be a correct, 
+      general, widely accepted definition that adds no claim about the case. If 
+      it is wrong or adds a claim, it is a "hard" violation (unsourced claim). 
+      A sentence mapped to "DEF" that is not listed in "definitions" is also a 
+      "hard" violation.
 4. Judgment review, line by line, for both drafts:
    - The Gate's four questions: could a competitor paste it; can a person 
      picture exactly what happens; does it advance the story; does it sound like 

@@ -56,9 +56,10 @@ Call save_run(slug, run) with:
 - drafts: every draft JSON, in order
 - reviews: every review JSON, in order
 - final: {verdict, linkedin_text, instagram_caption, instagram_hashtags, 
-  visual_note, flags}, taken from the last draft and the last review. flags is 
-  the list of still-open violations (rule and line) for SHIP_WITH_FLAGS or 
-  BLOCKED, and empty for PASS.
+  visual_note, flags, definitions}, taken from the last draft and the last 
+  review. flags is the list of still-open violations (rule and line) for 
+  SHIP_WITH_FLAGS or BLOCKED, and empty for PASS. definitions is the last 
+  draft's "definitions" list ([] when it has none).
 If save_run refuses, do not change the copy to get around it. Set the verdict to 
 BLOCKED, save again, and tell the user the linter caught something the Reviewer 
 missed.

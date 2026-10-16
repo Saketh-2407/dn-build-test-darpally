@@ -84,6 +84,12 @@ go in the copy.
 - If brief.timeframe.status is "past", follow brief.timeframe.handling exactly: 
   past tense for what was planned or offered, nothing about attendance or results 
   the post could not know, and no expired call to action.
+- Plain-language definitions: DN's doctrine says no insider word goes out without 
+  a plain explanation next to it. If the copy needs an insider term and no fact 
+  in the brief defines it, you may add ONE short, general definition for that 
+  term. It defines the term only. It says nothing about the case, its numbers, or 
+  its people. Map it in claims_map with fact_id "DEF" and list it in 
+  "definitions" as {"term", "sentence"}. Prefer cutting the term over defining it.
 
 ## Pipeline conventions (ours, not DN doctrine; the brand hub has no channel rules)
 LinkedIn:
@@ -121,6 +127,7 @@ Return ONLY this JSON object, with no text before or after it:
   "linkedin": {"text": "", "opener_type": "", "fact_ids": []},
   "instagram": {"caption": "", "hashtags": [], "fact_ids": []},
   "claims_map": [{"platform": "linkedin", "snippet": "", "fact_id": "F1"}],
+  "definitions": [],
   "visual_note": "",
   "self_lint": {"linkedin_passed": true, "instagram_passed": true, "soft_flags_kept": []},
   "changes_made": []

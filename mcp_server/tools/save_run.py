@@ -17,6 +17,7 @@ AI_DISCLOSURE = (
     "Drafted by an AI system from the source post and checked against DN's published voice doctrine. "
     "A human approves before anything is published."
 )
+DEFINITIONS_HEADING = "Definitions added (not from the source post; a human should confirm)"
 
 
 def _hashtags(final: dict[str, Any]) -> list[str]:
@@ -49,8 +50,11 @@ def _validate(run: Any) -> dict[str, Any] | None:
     for key in FINAL_TEXT_FIELDS:
         if not isinstance(final.get(key), str) or not final[key].strip():
             return error(f"run.final.{key} is empty.", f"Pass the final {key.replace('_', ' ')} as a string.")
-    if not isinstance(final.get("instagram_hashtags", []), list) or not isinstance(final.get("flags", []), list):
-        return error("run.final.instagram_hashtags and run.final.flags must be lists.", "Pass [] when there are none.")
+    if not all(isinstance(final.get(key, []), list) for key in ("instagram_hashtags", "flags", "definitions")):
+        return error("run.final.instagram_hashtags, flags and definitions must be lists.", "Pass [] when there are none.")
+    for entry in final.get("definitions") or []:
+        if not isinstance(entry, dict) or not entry.get("term") or not entry.get("sentence"):
+            return error("Each run.final.definitions entry needs term and sentence.", "Copy them from the last draft's definitions.")
     return None
 
 
@@ -98,6 +102,13 @@ def render_final_md(run: dict[str, Any], lint: dict[str, dict[str, Any]], today:
         f"## Instagram caption\n\n{final['instagram_caption'].strip()}\n\n{' '.join(_hashtags(final))}".rstrip(),
         f"## Visual note\n\n{final['visual_note'].strip()}",
         "## Facts used\n\n" + "\n".join(_facts(run["brief"])),
+    ]
+    definitions = final.get("definitions") or []
+    if definitions:
+        sections.append(
+            f"## {DEFINITIONS_HEADING}\n\n" + "\n".join(f"- **{d['term']}:** {d['sentence']}" for d in definitions)
+        )
+    sections += [
         "## Review summary\n\n" + "\n".join(_review_summary(run, lint)),
         f"## AI disclosure\n\n{AI_DISCLOSURE}",
     ]
@@ -114,7 +125,9 @@ def save_run(slug: str, run: dict[str, Any]) -> dict[str, Any]:
     slug: 3-80 chars of a-z, 0-9 and '-' (e.g. "future-of-data-hackathon"); becomes the folder name.
     run: {"source": {"url", "title"}, "brief": {..., "facts": [{"fact", "source_quote"}]},
     "drafts": [one per round], "reviews": [one per round], "final": {"verdict", "linkedin_text",
-    "instagram_caption", "instagram_hashtags": [str], "visual_note", "flags": [str]}}.
+    "instagram_caption", "instagram_hashtags": [str], "visual_note", "flags": [str],
+    "definitions": [{"term", "sentence"}]}}. definitions (optional) are plain-language definitions the
+    Writer added that are not from the source post; final.md lists them for a human to confirm.
     verdict is PASS, SHIP_WITH_FLAGS or BLOCKED. Final gate: linkedin_text, and instagram_caption
     with the hashtags, are linted; if either has hard failures the verdict must be BLOCKED, otherwise
     nothing is saved and an error lists the failures.

@@ -9,7 +9,7 @@ from pathlib import Path
 from unittest import mock
 
 from mcp_server.tools._common import SAMPLES_DIR_ENV
-from mcp_server.tools.save_run import AI_DISCLOSURE, save_run
+from mcp_server.tools.save_run import AI_DISCLOSURE, DEFINITIONS_HEADING, save_run
 
 RUN = {
     "source": {"url": "https://disruptionnow.com/blog/stub-post-for-tests", "title": "Stub Post"},
@@ -100,6 +100,24 @@ class SaveRunTests(unittest.TestCase):
         ]:
             with self.subTest(expected_text=expected_text[:30]):
                 self.assertIn(expected_text, final_md)
+        self.assertNotIn(DEFINITIONS_HEADING, final_md)
+
+    def test_definitions_listed_for_human_check(self):
+        definition = {"term": "bundling rules", "sentence": "Bundling rules say which services must be billed as one charge."}
+        result = save_run("definitions-run", run_with(definitions=[definition]))
+        self.assertEqual(result["verdict"], "PASS")
+        final_md = (self.root / "definitions-run" / "final.md").read_text(encoding="utf-8")
+        self.assertIn(
+            f"## {DEFINITIONS_HEADING}\n\n- **bundling rules:** Bundling rules say which services must be billed as one charge.",
+            final_md,
+        )
+
+    def test_malformed_definition_refused(self):
+        for bad in [["bundling rules"], [{"term": "bundling rules"}], "not a list"]:
+            with self.subTest(definitions=bad):
+                result = save_run("bad-definitions", run_with(definitions=bad))
+                self.assertIn("error", result)
+        self.assertNothingWritten()
 
     def test_files_named_by_own_round(self):
         run = copy.deepcopy(RUN)
