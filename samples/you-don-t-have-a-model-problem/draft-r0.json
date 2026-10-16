@@ -1,0 +1,129 @@
+{
+  "source_url": "https://disruptionnow.com/blog/you-don-t-have-a-model-problem",
+  "round": 0,
+  "linkedin": {
+    "text": "On July 2, 2026, Microsoft launched Frontier, a business backed by $2.5 billion and roughly 6,000 engineers, as The Next Web reported.\n\nTheir job is to sit inside customers' companies and make the AI those customers already paid for work. The companies that sell AI models paid to put people next to the customer because selling the model alone didn't move the numbers.\n\nIf your own pilot gave you a good demo and nothing on the bottom line, you're in the majority. MIT's NANDA researchers found that 95% of enterprise generative-AI pilots produce no measurable profit-and-loss impact, across more than 300 deployments.\n\nRob Richardson's post names four places a pilot usually dies: name the job, fit the workflow, own the handoff, prove the number. A person decides all four. We'd check them before you blame the tool.\n\nOutside engineers are fine as a jumpstart. If your own people never learn those four steps, you've bought a dependency that walks out the door when the contract ends. Teach them, and the skill stays with you after that.\n\nWhich of the four is your pilot missing?\n\nRead the full post: https://disruptionnow.com/blog/you-don-t-have-a-model-problem",
+    "opener_type": "Investigator",
+    "fact_ids": [
+      "F1",
+      "F4",
+      "F5",
+      "F6",
+      "F7"
+    ]
+  },
+  "instagram": {
+    "caption": "In July 2026, Microsoft backed a new business with $2.5 billion and roughly 6,000 engineers.\n\nTheir job is to sit inside customers' companies and make the AI those customers already paid for work, as The Next Web reported.\n\nIf your AI pilot stalled, you're in the majority. MIT's NANDA researchers found that 95% of enterprise generative-AI pilots produce no measurable profit-and-loss impact.\n\nRob Richardson's post names four places a pilot usually dies: name the job, fit the workflow, own the handoff, prove the number. A person decides all four.\n\nThose four take clarity and ownership. A ten-person shop in Cincinnati can bring both as well as a Fortune 500 can.\n\nFull post: link in bio.",
+    "hashtags": [
+      "#EnterpriseAI",
+      "#AIPilots",
+      "#WorkflowDesign",
+      "#Cincinnati"
+    ],
+    "fact_ids": [
+      "F1",
+      "F5",
+      "F6",
+      "F12"
+    ]
+  },
+  "claims_map": [
+    {
+      "platform": "linkedin",
+      "snippet": "On July 2, 2026, Microsoft launched Frontier, a business backed by $2.5 billion and roughly 6,000 engineers, as The Next Web reported.",
+      "fact_id": "F1"
+    },
+    {
+      "platform": "linkedin",
+      "snippet": "Their job is to sit inside customers' companies and make the AI those customers already paid for work.",
+      "fact_id": "F1"
+    },
+    {
+      "platform": "linkedin",
+      "snippet": "The companies that sell AI models paid to put people next to the customer because selling the model alone didn't move the numbers.",
+      "fact_id": "F4"
+    },
+    {
+      "platform": "linkedin",
+      "snippet": "If your own pilot gave you a good demo and nothing on the bottom line, you're in the majority.",
+      "fact_id": "F5"
+    },
+    {
+      "platform": "linkedin",
+      "snippet": "MIT's NANDA researchers found that 95% of enterprise generative-AI pilots produce no measurable profit-and-loss impact, across more than 300 deployments.",
+      "fact_id": "F5"
+    },
+    {
+      "platform": "linkedin",
+      "snippet": "Rob Richardson's post names four places a pilot usually dies: name the job, fit the workflow, own the handoff, prove the number.",
+      "fact_id": "F6"
+    },
+    {
+      "platform": "linkedin",
+      "snippet": "A person decides all four.",
+      "fact_id": "F6"
+    },
+    {
+      "platform": "linkedin",
+      "snippet": "Outside engineers are fine as a jumpstart.",
+      "fact_id": "F7"
+    },
+    {
+      "platform": "linkedin",
+      "snippet": "If your own people never learn those four steps, you've bought a dependency that walks out the door when the contract ends.",
+      "fact_id": "F7"
+    },
+    {
+      "platform": "linkedin",
+      "snippet": "Teach them, and the skill stays with you after that.",
+      "fact_id": "F7"
+    },
+    {
+      "platform": "instagram",
+      "snippet": "In July 2026, Microsoft backed a new business with $2.5 billion and roughly 6,000 engineers.",
+      "fact_id": "F1"
+    },
+    {
+      "platform": "instagram",
+      "snippet": "Their job is to sit inside customers' companies and make the AI those customers already paid for work, as The Next Web reported.",
+      "fact_id": "F1"
+    },
+    {
+      "platform": "instagram",
+      "snippet": "If your AI pilot stalled, you're in the majority.",
+      "fact_id": "F5"
+    },
+    {
+      "platform": "instagram",
+      "snippet": "MIT's NANDA researchers found that 95% of enterprise generative-AI pilots produce no measurable profit-and-loss impact.",
+      "fact_id": "F5"
+    },
+    {
+      "platform": "instagram",
+      "snippet": "Rob Richardson's post names four places a pilot usually dies: name the job, fit the workflow, own the handoff, prove the number.",
+      "fact_id": "F6"
+    },
+    {
+      "platform": "instagram",
+      "snippet": "A person decides all four.",
+      "fact_id": "F6"
+    },
+    {
+      "platform": "instagram",
+      "snippet": "Those four take clarity and ownership.",
+      "fact_id": "F12"
+    },
+    {
+      "platform": "instagram",
+      "snippet": "A ten-person shop in Cincinnati can bring both as well as a Fortune 500 can.",
+      "fact_id": "F12"
+    }
+  ],
+  "visual_note": "Use a real photograph of people working together at a desk or whiteboard, mapping a process or handing off work, rather than an AI-generated image (the post itself uses Pexels photos of people). If a logo is used: white lockup on dark backgrounds, dark lockup on light backgrounds, the purple 'Now' left unchanged, and no effects.",
+  "self_lint": {
+    "linkedin_passed": true,
+    "instagram_passed": true,
+    "soft_flags_kept": []
+  },
+  "changes_made": []
+}

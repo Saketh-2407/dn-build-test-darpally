@@ -1,0 +1,221 @@
+{
+  "round": 1,
+  "verdict": "PASS",
+  "lint": {
+    "linkedin": {
+      "passed": true,
+      "platform": "linkedin",
+      "char_count": 1182,
+      "hard_failures": [],
+      "soft_flags": []
+    },
+    "instagram": {
+      "passed": true,
+      "platform": "instagram",
+      "char_count": 811,
+      "hard_failures": [],
+      "soft_flags": []
+    },
+    "hashtags": {
+      "passed": true,
+      "platform": "instagram",
+      "char_count": 51,
+      "hard_failures": [],
+      "soft_flags": []
+    }
+  },
+  "fact_check": {
+    "quotes_verified": 6,
+    "quotes_missing": [],
+    "unsourced_claims": []
+  },
+  "violations": [],
+  "soft_flags_judged": [],
+  "sentence_audit": [
+    {
+      "platform": "linkedin",
+      "sentence": "On July 2, 2026, Microsoft launched Frontier, a business backed by $2.5 billion and roughly 6,000 engineers, as The Next Web reported.",
+      "advances_point": true,
+      "picturable": true,
+      "competitor_could_paste": false,
+      "issue": ""
+    },
+    {
+      "platform": "linkedin",
+      "sentence": "Their job is to sit inside customers' companies and make the AI those customers already bought do its job.",
+      "advances_point": true,
+      "picturable": true,
+      "competitor_could_paste": false,
+      "issue": ""
+    },
+    {
+      "platform": "linkedin",
+      "sentence": "The companies that sell AI models paid to put people next to the customer because selling the model alone didn't move the numbers.",
+      "advances_point": true,
+      "picturable": true,
+      "competitor_could_paste": false,
+      "issue": ""
+    },
+    {
+      "platform": "linkedin",
+      "sentence": "If your own pilot gave you a good demo and nothing on the bottom line, you're in the majority.",
+      "advances_point": true,
+      "picturable": true,
+      "competitor_could_paste": false,
+      "issue": ""
+    },
+    {
+      "platform": "linkedin",
+      "sentence": "MIT's NANDA researchers found that 95% of enterprise generative-AI pilots produce no measurable profit-and-loss impact, across more than 300 deployments.",
+      "advances_point": true,
+      "picturable": true,
+      "competitor_could_paste": false,
+      "issue": ""
+    },
+    {
+      "platform": "linkedin",
+      "sentence": "Rob Richardson's post names four places a pilot usually dies: name the job, fit the workflow, own the handoff, prove the number.",
+      "advances_point": true,
+      "picturable": true,
+      "competitor_could_paste": false,
+      "issue": ""
+    },
+    {
+      "platform": "linkedin",
+      "sentence": "A person decides all four.",
+      "advances_point": true,
+      "picturable": true,
+      "competitor_could_paste": false,
+      "issue": ""
+    },
+    {
+      "platform": "linkedin",
+      "sentence": "We'd check them before you blame the tool.",
+      "advances_point": true,
+      "picturable": true,
+      "competitor_could_paste": false,
+      "issue": ""
+    },
+    {
+      "platform": "linkedin",
+      "sentence": "Outside engineers are fine as a jumpstart.",
+      "advances_point": true,
+      "picturable": true,
+      "competitor_could_paste": false,
+      "issue": ""
+    },
+    {
+      "platform": "linkedin",
+      "sentence": "If your own people never learn those four steps, you've bought a dependency that walks out the door when the contract ends.",
+      "advances_point": true,
+      "picturable": true,
+      "competitor_could_paste": false,
+      "issue": ""
+    },
+    {
+      "platform": "linkedin",
+      "sentence": "Teach them, and the skill stays with you after the contract ends.",
+      "advances_point": true,
+      "picturable": true,
+      "competitor_could_paste": false,
+      "issue": ""
+    },
+    {
+      "platform": "linkedin",
+      "sentence": "Which of the four is your pilot missing?",
+      "advances_point": true,
+      "picturable": true,
+      "competitor_could_paste": false,
+      "issue": ""
+    },
+    {
+      "platform": "linkedin",
+      "sentence": "Read the full post: https://disruptionnow.com/blog/you-don-t-have-a-model-problem",
+      "advances_point": true,
+      "picturable": true,
+      "competitor_could_paste": false,
+      "issue": ""
+    },
+    {
+      "platform": "instagram",
+      "sentence": "In July 2026, Microsoft backed a new business with $2.5 billion and roughly 6,000 engineers.",
+      "advances_point": true,
+      "picturable": true,
+      "competitor_could_paste": false,
+      "issue": ""
+    },
+    {
+      "platform": "instagram",
+      "sentence": "Their job is to sit inside customers' companies and make the AI those customers already bought do its job, as The Next Web reported.",
+      "advances_point": true,
+      "picturable": true,
+      "competitor_could_paste": false,
+      "issue": ""
+    },
+    {
+      "platform": "instagram",
+      "sentence": "If your AI pilot showed nothing on the bottom line, you're in the majority.",
+      "advances_point": true,
+      "picturable": true,
+      "competitor_could_paste": false,
+      "issue": ""
+    },
+    {
+      "platform": "instagram",
+      "sentence": "MIT's NANDA researchers found that 95% of enterprise generative-AI pilots produce no measurable profit-and-loss impact.",
+      "advances_point": true,
+      "picturable": true,
+      "competitor_could_paste": false,
+      "issue": ""
+    },
+    {
+      "platform": "instagram",
+      "sentence": "Rob Richardson's post names four places a pilot usually dies: name the job, fit the workflow, own the handoff, prove the number.",
+      "advances_point": true,
+      "picturable": true,
+      "competitor_could_paste": false,
+      "issue": ""
+    },
+    {
+      "platform": "instagram",
+      "sentence": "A person decides all four.",
+      "advances_point": true,
+      "picturable": true,
+      "competitor_could_paste": false,
+      "issue": ""
+    },
+    {
+      "platform": "instagram",
+      "sentence": "Those four take a named job and a named owner.",
+      "advances_point": true,
+      "picturable": true,
+      "competitor_could_paste": false,
+      "issue": ""
+    },
+    {
+      "platform": "instagram",
+      "sentence": "A ten-person shop in Cincinnati can bring both as well as a Fortune 500 can.",
+      "advances_point": true,
+      "picturable": true,
+      "competitor_could_paste": false,
+      "issue": ""
+    },
+    {
+      "platform": "instagram",
+      "sentence": "If winning meant buying the biggest model, whoever had the most money would win.",
+      "advances_point": true,
+      "picturable": true,
+      "competitor_could_paste": false,
+      "issue": ""
+    },
+    {
+      "platform": "instagram",
+      "sentence": "Full post: link in bio.",
+      "advances_point": true,
+      "picturable": true,
+      "competitor_could_paste": false,
+      "issue": ""
+    }
+  ],
+  "notes": "Round 0 fixes V1 to V6 are all in place, and no new violations came up. verify_quotes found all 6 source_quotes the draft relies on (F1, F4, F5, F6, F7, F12) word for word in the post. The Writer asked me to check the added Instagram line 'If winning meant buying the biggest model, whoever had the most money would win.' It is not a verbatim quote, but the post body supports it: 'If the winning move were simply buying the biggest model, whoever had the most money would win and everyone else would lose.' The phrase 'whoever had the most money would win' was found word for word. The line is not in quotation marks and F12's fact text states it, so it counts as a properly mapped paraphrase. 'Outside engineers are fine as a jumpstart' paraphrases the body's 'Outside engineers are fine for a jumpstart.' and is mapped to F7, whose fact text says it. The draft keeps the hedges 'roughly 6,000' and 'usually dies'. The vendor moves are dated and in past tense. Nothing states results or outcomes for Frontier. Neither platform has a call to action that has expired. Fact density is 5 ids on LinkedIn and 4 on Instagram. Both platforms address the reader as 'you'. first_party.is_dn_work is false, so the Person rule does not apply to 'Rob Richardson's post'."
+}
