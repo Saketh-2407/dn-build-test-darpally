@@ -1,0 +1,163 @@
+{
+  "source": {
+    "url": "https://disruptionnow.com/blog/40-student-slots-real-world-impact",
+    "title": "40 Student Slots, Real-World Impact — Future of Data Hackathon"
+  },
+  "core_point": "The 2025 Future of Data Hackathon kept its student field to 40 so that every student could get direct mentorship and access to executives while spending 12 hours building AI tools for two real Cincinnati nonprofits.",
+  "reader_feeling": "Students want real experience and career connections, and classroom projects or internships rarely put them in front of hiring executives with a real client relying on their work.",
+  "what_we_do": "Join the Future of Data Hackathon: a capped cohort of 40 students in teams of four builds AI solutions for real nonprofit clients (Wood Hudson Cancer Research Laboratory on the Beginner Track, the YMCA of Greater Cincinnati on the Experienced Track), with mentors and corporate executives in the room.",
+  "what_they_get": "A portfolio piece a real nonprofit will use, a shot at the $1,000 top prize, unlimited Claude credits through Tembo that keep working after the event, and direct access to executives who come to scout talent.",
+  "facts": [
+    {
+      "id": "F1",
+      "kind": "story",
+      "fact": "At the 2024 hackathon (the post calls it last year), a team arrived with nothing but curiosity and a caffeine plan, and by dusk had shipped a working prototype, won thousands of dollars, and gained a new belief in what was possible.",
+      "source_quote": "By dusk, they'd shipped a working prototype, won thousands of dollars, and gained a new belief in what was possible.",
+      "attribution": "Future of Data Hackathon Team, quoted in the post",
+      "because": null,
+      "priority": "supporting"
+    },
+    {
+      "id": "F2",
+      "kind": "number",
+      "fact": "The 2025 Future of Data Hackathon ran on September 6 (2025) at the 1819 Innovation Hub at the University of Cincinnati.",
+      "source_quote": "The 2025 Future of Data Hackathon runs September 6 at the 1819 Innovation Hub.",
+      "attribution": null,
+      "because": null,
+      "priority": "supporting"
+    },
+    {
+      "id": "F3",
+      "kind": "number",
+      "fact": "The event was planned as twelve hours (8 AM to 8 PM) with two tracks, a $1,000 top prize, unlimited Claude credits, and corporate executives in the room looking for talent.",
+      "source_quote": "Twelve hours, two tracks, a $1,000 top prize, unlimited Claude credits, and corporate executives in the room looking for talent.",
+      "attribution": null,
+      "because": null,
+      "priority": "core"
+    },
+    {
+      "id": "F4",
+      "kind": "reason",
+      "fact": "The post's reason for capping students at 40: small enough that every student gets direct mentorship and meaningful access to the executives in the room, and large enough to form diverse, high-functioning teams.",
+      "source_quote": "small enough that every student gets direct mentorship and meaningful access to the executives in the room, large enough to form diverse, high-functioning teams.",
+      "attribution": null,
+      "because": null,
+      "priority": "core"
+    },
+    {
+      "id": "F5",
+      "kind": "number",
+      "fact": "There were 40 student slots in total across both tracks, filled on a first-come basis, with students working in teams of four.",
+      "source_quote": "Those 40 slots fill on a first-come basis.",
+      "attribution": null,
+      "because": "F4",
+      "priority": "core"
+    },
+    {
+      "id": "F6",
+      "kind": "example",
+      "fact": "Beginner Track client: Wood Hudson Cancer Research Laboratory, an independent cancer research institute in Newport, KY, founded in 1981, that maintains over 2 million tissue specimens across breast, colon, gastric, ovarian, and melanoma research lines. Participants were to build data and AI tools that support active cancer research operations, with mentors stationed throughout the day.",
+      "source_quote": "a 1981-founded independent cancer research institute in Newport, KY that maintains over 2 million tissue specimens across breast, colon, gastric, ovarian, and melanoma research lines.",
+      "attribution": null,
+      "because": null,
+      "priority": "core"
+    },
+    {
+      "id": "F7",
+      "kind": "example",
+      "fact": "Experienced Track client: the YMCA of Greater Cincinnati, with teams working on advanced AI for community programs (member analytics, program scheduling, outreach efficiency). The track expected participants to bring technical depth.",
+      "source_quote": "Experienced Track: teams collaborate with the YMCA of Greater Cincinnati on advanced AI for community programs.",
+      "attribution": null,
+      "because": null,
+      "priority": "core"
+    },
+    {
+      "id": "F8",
+      "kind": "claim",
+      "fact": "The unlimited Claude credits came from Tembo, the hackathon's AI tooling partner. Participants could use Claude during the event and keep using the credits afterward for coursework, personal projects, or freelance work.",
+      "source_quote": "The Unlimited Claude credits come via Tembo, the hackathon's AI tooling partner.",
+      "attribution": "Tembo named as partner, per the post",
+      "because": null,
+      "priority": "supporting"
+    },
+    {
+      "id": "F9",
+      "kind": "reason",
+      "fact": "The executives at the event are decision-makers who come to see who builds well under pressure.",
+      "source_quote": "The executives in the room are decision-makers who show up to see who builds well under pressure.",
+      "attribution": null,
+      "because": null,
+      "priority": "supporting"
+    },
+    {
+      "id": "F10",
+      "kind": "claim",
+      "fact": "The post says a strong showing at the hackathon has historically led to internship offers, job referrals, and mentorship relationships that last well past event day.",
+      "source_quote": "A strong showing at the hackathon has historically translated into internship offers, job referrals, and mentorship relationships that extend well past event day.",
+      "attribution": "the post's own claim, no source cited",
+      "because": "F9",
+      "priority": "supporting"
+    },
+    {
+      "id": "F11",
+      "kind": "claim",
+      "fact": "Movers & Makers covered the partnership when registration opened and reported that both nonprofits submitted real operational problems for the teams to solve.",
+      "source_quote": "both nonprofits submitted real operational problems for the teams to solve.",
+      "attribution": "Movers & Makers (Cincinnati), per the post",
+      "because": null,
+      "priority": "supporting"
+    },
+    {
+      "id": "F12",
+      "kind": "quote",
+      "fact": "Rob Richardson, Founder & CEO of Disruption Now, framed the hackathon as where builders become leaders by building for people first.",
+      "source_quote": "This is where builders become leaders",
+      "attribution": "Rob Richardson, Founder & CEO, Disruption Now",
+      "because": null,
+      "priority": "supporting"
+    }
+  ],
+  "human_story": {
+    "present": true,
+    "fact_ids": [
+      "F1"
+    ]
+  },
+  "opener": {
+    "type": "Magician",
+    "why": "The post opens on a surprising result: a team that arrived at the 2024 hackathon with nothing but curiosity had shipped a working prototype and won prize money by dusk. That result is the strongest way into a post about what students built in one day for real nonprofits."
+  },
+  "linkedin_angle": "Show that capping the cohort at 40 students and giving teams real nonprofit clients like a cancer research lab and the YMCA turned a 12-hour hackathon into mentorship, portfolio work, and executive access that a classroom rarely offers.",
+  "instagram_hook_idea": "Lead with students spending one day building AI tools for a Newport, KY cancer research lab that holds over 2 million tissue specimens.",
+  "earned_phrases": [],
+  "cautions": [
+    "TIMEFRAME IS PAST: the hackathon was September 6, 2025, the post was published 2025-08-30, and today is 2026-10-16. Describe only what the post says was planned or offered, in past tense. Never state attendance, winners, results, or outcomes of the 2025 event, because the post could not know them when it was written. No registration call to action: registration, 'register early', 'first come, first built' and the DevPost sign-up have all expired.",
+    "The title contains an em dash ('40 Student Slots, Real-World Impact — Future of Data Hackathon'). Do not quote it. Rewrite it without the dash.",
+    "Rob Richardson's full quote contains an em dash ('This is where builders become leaders — by building for people first.'). Do not quote it in full. Paraphrase it, or use only the verified fragment in F12.",
+    "The Future of Data Hackathon Team quote (F1) is about the 2024 event, not the 2025 one. Keep it attributed and in past tense. 'Thousands of dollars' is vague, so do not turn it into a specific figure.",
+    "'Over 2 million tissue specimens' (F6) is a hedged figure. Keep 'over'. Do not round it or restate it as an exact number.",
+    "F10 ('historically translated into internship offers, job referrals...') is the post's own unsourced claim. Present it as what the post says, keep the 'historically' hedge, and never imply guaranteed jobs or name specific hires.",
+    "F11 comes from Movers & Makers coverage and needs that attribution. F8: credit Tembo as the provider of the Claude credits.",
+    "The post uses 'X, not Y' contrast phrasing the Writer must not copy: 'a 12-hour sprint, not an open-enrollment course', 'designed to be used, not archived', and 'applied access to a production AI tool, not a classroom simulation'.",
+    "Wood Hudson is a cancer research lab, so keep the tone careful. Describe the work as supporting research operations, and do not suggest students cured, diagnosed, or treated anything.",
+    "Disruption Now's role: Rob Richardson founded and convenes MidwestCon, the conference the hackathon runs under, so this is first-party work. Do not overstate it beyond that."
+  ],
+  "visual_note": "Use a real photograph of students building at laptops in teams, or of the 1819 Innovation Hub, instead of an AI-generated image. If a logo is used, the white lockup goes on dark backgrounds and the dark lockup on light ones, the purple 'Now' stays unchanged, and no effects are added.",
+  "timeframe": {
+    "time_bound": true,
+    "key_dates": [
+      "2025-08-30 (post published)",
+      "2025-09-06 (hackathon day, 8 AM to 8 PM)"
+    ],
+    "status": "past",
+    "handling": "Describe only what the post says was planned or offered, in past tense; never state attendance, results, or outcomes the post could not know when it was written; no call to action that has expired (registration, slot availability, DevPost sign-up)."
+  },
+  "first_party": {
+    "is_dn_work": true,
+    "what": "The 2025 Future of Data Hackathon, which runs under MidwestCon. Per the byline bio, Rob Richardson founded and convenes MidwestCon."
+  },
+  "quote_check": {
+    "checked": 12,
+    "missing": 0
+  }
+}

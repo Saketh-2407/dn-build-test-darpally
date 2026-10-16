@@ -1,0 +1,235 @@
+{
+  "round": 1,
+  "verdict": "REVISE",
+  "lint": {
+    "linkedin": {
+      "passed": true,
+      "platform": "linkedin",
+      "char_count": 1139,
+      "hard_failures": [],
+      "soft_flags": [
+        {
+          "rule": "filler_intensifiers",
+          "match": "real",
+          "context": "...disruptionnow.com/blog/40-student-slots-real-world-impact"
+        }
+      ]
+    },
+    "instagram": {
+      "passed": true,
+      "platform": "instagram",
+      "char_count": 662,
+      "hard_failures": [],
+      "soft_flags": []
+    },
+    "hashtags": {
+      "passed": true,
+      "platform": "instagram",
+      "char_count": 59,
+      "hard_failures": [],
+      "soft_flags": []
+    }
+  },
+  "fact_check": {
+    "quotes_verified": 5,
+    "quotes_missing": [],
+    "unsourced_claims": []
+  },
+  "violations": [
+    {
+      "id": "V1",
+      "severity": "judgment",
+      "platform": "linkedin",
+      "line": "So the next year, we capped the student field at 40, in teams of four.",
+      "rule": "Honest: do not overclaim. Keep only the because the source gives.",
+      "category": "voice-principles",
+      "fix": "'So the next year' makes the cap sound new in 2025 and makes it sound like a response to the 2024 team's story. The source says neither. Its only wording is 'This year, 40 student slots are open', and F4 is its only reason for the cap, which the next line already gives. Replace 'So the next year, we capped' with 'For 2025, we capped'. Keep F5 as the fact, and leave the rest of the line as it is."
+    }
+  ],
+  "soft_flags_judged": [
+    {
+      "match": "real",
+      "verdict": "ok",
+      "why": "The match is inside the source URL slug (40-student-slots-real-world-impact) on the required 'Read the full post' closing line. It is part of the link, not our copy, and we can't change it."
+    }
+  ],
+  "sentence_audit": [
+    {
+      "platform": "linkedin",
+      "sentence": "In 2024, a team showed up to our hackathon with nothing but curiosity and a caffeine plan.",
+      "advances_point": true,
+      "picturable": true,
+      "competitor_could_paste": false,
+      "issue": ""
+    },
+    {
+      "platform": "linkedin",
+      "sentence": "By dusk, they'd shipped a working prototype and won thousands of dollars.",
+      "advances_point": true,
+      "picturable": true,
+      "competitor_could_paste": false,
+      "issue": "Magician result line. 'Thousands of dollars' keeps the source's vague figure, as the cautions require."
+    },
+    {
+      "platform": "linkedin",
+      "sentence": "That's how our Future of Data Hackathon team describes 2024.",
+      "advances_point": true,
+      "picturable": true,
+      "competitor_could_paste": false,
+      "issue": "Keeps the F1 attribution and the 2024 framing the cautions require."
+    },
+    {
+      "platform": "linkedin",
+      "sentence": "If you're a student, you want a day like that.",
+      "advances_point": true,
+      "picturable": true,
+      "competitor_could_paste": false,
+      "issue": ""
+    },
+    {
+      "platform": "linkedin",
+      "sentence": "You want to build something people will use, with someone who hires watching you work.",
+      "advances_point": true,
+      "picturable": true,
+      "competitor_could_paste": false,
+      "issue": "States the brief's reader_feeling. It describes what the reader wants and makes no claim about the event."
+    },
+    {
+      "platform": "linkedin",
+      "sentence": "So the next year, we capped the student field at 40, in teams of four.",
+      "advances_point": true,
+      "picturable": true,
+      "competitor_could_paste": false,
+      "issue": "See V1: 'So the next year' implies the cap was new and caused by the 2024 story. The source does not say that."
+    },
+    {
+      "platform": "linkedin",
+      "sentence": "Forty was small enough that every student could get direct mentorship and meaningful access to the executives at the event.",
+      "advances_point": true,
+      "picturable": true,
+      "competitor_could_paste": false,
+      "issue": "Carries the F4 because. 'Could get' keeps it to what was planned, which the past timeframe requires."
+    },
+    {
+      "platform": "linkedin",
+      "sentence": "Then we lined up two clients.",
+      "advances_point": true,
+      "picturable": true,
+      "competitor_could_paste": false,
+      "issue": "A transition the next sentence needs. First person is correct for DN's own work."
+    },
+    {
+      "platform": "linkedin",
+      "sentence": "Beginner Track teams were set to build data and AI tools that support cancer research operations at Wood Hudson Cancer Research Laboratory in Newport, KY.",
+      "advances_point": true,
+      "picturable": true,
+      "competitor_could_paste": false,
+      "issue": ""
+    },
+    {
+      "platform": "linkedin",
+      "sentence": "Founded in 1981, the lab maintains over 2 million tissue specimens.",
+      "advances_point": true,
+      "picturable": true,
+      "competitor_could_paste": false,
+      "issue": "Keeps the 'over' hedge (F6)."
+    },
+    {
+      "platform": "linkedin",
+      "sentence": "Experienced Track teams were set to work with the YMCA of Greater Cincinnati on AI for member analytics, program scheduling, and outreach.",
+      "advances_point": true,
+      "picturable": true,
+      "competitor_could_paste": false,
+      "issue": ""
+    },
+    {
+      "platform": "linkedin",
+      "sentence": "Each student would build for a client who could use the work.",
+      "advances_point": true,
+      "picturable": true,
+      "competitor_could_paste": false,
+      "issue": "The payoff line after the two named clients, in conditional past tense. The round 0 fix (V2) was applied correctly."
+    },
+    {
+      "platform": "linkedin",
+      "sentence": "Which track would you have picked?",
+      "advances_point": true,
+      "picturable": true,
+      "competitor_could_paste": false,
+      "issue": "Past-tense engagement question. It does not point to the expired registration."
+    },
+    {
+      "platform": "linkedin",
+      "sentence": "Read the full post: https://disruptionnow.com/blog/40-student-slots-real-world-impact",
+      "advances_point": true,
+      "picturable": true,
+      "competitor_could_paste": false,
+      "issue": "Standard closing line."
+    },
+    {
+      "platform": "instagram",
+      "sentence": "Our hackathon asked students to build AI tools for a cancer lab that holds over 2 million tissue specimens.",
+      "advances_point": true,
+      "picturable": true,
+      "competitor_could_paste": false,
+      "issue": "The hook follows the brief's instagram_hook_idea and keeps the 'over' hedge."
+    },
+    {
+      "platform": "instagram",
+      "sentence": "The lab is Wood Hudson Cancer Research Laboratory in Newport, KY.",
+      "advances_point": true,
+      "picturable": true,
+      "competitor_could_paste": false,
+      "issue": ""
+    },
+    {
+      "platform": "instagram",
+      "sentence": "Beginner Track teams were set to build data and AI tools that support its research operations.",
+      "advances_point": true,
+      "picturable": true,
+      "competitor_could_paste": false,
+      "issue": "Describes the work carefully, as supporting research operations."
+    },
+    {
+      "platform": "instagram",
+      "sentence": "Experienced Track teams were set to work with the YMCA of Greater Cincinnati on member analytics, program scheduling, and outreach.",
+      "advances_point": true,
+      "picturable": true,
+      "competitor_could_paste": false,
+      "issue": ""
+    },
+    {
+      "platform": "instagram",
+      "sentence": "We capped the field at 40 students, in teams of four.",
+      "advances_point": true,
+      "picturable": true,
+      "competitor_could_paste": false,
+      "issue": ""
+    },
+    {
+      "platform": "instagram",
+      "sentence": "That kept it small enough for every student to get direct mentorship and meaningful access to the executives at the event.",
+      "advances_point": true,
+      "picturable": true,
+      "competitor_could_paste": false,
+      "issue": "Carries the F4 because. It describes the cohort's size, not a reported 2025 result."
+    },
+    {
+      "platform": "instagram",
+      "sentence": "If you're a student, which track would you have picked?",
+      "advances_point": true,
+      "picturable": true,
+      "competitor_could_paste": false,
+      "issue": ""
+    },
+    {
+      "platform": "instagram",
+      "sentence": "Full post: link in bio.",
+      "advances_point": true,
+      "picturable": true,
+      "competitor_could_paste": false,
+      "issue": "Standard closing line."
+    }
+  ],
+  "notes": "Round 1. Both round 0 fixes (V1 and V2) were applied correctly. All three lint checks passed with zero hard failures. All 5 source_quotes verified word-for-word (F1, F4, F5, F6, F7). The draft follows the past timeframe: there is no 2025 attendance, winners or outcomes, and no registration call to action. Both platforms use first person for DN's work and include 'you'. Fact density is 5 ids on LinkedIn and 4 on Instagram. There are 5 hashtags. One judgment violation is open (V1, LinkedIn: 'So the next year'). To check V1, verify_quotes was used to look up the closest source sentences. The post says 'This year, 40 student slots are open', and its 2024 story begins 'Last year, a team walked in...'. Nothing in the post says the cap was new or a response to 2024."
+}

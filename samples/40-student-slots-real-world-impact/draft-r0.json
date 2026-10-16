@@ -1,0 +1,142 @@
+{
+  "source_url": "https://disruptionnow.com/blog/40-student-slots-real-world-impact",
+  "round": 0,
+  "linkedin": {
+    "text": "In 2024, a team showed up to our hackathon with nothing but curiosity and a caffeine plan. By dusk, they'd shipped a working prototype and won thousands of dollars.\n\nThat's how our Future of Data Hackathon team describes 2024.\n\nIf you're a student, you want a day like that. You want to build something people will use, with someone who hires watching you work.\n\nSo the next year, we capped the student field at 40, in teams of four.\n\nForty was small enough that every student could get direct mentorship and meaningful access to the executives at the event. It was also large enough to form diverse teams.\n\nThen we lined up two clients. Beginner Track teams were set to build data and AI tools that support cancer research operations at Wood Hudson Cancer Research Laboratory in Newport, KY.\n\nFounded in 1981, the lab maintains over 2 million tissue specimens.\n\nExperienced Track teams were set to work with the YMCA of Greater Cincinnati on AI for member analytics, program scheduling, and outreach.\n\nEach student would build for a client who could use the work, and get direct mentorship while doing it.\n\nWhich track would you have picked?\n\nRead the full post: https://disruptionnow.com/blog/40-student-slots-real-world-impact",
+    "opener_type": "Magician",
+    "fact_ids": [
+      "F1",
+      "F4",
+      "F5",
+      "F6",
+      "F7"
+    ]
+  },
+  "instagram": {
+    "caption": "Our hackathon asked students to build AI tools for a cancer lab that holds over 2 million tissue specimens.\n\nThe lab is Wood Hudson Cancer Research Laboratory in Newport, KY.\nBeginner Track teams were set to build data and AI tools that support its research operations.\n\nExperienced Track teams were set to work with the YMCA of Greater Cincinnati on member analytics, program scheduling, and outreach.\n\nWe capped the field at 40 students, in teams of four.\nThat kept it small enough for every student to get direct mentorship and meaningful access to the executives at the event.\n\nIf you're a student, which track would you have picked?\n\nFull post: link in bio.",
+    "hashtags": [
+      "#Cincinnati",
+      "#Hackathon",
+      "#NewportKY",
+      "#MidwestCon",
+      "#FutureOfData"
+    ],
+    "fact_ids": [
+      "F4",
+      "F5",
+      "F6",
+      "F7"
+    ]
+  },
+  "claims_map": [
+    {
+      "platform": "linkedin",
+      "snippet": "In 2024, a team showed up to our hackathon with nothing but curiosity and a caffeine plan.",
+      "fact_id": "F1"
+    },
+    {
+      "platform": "linkedin",
+      "snippet": "By dusk, they'd shipped a working prototype and won thousands of dollars.",
+      "fact_id": "F1"
+    },
+    {
+      "platform": "linkedin",
+      "snippet": "That's how our Future of Data Hackathon team describes 2024.",
+      "fact_id": "F1"
+    },
+    {
+      "platform": "linkedin",
+      "snippet": "So the next year, we capped the student field at 40, in teams of four.",
+      "fact_id": "F5"
+    },
+    {
+      "platform": "linkedin",
+      "snippet": "Forty was small enough that every student could get direct mentorship and meaningful access to the executives at the event.",
+      "fact_id": "F4"
+    },
+    {
+      "platform": "linkedin",
+      "snippet": "It was also large enough to form diverse teams.",
+      "fact_id": "F4"
+    },
+    {
+      "platform": "linkedin",
+      "snippet": "Then we lined up two clients.",
+      "fact_id": "F6"
+    },
+    {
+      "platform": "linkedin",
+      "snippet": "Then we lined up two clients.",
+      "fact_id": "F7"
+    },
+    {
+      "platform": "linkedin",
+      "snippet": "Beginner Track teams were set to build data and AI tools that support cancer research operations at Wood Hudson Cancer Research Laboratory in Newport, KY.",
+      "fact_id": "F6"
+    },
+    {
+      "platform": "linkedin",
+      "snippet": "Founded in 1981, the lab maintains over 2 million tissue specimens.",
+      "fact_id": "F6"
+    },
+    {
+      "platform": "linkedin",
+      "snippet": "Experienced Track teams were set to work with the YMCA of Greater Cincinnati on AI for member analytics, program scheduling, and outreach.",
+      "fact_id": "F7"
+    },
+    {
+      "platform": "linkedin",
+      "snippet": "Each student would build for a client who could use the work, and get direct mentorship while doing it.",
+      "fact_id": "F4"
+    },
+    {
+      "platform": "linkedin",
+      "snippet": "Each student would build for a client who could use the work, and get direct mentorship while doing it.",
+      "fact_id": "F6"
+    },
+    {
+      "platform": "instagram",
+      "snippet": "Our hackathon asked students to build AI tools for a cancer lab that holds over 2 million tissue specimens.",
+      "fact_id": "F6"
+    },
+    {
+      "platform": "instagram",
+      "snippet": "The lab is Wood Hudson Cancer Research Laboratory in Newport, KY.",
+      "fact_id": "F6"
+    },
+    {
+      "platform": "instagram",
+      "snippet": "Beginner Track teams were set to build data and AI tools that support its research operations.",
+      "fact_id": "F6"
+    },
+    {
+      "platform": "instagram",
+      "snippet": "Experienced Track teams were set to work with the YMCA of Greater Cincinnati on member analytics, program scheduling, and outreach.",
+      "fact_id": "F7"
+    },
+    {
+      "platform": "instagram",
+      "snippet": "We capped the field at 40 students, in teams of four.",
+      "fact_id": "F5"
+    },
+    {
+      "platform": "instagram",
+      "snippet": "That kept it small enough for every student to get direct mentorship and meaningful access to the executives at the event.",
+      "fact_id": "F4"
+    }
+  ],
+  "visual_note": "Use a real photograph of students building at laptops in teams, or of the 1819 Innovation Hub, instead of an AI-generated image. If a logo is used, the white lockup goes on dark backgrounds and the dark lockup on light ones, the purple 'Now' stays unchanged, and no effects are added.",
+  "self_lint": {
+    "linkedin_passed": true,
+    "instagram_passed": true,
+    "soft_flags_kept": [
+      {
+        "platform": "linkedin",
+        "rule": "filler_intensifiers",
+        "match": "real",
+        "reason": "The match sits inside the source URL slug (40-student-slots-real-world-impact) on the required 'Read the full post' line. It can't be changed and isn't copy."
+      }
+    ]
+  },
+  "changes_made": []
+}
