@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "dn-repurposer/review.schema.json",
+  "title": "Reviewer verdict",
+  "description": "What dn-reviewer hands back to the orchestrator and dn-writer. Only the keys the pipeline depends on are required.",
+  "type": "object",
+  "required": ["round", "verdict", "violations", "sentence_audit"],
+  "properties": {
+    "round": {"type": "integer", "minimum": 0, "maximum": 2},
+    "verdict": {"enum": ["PASS", "REVISE", "SHIP_WITH_FLAGS", "BLOCKED"]},
+    "violations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "severity", "platform", "line", "rule", "fix"],
+        "properties": {
+          "id": {"type": "string", "minLength": 1},
+          "severity": {"enum": ["hard", "judgment"]},
+          "platform": {"type": "string"},
+          "line": {"type": "string"},
+          "rule": {"type": "string", "minLength": 1},
+          "fix": {"type": "string", "minLength": 1}
+        }
+      }
+    },
+    "sentence_audit": {"type": "array", "minItems": 1}
+  }
+}

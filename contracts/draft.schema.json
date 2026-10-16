@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "dn-repurposer/draft.schema.json",
+  "title": "Writer draft",
+  "description": "What dn-writer hands to dn-reviewer and save_run. Only the keys the pipeline depends on are required.",
+  "type": "object",
+  "required": ["source_url", "round", "linkedin", "instagram", "claims_map", "definitions", "visual_note"],
+  "properties": {
+    "source_url": {"type": "string", "minLength": 1},
+    "round": {"type": "integer", "minimum": 0, "maximum": 2},
+    "linkedin": {
+      "type": "object",
+      "required": ["text", "fact_ids"],
+      "properties": {
+        "text": {"type": "string", "minLength": 1},
+        "fact_ids": {"type": "array", "items": {"type": "string"}}
+      }
+    },
+    "instagram": {
+      "type": "object",
+      "required": ["caption", "hashtags", "fact_ids"],
+      "properties": {
+        "caption": {"type": "string", "minLength": 1},
+        "hashtags": {"type": "array", "items": {"type": "string"}},
+        "fact_ids": {"type": "array", "items": {"type": "string"}}
+      }
+    },
+    "claims_map": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["platform", "snippet", "fact_id"],
+        "properties": {
+          "platform": {"enum": ["linkedin", "instagram"]},
+          "snippet": {"type": "string", "minLength": 1},
+          "fact_id": {"type": "string", "minLength": 1}
+        }
+      }
+    },
+    "definitions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["term", "sentence"],
+        "properties": {
+          "term": {"type": "string", "minLength": 1},
+          "sentence": {"type": "string", "minLength": 1}
+        }
+      }
+    },
+    "visual_note": {"type": "string"}
+  }
+}

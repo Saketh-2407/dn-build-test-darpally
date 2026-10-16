@@ -38,7 +38,7 @@ BRAND_RULE_FILES = [
     "voice-principles.json",
     "where-the-brand-speaks.json",
 ]
-EXPECTED_TOOLS = ["list_blog_posts", "fetch_blog_post", "get_brand_rule", "lint_draft", "verify_quotes", "save_run"]
+EXPECTED_TOOLS = ["list_blog_posts", "fetch_blog_post", "get_brand_rule", "lint_draft", "verify_quotes", "validate_handoff", "save_run"]
 SERVER_TIMEOUT_SECONDS = 60
 
 # Runs inside .venv (where the mcp SDK is installed); prints the server's tool names as JSON.

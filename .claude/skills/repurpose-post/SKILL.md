@@ -2,7 +2,7 @@
 name: repurpose-post
 description: Turn a Disruption Now blog post into a LinkedIn post and an Instagram caption that pass DN's published brand doctrine, using the dn-repurposer MCP tools and three subagents (Analyst, Writer, Reviewer). Use when asked to repurpose a DN blog post, given a disruptionnow.com/blog URL, or asked for DN social content on a topic.
 argument-hint: "[post URL, topic word, or nothing]"
-allowed-tools: mcp__dn-repurposer__list_blog_posts mcp__dn-repurposer__save_run
+allowed-tools: mcp__dn-repurposer__list_blog_posts mcp__dn-repurposer__validate_handoff mcp__dn-repurposer__save_run
 ---
 
 # Repurpose a DN blog post (SOP)
@@ -29,23 +29,34 @@ tell the user to open /mcp and approve or reconnect "dn-repurposer".
 Make the slug from the URL's last path segment: lowercase, any character outside 
 a-z, 0-9, and "-" replaced with "-", cut to 80 characters.
 
+## Checking a handoff
+Every brief, draft and review goes through validate_handoff before it moves on:
+- If it returns valid: true, continue.
+- If it returns valid: false, send the JSON back to the same subagent once, with 
+  the errors, and ask for the corrected JSON only. Check the corrected JSON 
+  again.
+- If it is still invalid, stop and report the errors to the user.
+Never fix a handoff yourself.
+
 ## Step 2: Analyst
 Delegate to the dn-analyst subagent with the post URL and today's date in YYYY-MM-DD form.
-It returns the brief JSON. Stop and report to the user if:
-- it returned an error, or
-- quote_check.missing is not 0, or
-- it has fewer than 3 facts.
+It returns the brief JSON. If it returned an error, stop and report it to the 
+user. Otherwise call validate_handoff("brief", brief). This also catches 
+quote_check.missing not being 0 and fewer than 3 facts.
 
 ## Step 3: Writer, first draft
 Delegate to the dn-writer subagent with the full brief JSON and round 0.
+Call validate_handoff("draft", draft, brief).
 
 ## Step 4: Reviewer
 Delegate to the dn-reviewer subagent with the full brief JSON, the full draft 
 JSON, and the round number.
+Call validate_handoff("review", review).
 
 ## Step 5: Revision loop (at most 2 revisions)
 If the verdict is REVISE, delegate to dn-writer with the brief, the latest draft, 
-and the Reviewer's JSON (round + 1), then go back to Step 4.
+and the Reviewer's JSON (round + 1). Call validate_handoff("draft", draft, 
+brief), then go back to Step 4.
 The loop ends on PASS, SHIP_WITH_FLAGS, or BLOCKED. The Reviewer will not return 
 REVISE for round 2.
 
@@ -71,6 +82,8 @@ flags, the saved file paths, and the final LinkedIn and Instagram text.
 ## Rules
 - Every fact in the copy comes from the source post, through the Analyst's 
   verified ledger. No outside research.
+- Handoffs are contracts: every brief, draft and review is checked against 
+  contracts/*.schema.json with validate_handoff before it moves on.
 - The linter only checks copy we generate, never the source post.
 - Run one post per conversation, so context stays small. Start a new 
   conversation for the next post.

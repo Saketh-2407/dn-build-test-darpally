@@ -6,6 +6,7 @@
       "mcp__dn-repurposer__get_brand_rule",
       "mcp__dn-repurposer__lint_draft",
       "mcp__dn-repurposer__verify_quotes",
+      "mcp__dn-repurposer__validate_handoff",
       "mcp__dn-repurposer__save_run"
     ]
   }

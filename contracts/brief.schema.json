@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "dn-repurposer/brief.schema.json",
+  "title": "Analyst brief",
+  "description": "What dn-analyst hands to dn-writer and dn-reviewer. Only the keys the pipeline depends on are required.",
+  "type": "object",
+  "required": ["source", "core_point", "facts", "opener", "cautions", "visual_note", "timeframe", "first_party", "quote_check"],
+  "properties": {
+    "source": {
+      "type": "object",
+      "required": ["url", "title"],
+      "properties": {
+        "url": {"type": "string", "minLength": 1},
+        "title": {"type": "string", "minLength": 1}
+      }
+    },
+    "core_point": {"type": "string", "minLength": 1},
+    "facts": {
+      "type": "array",
+      "minItems": 3,
+      "items": {
+        "type": "object",
+        "required": ["id", "fact", "source_quote"],
+        "properties": {
+          "id": {"type": "string", "pattern": "^F[0-9]+$"},
+          "fact": {"type": "string", "minLength": 1},
+          "source_quote": {"type": "string", "minLength": 1}
+        }
+      }
+    },
+    "opener": {
+      "type": "object",
+      "required": ["type"],
+      "properties": {"type": {"type": "string", "minLength": 1}}
+    },
+    "cautions": {"type": "array"},
+    "visual_note": {"type": "string"},
+    "timeframe": {
+      "type": "object",
+      "required": ["status"],
+      "properties": {"status": {"enum": ["past", "upcoming", "evergreen"]}}
+    },
+    "first_party": {
+      "type": "object",
+      "required": ["is_dn_work"],
+      "properties": {"is_dn_work": {"type": "boolean"}}
+    },
+    "quote_check": {
+      "type": "object",
+      "required": ["checked", "missing"],
+      "properties": {
+        "checked": {"type": "integer"},
+        "missing": {"type": "integer"}
+      }
+    }
+  }
+}
