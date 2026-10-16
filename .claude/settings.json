@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__dn-repurposer__list_blog_posts",
+      "mcp__dn-repurposer__fetch_blog_post",
+      "mcp__dn-repurposer__get_brand_rule",
+      "mcp__dn-repurposer__lint_draft",
+      "mcp__dn-repurposer__verify_quotes",
+      "mcp__dn-repurposer__save_run"
+    ]
+  }
+}
