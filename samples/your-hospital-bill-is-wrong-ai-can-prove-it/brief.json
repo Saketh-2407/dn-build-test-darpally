@@ -1,0 +1,166 @@
+{
+  "source": {
+    "url": "https://disruptionnow.com/blog/your-hospital-bill-is-wrong-ai-can-prove-it/",
+    "title": "Your Hospital Bill Is Wrong. AI Can Prove It."
+  },
+  "core_point": "Institutions use complexity as a defense, and AI now lets an ordinary person read the rulebook and challenge them with evidence, as one man did when he used AI to get a $195,000 hospital bill cut to approximately $33,000.",
+  "reader_feeling": "Overwhelmed and powerless in front of a bill, statement, or policy written in codes and jargon you cannot check, so it feels like you either pay or plead.",
+  "what_we_do": "Use AI as an investigative ally: have it read the fine print line by line, find which official rules govern the issue, write the challenge in the institution's own language, and check every citation yourself before you send anything.",
+  "what_they_get": "A documented, rules-based challenge that institutions have to answer. In the post's case, a $195,000 hospital bill dropped to approximately $33,000 two weeks after a written challenge, with no lawyer.",
+  "facts": [
+    {
+      "id": "F1",
+      "kind": "story",
+      "fact": "The widow's brother-in-law, described as a quiet analytical type with no healthcare billing expertise, took the hospital papers home and uploaded them to Claude.",
+      "source_quote": "The widow's brother-in-law, a quiet analytical type with no healthcare billing expertise, took the papers home and uploaded them to Claude.",
+      "attribution": null,
+      "because": null,
+      "priority": "core"
+    },
+    {
+      "id": "F2",
+      "kind": "number",
+      "fact": "An ordinary citizen with an ordinary laptop uploaded a $195,000 itemized hospital bill to AI.",
+      "source_quote": "An ordinary citizen with an ordinary laptop uploaded a $195,000 itemized hospital bill to AI.",
+      "attribution": null,
+      "because": null,
+      "priority": "core"
+    },
+    {
+      "id": "F3",
+      "kind": "example",
+      "fact": "The charge covered four hours in an emergency room after a fatal heart attack.",
+      "source_quote": "The charge was for four hours in an emergency room after a fatal heart attack.",
+      "attribution": null,
+      "because": null,
+      "priority": "supporting"
+    },
+    {
+      "id": "F4",
+      "kind": "number",
+      "fact": "The AI flagged $162,000 in likely Medicare violations and duplicate charges, cross-referenced against CMS Medicare Fee Schedules and bundling rules.",
+      "source_quote": "It flagged $162,000 in likely Medicare violations and duplicate charges (cross-referenced against CMS Medicare Fee Schedules and bundling rules).",
+      "attribution": null,
+      "because": null,
+      "priority": "core"
+    },
+    {
+      "id": "F5",
+      "kind": "number",
+      "fact": "Two weeks later, the $195,000 bill dropped to approximately $33,000.",
+      "source_quote": "Two weeks later, the $195,000 bill dropped to approximately $33,000",
+      "attribution": null,
+      "because": "F6",
+      "priority": "core"
+    },
+    {
+      "id": "F6",
+      "kind": "story",
+      "fact": "He printed the AI's analysis and submitted a written challenge to the hospital.",
+      "source_quote": "He printed the AI's analysis and submitted a written challenge to the hospital.",
+      "attribution": null,
+      "because": "F4",
+      "priority": "supporting"
+    },
+    {
+      "id": "F7",
+      "kind": "number",
+      "fact": "The post places the case inside a broader pattern documented by KFF Health News in its Diagnosis: Debt series: 41% of U.S. adults carry medical debt.",
+      "source_quote": "the broader pattern KFF Health News documented in Diagnosis: Debt, where 41% of U.S. adults carry medical debt.",
+      "attribution": "KFF Health News, Diagnosis: Debt (listed in the post's sources as KFF Health News + NPR, 2022), per the post",
+      "because": null,
+      "priority": "supporting"
+    },
+    {
+      "id": "F8",
+      "kind": "claim",
+      "fact": "Across hospitals, banks, school districts, and government agencies, complexity is a defense mechanism.",
+      "source_quote": "Across hospitals, banks, school districts, and government agencies, complexity is a defense mechanism.",
+      "attribution": null,
+      "because": null,
+      "priority": "supporting"
+    },
+    {
+      "id": "F9",
+      "kind": "quote",
+      "fact": "Rob Richardson on the brother-in-law: he did not ask what he should do, he asked what rules govern this, and that single question changed everything.",
+      "source_quote": "He didn't ask 'What should I do?' He asked 'What rules govern this?' That single question changed everything.",
+      "attribution": "Rob Richardson, Founder & CEO, Disruption Now",
+      "because": null,
+      "priority": "core"
+    },
+    {
+      "id": "F10",
+      "kind": "example",
+      "fact": "Principle 3 (adopt the institutional register): instead of writing 'This seems unfair,' the letter reads 'This billing structure appears inconsistent with CMS bundling regulations.'",
+      "source_quote": "Instead of 'This seems unfair,' your letter reads 'This billing structure appears inconsistent with CMS bundling regulations.'",
+      "attribution": null,
+      "because": null,
+      "priority": "supporting"
+    },
+    {
+      "id": "F11",
+      "kind": "claim",
+      "fact": "The investigator's mindset has three parts: investigate before you negotiate, control the frame, treat every response as data.",
+      "source_quote": "The investigator's mindset: investigate before you negotiate, control the frame, treat every response as data.",
+      "attribution": null,
+      "because": null,
+      "priority": "supporting"
+    },
+    {
+      "id": "F12",
+      "kind": "reason",
+      "fact": "Principle 7: let AI do the research and drafting, but verify citations manually before sending anything, because a single false claim weakens an otherwise airtight case.",
+      "source_quote": "But verify citations manually before sending anything. A single false claim weakens an otherwise airtight case.",
+      "attribution": null,
+      "because": null,
+      "priority": "supporting"
+    }
+  ],
+  "human_story": {
+    "present": true,
+    "fact_ids": [
+      "F1",
+      "F3",
+      "F6",
+      "F5"
+    ]
+  },
+  "opener": {
+    "type": "Investigator",
+    "why": "The post is about finding out what is really going on: a man who 'investigated' a bill and found a pattern, institutions hiding behind complexity. Opening on what was really inside a $195,000 bill (F2, F4) fits both the story and the post's investigator's-mindset framework."
+  },
+  "linkedin_angle": "Complexity protects institutions, and AI lets anyone find the rulebook and challenge a bill, policy, or fee with evidence instead of emotion, as long as they check the AI's citations themselves.",
+  "instagram_hook_idea": "Lead with the numbers: a $195,000 emergency room bill, $162,000 in likely Medicare violations flagged by AI, and a revised bill of approximately $33,000 two weeks later.",
+  "earned_phrases": [
+    "the investigator's mindset",
+    "investigate before you negotiate, control the frame, treat every response as data",
+    "Eight Principles of Institutional Self-Defense"
+  ],
+  "cautions": [
+    "Em dashes: the post body uses many (for example 'AI does not give you the correct answer — it gives you a map' and 'Institutions do not need to deceive directly — they only need to...'). Never quote a line containing an em dash; rewrite it. None of the verified source_quotes contain one. The title has no em dash.",
+    "Estimates and hedges: the $162,000 is 'likely' Medicare violations (F4). Keep 'likely'. Do not call them confirmed violations or fraud, even though one stat card in the post drops the word. The final bill is 'approximately $33,000' (F5). Keep 'approximately' or an equivalent, and do not round, combine, or work out a savings figure.",
+    "Third-party attribution: the 41% medical-debt figure belongs to KFF Health News, Diagnosis: Debt (F7). KFF documented the broader pattern, not this specific case, so do not imply KFF reported the $195,000 bill. The post also says the CFPB 'has documented' coercive billing practices, but that line is not a verified fact here. Do not use it.",
+    "Sensitive subject: the bill followed a fatal heart attack, and the family includes a widow. Handle the death and the grieving family with care. Do not make the death a punchline or a hook gimmick, and do not invent names, feelings, or details about the family beyond F1, F3, and F6.",
+    "No overclaiming or advice: do not promise readers that AI will cut their bill or that results like this are typical. This is one case. Keep the post's own warning to verify citations manually (F12). Do not present this as legal or medical billing advice.",
+    "Internal inconsistency in the post: the body ties student loan fees to the Fair Credit Reporting Act, while its table lists the Fair Debt Collection Practices Act for student loans. Do not pair a specific law with student loans in the copy.",
+    "Contrast phrasing to avoid: the post uses 'AI does not give you the correct answer — it gives you a map', 'Institutions rely on exhaustion more than force', 'Institutions do not need to deceive directly — they only need to...', 'From asking for mercy to demanding compliance', and 'He did not threaten, beg, or hire a lawyer. He investigated.' Do not copy these 'not X, it's Y' patterns.",
+    "First-party boundary: the hospital-bill case was done by the widow's brother-in-law, not by Disruption Now or Rob. Do not say or imply that DN handled, coached, or won this case. The DN link comes only from the byline bio, which says Rob's training framework teaches the investigator's mindset and that MidwestCon is where he convenes the practitioners building these workflows. Bio details (training engagements with healthcare systems, civic agencies, family caregivers) are not verified facts and must not be used as claims.",
+    "Tool naming: the post says the brother-in-law used Claude (F1). If the copy names the tool, name it accurately and do not turn it into an endorsement the post does not make."
+  ],
+  "visual_note": "Use a real photograph of the literal activity, such as hands holding an itemized hospital bill next to a laptop at a kitchen table, rather than an AI-generated image. Do not stage it as the actual family. If the logo is used, put the white lockup on dark backgrounds and the dark lockup on light ones, keep the purple 'Now' unchanged, and add no effects.",
+  "timeframe": {
+    "time_bound": false,
+    "key_dates": [],
+    "status": "evergreen",
+    "handling": "Evergreen: the post (published 2025-12-05) is not tied to an event, deadline, or registration. The case is undated apart from 'two weeks later', so do not assign it a date or call it recent."
+  },
+  "first_party": {
+    "is_dn_work": true,
+    "what": "Rob Richardson's AI training framework, which teaches the investigator's mindset (per the byline bio). MidwestCon is where he convenes practitioners building these workflows. The $195,000 hospital-bill case itself is not DN work."
+  },
+  "quote_check": {
+    "checked": 12,
+    "missing": 0
+  }
+}

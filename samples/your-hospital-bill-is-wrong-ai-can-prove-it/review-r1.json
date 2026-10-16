@@ -1,0 +1,229 @@
+{
+  "round": 1,
+  "verdict": "PASS",
+  "lint": {
+    "linkedin": {
+      "passed": true,
+      "platform": "linkedin",
+      "char_count": 1044,
+      "hard_failures": [],
+      "soft_flags": []
+    },
+    "instagram": {
+      "passed": true,
+      "platform": "instagram",
+      "char_count": 690,
+      "hard_failures": [],
+      "soft_flags": []
+    },
+    "hashtags": {
+      "passed": true,
+      "platform": "instagram",
+      "char_count": 50,
+      "hard_failures": [],
+      "soft_flags": []
+    }
+  },
+  "fact_check": {
+    "quotes_verified": 5,
+    "quotes_missing": [],
+    "unsourced_claims": []
+  },
+  "violations": [],
+  "soft_flags_judged": [],
+  "sentence_audit": [
+    {
+      "platform": "linkedin",
+      "sentence": "What was inside a $195,000 hospital bill?",
+      "advances_point": true,
+      "picturable": true,
+      "competitor_could_paste": false,
+      "issue": "Investigator opener, matches the declared opener_type. Number matches F2."
+    },
+    {
+      "platform": "linkedin",
+      "sentence": "AI flagged $162,000 in likely Medicare violations and duplicate charges.",
+      "advances_point": true,
+      "picturable": true,
+      "competitor_could_paste": false,
+      "issue": "Matches F4. Keeps the 'likely' hedge."
+    },
+    {
+      "platform": "linkedin",
+      "sentence": "You've held a bill written in codes you can't check.",
+      "advances_point": true,
+      "picturable": true,
+      "competitor_could_paste": false,
+      "issue": "Reader-feeling line taken from brief.reader_feeling. Not a factual claim."
+    },
+    {
+      "platform": "linkedin",
+      "sentence": "It can feel like your only choices are to pay or to plead.",
+      "advances_point": true,
+      "picturable": true,
+      "competitor_could_paste": false,
+      "issue": "Finishes the feeling from brief.reader_feeling. No contrast framing."
+    },
+    {
+      "platform": "linkedin",
+      "sentence": "An ordinary citizen with an ordinary laptop uploaded the $195,000 itemized hospital bill to AI.",
+      "advances_point": true,
+      "picturable": true,
+      "competitor_could_paste": false,
+      "issue": "Close to verbatim F2. The repeated 'ordinary' comes from the source."
+    },
+    {
+      "platform": "linkedin",
+      "sentence": "The AI cross-referenced the charges against Medicare's official fee schedules and bundling rules.",
+      "advances_point": true,
+      "picturable": true,
+      "competitor_could_paste": false,
+      "issue": "F4 basis. 'Medicare's official fee schedules' accurately renders 'CMS Medicare Fee Schedules'. The CMS acronym was removed per the round 0 fix."
+    },
+    {
+      "platform": "linkedin",
+      "sentence": "Bundling rules say which services must be billed as one charge.",
+      "advances_point": true,
+      "picturable": true,
+      "competitor_could_paste": false,
+      "issue": "Plain explanation of an insider term, required by Mechanics (Plain American English). It defines a term and says nothing new about the case. See notes."
+    },
+    {
+      "platform": "linkedin",
+      "sentence": "The man printed the AI's analysis and sent the hospital a written challenge.",
+      "advances_point": true,
+      "picturable": true,
+      "competitor_could_paste": false,
+      "issue": "Matches F6. This is the 'because' for F5, and it comes right before F5."
+    },
+    {
+      "platform": "linkedin",
+      "sentence": "Two weeks later, the $195,000 bill dropped to approximately $33,000.",
+      "advances_point": true,
+      "picturable": true,
+      "competitor_could_paste": false,
+      "issue": "Matches F5. Keeps 'approximately'. No savings figure is worked out."
+    },
+    {
+      "platform": "linkedin",
+      "sentence": "This is one case, and nobody can promise your bill the same result.",
+      "advances_point": true,
+      "picturable": true,
+      "competitor_could_paste": false,
+      "issue": "Honest hedge required by the brief's no-overclaiming caution. Not a factual claim."
+    },
+    {
+      "platform": "linkedin",
+      "sentence": "Let AI do the research and drafting on your bill.",
+      "advances_point": true,
+      "picturable": true,
+      "competitor_could_paste": false,
+      "issue": "Matches F12. Round 0 fix V3 applied."
+    },
+    {
+      "platform": "linkedin",
+      "sentence": "Then check every citation yourself before you send anything, because a single false claim weakens an otherwise airtight case.",
+      "advances_point": true,
+      "picturable": true,
+      "competitor_could_paste": false,
+      "issue": "Matches F12 and keeps its 'because'."
+    },
+    {
+      "platform": "linkedin",
+      "sentence": "What's the last bill you paid without asking which rules govern it?",
+      "advances_point": true,
+      "picturable": true,
+      "competitor_could_paste": false,
+      "issue": "Closing question that echoes the 'What rules govern this?' idea and points back to core_point. Not a factual claim."
+    },
+    {
+      "platform": "linkedin",
+      "sentence": "Read the full post: https://disruptionnow.com/blog/your-hospital-bill-is-wrong-ai-can-prove-it/",
+      "advances_point": true,
+      "picturable": true,
+      "competitor_could_paste": false,
+      "issue": "Standard pipeline closing line, which the closing-line convention allows."
+    },
+    {
+      "platform": "instagram",
+      "sentence": "AI flagged $162,000 in likely Medicare violations and duplicate charges on one $195,000 hospital bill.",
+      "advances_point": true,
+      "picturable": true,
+      "competitor_could_paste": false,
+      "issue": "Number-led hook as brief.instagram_hook_idea asks. Matches F4 and F5 and keeps 'likely'."
+    },
+    {
+      "platform": "instagram",
+      "sentence": "You've held a bill written in codes you can't check.",
+      "advances_point": true,
+      "picturable": true,
+      "competitor_could_paste": false,
+      "issue": "Reader-feeling line from brief.reader_feeling."
+    },
+    {
+      "platform": "instagram",
+      "sentence": "Paying or pleading can feel like the only choices.",
+      "advances_point": true,
+      "picturable": true,
+      "competitor_could_paste": false,
+      "issue": "Reader-feeling line from brief.reader_feeling."
+    },
+    {
+      "platform": "instagram",
+      "sentence": "The AI checked those charges against Medicare's fee schedules and bundling rules.",
+      "advances_point": true,
+      "picturable": true,
+      "competitor_could_paste": false,
+      "issue": "Gives F4's basis, added per the round 0 fix V2. Does not claim that every charge was checked."
+    },
+    {
+      "platform": "instagram",
+      "sentence": "Bundling rules say which services must be billed as one charge.",
+      "advances_point": true,
+      "picturable": true,
+      "competitor_could_paste": false,
+      "issue": "Plain explanation of an insider term, required by Mechanics. See notes."
+    },
+    {
+      "platform": "instagram",
+      "sentence": "One man printed the AI's analysis and sent the hospital a written challenge.",
+      "advances_point": true,
+      "picturable": true,
+      "competitor_could_paste": false,
+      "issue": "Matches F6. This is the 'because' for F5, and it comes right before F5. Handles the family with care."
+    },
+    {
+      "platform": "instagram",
+      "sentence": "Two weeks later, the $195,000 bill dropped to approximately $33,000.",
+      "advances_point": true,
+      "picturable": true,
+      "competitor_could_paste": false,
+      "issue": "Matches F5 and keeps 'approximately'."
+    },
+    {
+      "platform": "instagram",
+      "sentence": "Let AI do the research and drafting.",
+      "advances_point": true,
+      "picturable": true,
+      "competitor_could_paste": false,
+      "issue": "Matches F12. As specific as the source."
+    },
+    {
+      "platform": "instagram",
+      "sentence": "Then check every citation yourself before you send anything, because a single false claim weakens an otherwise airtight case.",
+      "advances_point": true,
+      "picturable": true,
+      "competitor_could_paste": false,
+      "issue": "Matches F12 and keeps its 'because'."
+    },
+    {
+      "platform": "instagram",
+      "sentence": "Full post: link in bio.",
+      "advances_point": true,
+      "picturable": true,
+      "competitor_could_paste": false,
+      "issue": "Standard pipeline closing line, which the closing-line convention allows."
+    }
+  ],
+  "notes": "All three round 0 fixes are in place: V1 (CMS removed and the bundling term explained on LinkedIn), V2 (F4's basis added to Instagram) and V3 (the 'You can put AI to work the same way' line cut). The five quotes behind the fact ids the draft uses (F2, F4, F5, F6, F12) all verified word-for-word. The hedges 'likely' and 'approximately' are kept on both platforms. No savings figure is worked out. Neither draft says DN or Rob handled the case. The death and the family are not used as a hook. Both platforms use 'you'. Fact density is 5 ids on LinkedIn and 4 on Instagram, within the limits. The timeframe is evergreen, so no date or recency claim was checked. On the bundling explanation ('Bundling rules say which services must be billed as one charge.'): verify_quotes shows the post never defines bundling, so this sentence is not in the ledger. I did not count it as an unsourced claim. It is the plain explanation that Mechanics ('No insider word without a plain explanation next to it') requires for an insider term in F4. It says nothing new about the case, its numbers or its people. It is an accurate plain description of how Medicare bundling works. The Writer disclosed it openly in changes_made. Counting it as a hard violation would conflict with the doctrine rule that required it."
+}

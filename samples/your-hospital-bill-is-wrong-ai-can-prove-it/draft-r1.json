@@ -1,0 +1,142 @@
+{
+  "source_url": "https://disruptionnow.com/blog/your-hospital-bill-is-wrong-ai-can-prove-it/",
+  "round": 1,
+  "linkedin": {
+    "text": "What was inside a $195,000 hospital bill? AI flagged $162,000 in likely Medicare violations and duplicate charges.\n\nYou've held a bill written in codes you can't check. It can feel like your only choices are to pay or to plead.\n\nAn ordinary citizen with an ordinary laptop uploaded the $195,000 itemized hospital bill to AI. The AI cross-referenced the charges against Medicare's official fee schedules and bundling rules. Bundling rules say which services must be billed as one charge.\n\nThe man printed the AI's analysis and sent the hospital a written challenge. Two weeks later, the $195,000 bill dropped to approximately $33,000. This is one case, and nobody can promise your bill the same result.\n\nLet AI do the research and drafting on your bill. Then check every citation yourself before you send anything, because a single false claim weakens an otherwise airtight case.\n\nWhat's the last bill you paid without asking which rules govern it?\n\nRead the full post: https://disruptionnow.com/blog/your-hospital-bill-is-wrong-ai-can-prove-it/",
+    "opener_type": "Investigator",
+    "fact_ids": [
+      "F2",
+      "F4",
+      "F6",
+      "F5",
+      "F12"
+    ]
+  },
+  "instagram": {
+    "caption": "AI flagged $162,000 in likely Medicare violations and duplicate charges on one $195,000 hospital bill.\n\nYou've held a bill written in codes you can't check. Paying or pleading can feel like the only choices.\n\nThe AI checked those charges against Medicare's fee schedules and bundling rules. Bundling rules say which services must be billed as one charge.\n\nOne man printed the AI's analysis and sent the hospital a written challenge. Two weeks later, the $195,000 bill dropped to approximately $33,000.\n\nLet AI do the research and drafting. Then check every citation yourself before you send anything, because a single false claim weakens an otherwise airtight case.\n\nFull post: link in bio.",
+    "hashtags": [
+      "#MedicalBills",
+      "#HospitalBill",
+      "#Medicare",
+      "#MedicalDebt"
+    ],
+    "fact_ids": [
+      "F4",
+      "F5",
+      "F6",
+      "F12"
+    ]
+  },
+  "claims_map": [
+    {
+      "platform": "linkedin",
+      "snippet": "What was inside a $195,000 hospital bill?",
+      "fact_id": "F2"
+    },
+    {
+      "platform": "linkedin",
+      "snippet": "AI flagged $162,000 in likely Medicare violations and duplicate charges.",
+      "fact_id": "F4"
+    },
+    {
+      "platform": "linkedin",
+      "snippet": "An ordinary citizen with an ordinary laptop uploaded the $195,000 itemized hospital bill to AI.",
+      "fact_id": "F2"
+    },
+    {
+      "platform": "linkedin",
+      "snippet": "The AI cross-referenced the charges against Medicare's official fee schedules and bundling rules.",
+      "fact_id": "F4"
+    },
+    {
+      "platform": "linkedin",
+      "snippet": "Bundling rules say which services must be billed as one charge.",
+      "fact_id": "F4"
+    },
+    {
+      "platform": "linkedin",
+      "snippet": "The man printed the AI's analysis and sent the hospital a written challenge.",
+      "fact_id": "F6"
+    },
+    {
+      "platform": "linkedin",
+      "snippet": "Two weeks later, the $195,000 bill dropped to approximately $33,000.",
+      "fact_id": "F5"
+    },
+    {
+      "platform": "linkedin",
+      "snippet": "This is one case, and nobody can promise your bill the same result.",
+      "fact_id": "F5"
+    },
+    {
+      "platform": "linkedin",
+      "snippet": "Let AI do the research and drafting on your bill.",
+      "fact_id": "F12"
+    },
+    {
+      "platform": "linkedin",
+      "snippet": "Then check every citation yourself before you send anything, because a single false claim weakens an otherwise airtight case.",
+      "fact_id": "F12"
+    },
+    {
+      "platform": "instagram",
+      "snippet": "AI flagged $162,000 in likely Medicare violations and duplicate charges on one $195,000 hospital bill.",
+      "fact_id": "F4"
+    },
+    {
+      "platform": "instagram",
+      "snippet": "AI flagged $162,000 in likely Medicare violations and duplicate charges on one $195,000 hospital bill.",
+      "fact_id": "F5"
+    },
+    {
+      "platform": "instagram",
+      "snippet": "The AI checked those charges against Medicare's fee schedules and bundling rules.",
+      "fact_id": "F4"
+    },
+    {
+      "platform": "instagram",
+      "snippet": "Bundling rules say which services must be billed as one charge.",
+      "fact_id": "F4"
+    },
+    {
+      "platform": "instagram",
+      "snippet": "One man printed the AI's analysis and sent the hospital a written challenge.",
+      "fact_id": "F6"
+    },
+    {
+      "platform": "instagram",
+      "snippet": "Two weeks later, the $195,000 bill dropped to approximately $33,000.",
+      "fact_id": "F5"
+    },
+    {
+      "platform": "instagram",
+      "snippet": "Let AI do the research and drafting.",
+      "fact_id": "F12"
+    },
+    {
+      "platform": "instagram",
+      "snippet": "Then check every citation yourself before you send anything, because a single false claim weakens an otherwise airtight case.",
+      "fact_id": "F12"
+    }
+  ],
+  "visual_note": "Use a real photograph of the literal activity, such as hands holding an itemized hospital bill next to a laptop at a kitchen table, rather than an AI-generated image. Do not stage it as the actual family. If the logo is used, put the white lockup on dark backgrounds and the dark lockup on light ones, keep the purple 'Now' unchanged, and add no effects.",
+  "self_lint": {
+    "linkedin_passed": true,
+    "instagram_passed": true,
+    "soft_flags_kept": []
+  },
+  "changes_made": [
+    {
+      "violation_id": "V1",
+      "change": "LinkedIn: changed 'The AI cross-referenced the charges against CMS Medicare Fee Schedules and bundling rules.' to 'The AI cross-referenced the charges against Medicare's official fee schedules and bundling rules.' I removed the acronym 'CMS' instead of adding a parenthetical about it, which keeps the sentence to one idea. I added a separate plain-gloss sentence: 'Bundling rules say which services must be billed as one charge.' That paragraph now has 3 sentences. Note: this gloss and the matching one on Instagram are a general definition the Reviewer asked for. They are not a fact in the brief's ledger, so they are mapped to F4 as the explanation of F4's term."
+    },
+    {
+      "violation_id": "V2",
+      "change": "Instagram: added F4's basis as its own block after the feeling block: 'The AI checked those charges against Medicare's fee schedules and bundling rules. Bundling rules say which services must be billed as one charge.' I used 'those charges', not 'every charge', because F4 does not say every charge was checked. I put the basis in its own block instead of in the hook block, so the hook still stands alone and the order follows the Gate (feel, do, get). I added the same bundling gloss as V1 so the insider term is explained here too. The hook line, 'likely', and every other line are unchanged. The caption now has 5 blocks and is about 110 words."
+    },
+    {
+      "violation_id": "V3",
+      "change": "LinkedIn: cut 'You can put AI to work the same way.' and changed 'Let it do the research and drafting on your bill.' to 'Let AI do the research and drafting on your bill.'"
+    }
+  ]
+}
