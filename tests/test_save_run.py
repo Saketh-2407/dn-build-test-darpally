@@ -78,11 +78,11 @@ class SaveRunTests(unittest.TestCase):
     def test_clean_pass_writes_every_file(self):
         result = save_run("clean-run", copy.deepcopy(RUN))
         out = self.root / "clean-run"
-        expected = ["brief.json", "draft-r1.json", "draft-r2.json", "review-r1.json", "review-r2.json", "final.md"]
+        expected = ["brief.json", "draft-r0.json", "draft-r1.json", "review-r0.json", "review-r1.json", "final.md"]
         self.assertEqual(result, {"saved": [str(out / name) for name in expected], "verdict": "PASS"})
         self.assertEqual(sorted(p.name for p in out.iterdir()), sorted(expected))
         self.assertEqual(json.loads((out / "brief.json").read_text(encoding="utf-8")), RUN["brief"])
-        self.assertEqual(json.loads((out / "review-r2.json").read_text(encoding="utf-8")), RUN["reviews"][1])
+        self.assertEqual(json.loads((out / "review-r1.json").read_text(encoding="utf-8")), RUN["reviews"][1])
 
         final_md = (out / "final.md").read_text(encoding="utf-8")
         for expected_text in [
@@ -94,11 +94,30 @@ class SaveRunTests(unittest.TestCase):
             "## Visual note",
             '1. There are 40 student slots.\n   > "Forty student slots are open to teams and solo builders."',
             "- Rounds: 2",
-            "- Round 1: REVISE - Tighten the hook.",
+            "- Round 0: REVISE - Tighten the hook.",
+            "- Round 1: PASS - Ready.",
             f"## AI disclosure\n\n{AI_DISCLOSURE}",
         ]:
             with self.subTest(expected_text=expected_text[:30]):
                 self.assertIn(expected_text, final_md)
+
+    def test_files_named_by_own_round(self):
+        run = copy.deepcopy(RUN)
+        run["drafts"] = [{"round": 1, "linkedin_text": "Revision."}]
+        run["reviews"] = [{"round": 1, "verdict": "PASS", "summary": "Ready."}]
+        result = save_run("round-run", run)
+        out = self.root / "round-run"
+        expected = ["brief.json", "draft-r1.json", "review-r1.json", "final.md"]
+        self.assertEqual(result["saved"], [str(out / name) for name in expected])
+        self.assertIn("- Round 1: PASS - Ready.", (out / "final.md").read_text(encoding="utf-8"))
+
+    def test_rerun_clears_stale_round_files(self):
+        save_run("rerun", copy.deepcopy(RUN))
+        run = copy.deepcopy(RUN)
+        run["drafts"], run["reviews"] = run["drafts"][:1], run["reviews"][:1]
+        save_run("rerun", run)
+        names = sorted(p.name for p in (self.root / "rerun").iterdir())
+        self.assertEqual(names, ["brief.json", "draft-r0.json", "final.md", "review-r0.json"])
 
 
 if __name__ == "__main__":

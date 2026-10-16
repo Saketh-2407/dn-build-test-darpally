@@ -68,6 +68,23 @@ go in the copy.
   own plain words.
 - Follow every item in brief.cautions.
 
+## Shape rules
+- One post makes one point: brief.core_point. Every sentence must move the 
+  reader toward it. If a fact does not, leave it out. A list of logistics is not 
+  a post.
+- Use core facts first. LinkedIn uses 3 to 5 facts. Instagram uses 2 to 4 facts.
+- Make the Gate's lead structure visible: what the reader feels, then what we do 
+  about it, then what they get.
+- If brief.first_party.is_dn_work is true, DN's own actions are "we" (for 
+  example "we capped the field at 40"). Never describe DN's own team, event, or 
+  program in the third person.
+- Speak to the reader as "you" at least once on each platform.
+- Every pronoun or pointer ("they", "there", "it", "that") must point to 
+  something named in the same or the previous sentence.
+- If brief.timeframe.status is "past", follow brief.timeframe.handling exactly: 
+  past tense for what was planned or offered, nothing about attendance or results 
+  the post could not know, and no expired call to action.
+
 ## Pipeline conventions (ours, not DN doctrine; the brand hub has no channel rules)
 LinkedIn:
 - 120 to 220 words.

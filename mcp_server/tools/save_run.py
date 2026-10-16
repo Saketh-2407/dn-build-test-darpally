@@ -24,6 +24,12 @@ def _hashtags(final: dict[str, Any]) -> list[str]:
     return [tag if tag.startswith("#") else f"#{tag}" for tag in tags]
 
 
+def _round_no(item: Any, index: int) -> int:
+    """The item's own "round" value, or its 0-based list index when it has none."""
+    value = item.get("round") if isinstance(item, dict) else None
+    return value if isinstance(value, int) and not isinstance(value, bool) and value >= 0 else index
+
+
 def _validate(run: Any) -> dict[str, Any] | None:
     if not isinstance(run, dict):
         return error("run must be an object.", "Pass {source, brief, drafts, reviews, final}.")
@@ -67,10 +73,10 @@ def _facts(brief: dict[str, Any]) -> list[str]:
 
 def _review_summary(run: dict[str, Any], lint: dict[str, dict[str, Any]]) -> list[str]:
     lines = [f"- Rounds: {len(run['reviews'])}"]
-    for i, review in enumerate(run["reviews"], start=1):
+    for i, review in enumerate(run["reviews"]):
         if isinstance(review, dict) and (review.get("verdict") or review.get("summary")):
             detail = " - ".join(str(review[k]) for k in ("verdict", "summary") if review.get(k))
-            lines.append(f"- Round {i}: {detail}")
+            lines.append(f"- Round {_round_no(review, i)}: {detail}")
     flags = run["final"].get("flags") or []
     lines.append("- Flags: none" if not flags else "- Flags:")
     lines += [f"  - {flag}" for flag in flags]
@@ -113,7 +119,7 @@ def save_run(slug: str, run: dict[str, Any]) -> dict[str, Any]:
     with the hashtags, are linted; if either has hard failures the verdict must be BLOCKED, otherwise
     nothing is saved and an error lists the failures.
     Writes brief.json, draft-rN.json, review-rN.json and final.md (with the AI disclosure), replacing
-    any earlier run saved under the same slug. Returns {"saved": [paths], "verdict"}.
+    any earlier run saved under the same slug. N is each item's own "round" (0-based list index if absent). Returns {"saved": [paths], "verdict"}.
     On failure returns {"error", "hint"}.
     """
     if not isinstance(slug, str) or not SLUG_RE.match(slug):
@@ -142,8 +148,8 @@ def save_run(slug: str, run: dict[str, Any]) -> dict[str, Any]:
             for stale in out_dir.glob(pattern):
                 stale.unlink()
         files: list[tuple[Path, Any]] = [(out_dir / "brief.json", run["brief"])]
-        files += [(out_dir / f"draft-r{i}.json", d) for i, d in enumerate(run["drafts"], start=1)]
-        files += [(out_dir / f"review-r{i}.json", r) for i, r in enumerate(run["reviews"], start=1)]
+        files += [(out_dir / f"draft-r{_round_no(d, i)}.json", d) for i, d in enumerate(run["drafts"])]
+        files += [(out_dir / f"review-r{_round_no(r, i)}.json", r) for i, r in enumerate(run["reviews"])]
         for path, data in files:
             _write_json(path, data)
         final_md = out_dir / "final.md"

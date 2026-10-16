@@ -1,7 +1,7 @@
 ---
 name: repurpose-post
 description: Turn a Disruption Now blog post into a LinkedIn post and an Instagram caption that pass DN's published brand doctrine, using the dn-repurposer MCP tools and three subagents (Analyst, Writer, Reviewer). Use when asked to repurpose a DN blog post, given a disruptionnow.com/blog URL, or asked for DN social content on a topic.
-argument-hint: [post URL, topic word, or nothing]
+argument-hint: "[post URL, topic word, or nothing]"
 allowed-tools: mcp__dn-repurposer__list_blog_posts mcp__dn-repurposer__save_run
 ---
 
@@ -30,7 +30,7 @@ Make the slug from the URL's last path segment: lowercase, any character outside
 a-z, 0-9, and "-" replaced with "-", cut to 80 characters.
 
 ## Step 2: Analyst
-Delegate to the dn-analyst subagent with the post URL.
+Delegate to the dn-analyst subagent with the post URL and today's date in YYYY-MM-DD form.
 It returns the brief JSON. Stop and report to the user if:
 - it returned an error, or
 - quote_check.missing is not 0, or
@@ -73,3 +73,7 @@ flags, the saved file paths, and the final LinkedIn and Instagram text.
 - The linter only checks copy we generate, never the source post.
 - Run one post per conversation, so context stays small. Start a new 
   conversation for the next post.
+- Never ask the user how to frame a time-bound post (an event, a deadline, a 
+  registration). The brief's timeframe decides: a past event becomes evergreen 
+  copy with no expired call to action. Only ask the user to choose a post when 
+  none was given.

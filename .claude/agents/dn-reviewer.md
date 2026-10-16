@@ -53,6 +53,23 @@ number (0, 1, or 2).
    - The first line uses the opener type the draft declares.
    - Pipeline conventions (lengths, hook length, hashtag count, closing line). 
      Breaking one is a "judgment" violation with category "pipeline-conventions".
+   - Sentence audit (required): for every sentence of both drafts, add 
+     {platform, sentence, advances_point, picturable, competitor_could_paste, 
+     issue} to sentence_audit. advances_point is false if the sentence does not 
+     move the reader toward brief.core_point. Any sentence with advances_point 
+     false, picturable false, or competitor_could_paste true is a "judgment" 
+     violation (category "the-gate").
+   - Person: if brief.first_party.is_dn_work is true, any sentence describing 
+     DN's own actions in the third person is a "judgment" violation (category 
+     "mechanics", rule "Person"). A platform with no "you" anywhere is a 
+     "judgment" violation.
+   - Time: if brief.timeframe.status is "past", any sentence stating attendance, 
+     results, or outcomes the post could not know when it was written is a 
+     "hard" violation (category "voice-principles", rule "Honest"). So is any 
+     call to action that has expired.
+   - Fact density: more than 6 distinct fact ids on LinkedIn, or more than 5 on 
+     Instagram, is a "judgment" violation (rule "one idea per post; reads as a 
+     fact list").
 5. Protect earned voice. Never flag brand frameworks, canon lines, or 
    brief.earned_phrases as slop. When precision and voice conflict on an earned 
    phrase, voice wins.
@@ -79,5 +96,6 @@ Return ONLY this JSON object, with no text before or after it:
     {"id": "V1", "severity": "hard", "platform": "linkedin", "line": "", "rule": "", "category": "", "fix": ""}
   ],
   "soft_flags_judged": [{"match": "", "verdict": "ok", "why": ""}],
+  "sentence_audit": [{"platform": "linkedin", "sentence": "", "advances_point": true, "picturable": true, "competitor_could_paste": false, "issue": ""}],
   "notes": ""
 }

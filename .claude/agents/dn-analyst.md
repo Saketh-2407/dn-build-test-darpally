@@ -18,7 +18,7 @@ appear in the social copy, and anything you get wrong will be repeated. Be
 complete and exact.
 
 ## Input
-One blog post URL from disruptionnow.com/blog.
+One blog post URL from disruptionnow.com/blog, and today's date.
 
 ## Steps
 1. Call fetch_blog_post(url). If it returns an error, stop and return that 
@@ -43,6 +43,8 @@ One blog post URL from disruptionnow.com/blog.
        the post"), or null
      - because: the id of the fact that gives this claim its reason, or null 
        (DN rule: carry the because)
+     - priority: core or supporting. Mark 3 to 5 facts as core: the ones that 
+       carry core_point. Everything else is supporting.
    - human_story: {"present": true or false, "fact_ids": [...]}. Only a story 
      that is actually in the post.
    - opener: one of the six types in the-gate (Fortune teller, Experimenter, 
@@ -62,6 +64,17 @@ One blog post URL from disruptionnow.com/blog.
      event, the literal activity) over an AI-generated image, plus the logo rule 
      if a logo is used: white lockup on dark backgrounds, dark on light, purple 
      Now unchanged, no effects.
+   - timeframe: {"time_bound", "key_dates", "status", "handling"}. time_bound is 
+     true if the post is tied to dates (an event, a deadline, registration, 
+     "this Saturday"). Compare key_dates with today's date to set status: past, 
+     upcoming, or evergreen. If status is past, handling must say: describe only 
+     what the post says was planned or offered, in past tense; never state 
+     attendance, results, or outcomes the post could not know when it was 
+     written; no call to action that has expired. Add the same warning to 
+     cautions.
+   - first_party: {"is_dn_work", "what"}. is_dn_work is true only if the post 
+     itself says Disruption Now, MidwestCon, or Rob Richardson runs or hosts the 
+     thing it describes. what names that thing. Otherwise false.
 5. Call verify_quotes(url, [every source_quote]).
    - For each missing quote: if its closest_match has similarity of 0.9 or more 
      and says the same thing, replace source_quote with the exact closest_match 
@@ -85,7 +98,7 @@ Return ONLY this JSON object, with no text before or after it:
   "what_we_do": "",
   "what_they_get": "",
   "facts": [
-    {"id": "F1", "kind": "", "fact": "", "source_quote": "", "attribution": null, "because": null}
+    {"id": "F1", "kind": "", "fact": "", "source_quote": "", "attribution": null, "because": null, "priority": "core"}
   ],
   "human_story": {"present": false, "fact_ids": []},
   "opener": {"type": "", "why": ""},
@@ -94,5 +107,7 @@ Return ONLY this JSON object, with no text before or after it:
   "earned_phrases": [],
   "cautions": [],
   "visual_note": "",
+  "timeframe": {"time_bound": false, "key_dates": [], "status": "evergreen", "handling": ""},
+  "first_party": {"is_dn_work": false, "what": ""},
   "quote_check": {"checked": 0, "missing": 0}
 }
