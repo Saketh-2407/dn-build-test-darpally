@@ -70,6 +70,13 @@ number (0, 1, or 2).
    - Fact density: more than 6 distinct fact ids on LinkedIn, or more than 5 on 
      Instagram, is a "judgment" violation (rule "one idea per post; reads as a 
      fact list").
+   - Repetition: the same clause, phrase, or distinctive word used twice in 
+     neighboring sentences (for example "when the contract ends" followed by 
+     "after the contract ends") is a "judgment" violation (category "the-gate", 
+     rule "Does this sentence say something the next sentence needs?").
+   - Near-variants: a close variant of a phrase in the anti-slop catalog counts 
+     as that phrase. For example "move the numbers" is the generic cliche "move 
+     the needle". Flag it as a "judgment" violation in that catalog category.
 5. Protect earned voice. Never flag brand frameworks, canon lines, or 
    brief.earned_phrases as slop. When precision and voice conflict on an earned 
    phrase, voice wins.
