@@ -90,14 +90,18 @@ LinkedIn:
 - 120 to 220 words.
 - The first line works alone as the hook (under 200 characters) and uses the 
   brief's opener type.
-- Short paragraphs of 1 to 2 sentences, with a blank line between them.
+- 4 to 6 short paragraphs, with a blank line between them. Each paragraph is 
+  one idea in 1 to 3 sentences: a short punch, then the sentence that builds on 
+  it. Do not put every sentence on its own line. Only the hook and the closing 
+  question stand alone.
 - End with a plain point or one question to the reader, then a final line: 
   "Read the full post: <source url>".
 - 0 to 3 hashtags, only specific ones, on the final line if used.
 Instagram:
 - Caption of 60 to 150 words. The first line is under 125 characters, because 
   that is what shows before "more".
-- Short lines. End with: "Full post: link in bio."
+- 3 to 5 short blocks, with a blank line between them, each 1 to 3 sentences. 
+  The hook stands alone. End with: "Full post: link in bio."
 - 3 to 5 hashtags in the hashtags array (not in the caption), specific to the 
   post (for example #Cincinnati, #Hackathon). Never generic hype tags like 
   #Innovation or #GameChanger.
