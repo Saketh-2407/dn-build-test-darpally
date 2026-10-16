@@ -2,15 +2,51 @@
   "category": "say-this-not-that",
   "source": "https://dn-brand-hub.netlify.app/brand/voice/say-this-not-that",
   "pairs": [
-    {"dont": "Leverage cutting-edge AI to unlock transformative synergies.", "say": "AI is a sharp junior employee with no common sense. It needs your direction."},
-    {"dont": "Join us at the premier nexus of innovation and impact.", "say": "You'll build a working AI tool with your own hands, coached by people who do it for a living."},
-    {"dont": "Let's operationalize human-in-the-loop synergies.", "say": "AI is a genius with no common sense or context."},
-    {"dont": "We deliver bespoke AI solutions tailored to your needs.", "say": "Your team builds one working AI tool on your own work, and keeps it."},
-    {"dont": "Empowering organizations to thrive in the age of AI.", "say": "We help good people do more with AI."}
+    {
+      "dont": "Leverage cutting-edge AI to unlock transformative synergies.",
+      "say": "AI is a sharp junior employee with no common sense. It needs your direction."
+    },
+    {
+      "dont": "Join us at the premier nexus of innovation and impact.",
+      "say": "You'll build a working AI tool with your own hands, coached by people who do it for a living."
+    },
+    {
+      "dont": "Let's operationalize human-in-the-loop synergies.",
+      "say": "AI is a genius with no common sense or context."
+    },
+    {
+      "dont": "We deliver bespoke AI solutions tailored to your needs.",
+      "say": "Your team builds one working AI tool on your own work, and keeps it."
+    },
+    {
+      "dont": "Empowering organizations to thrive in the age of AI.",
+      "say": "We help good people do more with AI."
+    }
   ],
   "brand_vocabulary": {
-    "frameworks": ["Pain/Play/Practice", "the 4 Ds", "SAT", "the three returns", "ARC", "past the chatbot", "MRP", "the three Fs", "the three truths", "convergence", "Abundant Intelligence"],
-    "canon_lines": ["coach, not consultant", "fear is not a strategy", "from AI consumers to AI producers", "show, don't tell", "no one gets to define you"]
+    "frameworks": [
+      "Pain/Play/Practice",
+      "the 4 Ds",
+      "SAT",
+      "the three returns",
+      "ARC",
+      "past the chatbot",
+      "MRP",
+      "the three Fs",
+      "the three truths",
+      "convergence",
+      "Abundant Intelligence"
+    ],
+    "canon_lines": [
+      "coach, not consultant",
+      "fear is not a strategy",
+      "from AI consumers to AI producers",
+      "show, don't tell",
+      "no one gets to define you"
+    ]
   },
-  "avoid": "The business-jargon list, plus any line you would find on a generic AI company's homepage. NOTE: the frameworks and canon lines above are earned brand voice; never flag them as slop."
+  "avoid": "The business-jargon list, plus any line you would find on a generic AI company's homepage. NOTE: the frameworks and canon lines above are earned brand voice; never flag them as slop.",
+  "verbatim": "Say this, not that.\nOur voice is plain, concrete, and human. We say what we mean, we show (don't tell), and we refuse to sound like everyone else. That is how Disruption Now sounds.\nSection 1\nPhrases that work for all three brands.\n01\nDon't\n\"Leverage cutting-edge AI to unlock transformative synergies.\"\nSay\n\"AI is a sharp junior employee with no common sense. It needs your direction.\"\n02\nDon't\n\"Join us at the premier nexus of innovation and impact.\"\nSay\n\"You'll build a working AI tool with your own hands, coached by people who do it for a living.\"\n03\nDon't\n\"Let's operationalize human-in-the-loop synergies.\"\nSay\n\"AI is a genius with no common sense or context.\"\n04\nDon't\n\"We deliver bespoke AI solutions tailored to your needs.\"\nSay\n\"Your team builds one working AI tool on your own work, and keeps it.\"\n05\nDon't\n\"Empowering organizations to thrive in the age of AI.\"\nSay\n\"We help good people do more with AI.\"\nSection 2\nPhrases unique to each brand.\nDisruption Now →\nDon't\n\"Leverage cutting-edge AI to unlock transformative synergies.\" (jargon, empty)\nSay\n\"AI is a sharp junior employee with no common sense. It needs your direction.\" (plain, you can picture it)\nMidwestCon →\nDon't\n\"Join us at the premier nexus of innovation and impact.\" (slop, says nothing)\nSay\n\"You'll build a working AI tool with your own hands, coached by people who do it for a living.\" (warm and concrete)\nRob Richardson →\nDon't\n\"Let's operationalize human-in-the-loop synergies.\" (jargon he deliberately dropped)\nSay\n\"AI is a genius with no common sense or context.\" (plain, you can picture it)\nSection 3\nThe brand's own vocabulary.\nOurs, use them.\nThe frameworks:\nPain/Play/Practice\nthe 4 Ds\nSAT\nthe three returns\nARC\npast the chatbot\nMRP\nthe three Fs\nthe three truths\nconvergence\nAbundant Intelligence\nThe canon lines:\n\"coach, not consultant\"\n\"fear is not a strategy\"\n\"from AI consumers to AI producers\"\n\"show, don't tell\"\n\"no one gets to define you\"\nAvoid. The business-jargon list above, plus any line you would find on a generic AI company's homepage.",
+  "fetched_at": "2026-10-16T04:34:10.538614+00:00",
+  "note": "verbatim is the exact page text as fetched; the other fields are a structured index of it."
 }

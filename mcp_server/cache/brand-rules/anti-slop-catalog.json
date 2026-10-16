@@ -2,24 +2,91 @@
   "category": "anti-slop-catalog",
   "source": "https://dn-brand-hub.netlify.app/brand/voice/anti-slop-catalog",
   "patterns": [
-    {"dont": "Contrast framing in prose", "example": "'It's not X, it's Y' / 'most do X, we do Y'", "instead": "We help good people do more with AI."},
-    {"dont": "Significance adjectives", "example": "premier, cutting-edge, world-class, seamless, powerful", "instead": "The fact that earns it: 741 people, 347 organizations."},
-    {"dont": "Abstraction nouns", "example": "'solutions,' 'the future of work,' 'the intersection of innovation and impact'", "instead": "Training, consulting, media, and events."},
-    {"dont": "Throat-clearing openers", "example": "'In an age of AI...', 'Imagine a world where...'", "instead": "AI is rewriting every industry, but it wasn't built for everyone."},
-    {"dont": "Hype verbs", "example": "unlock, supercharge, leverage, harness, transform", "instead": "The three returns: ROI, return on time, decision velocity."},
-    {"dont": "Hollow triads", "example": "three words only for rhythm", "instead": "Pain, Play, Practice."},
-    {"dont": "Generic cliches", "example": "'in the same room,' 'move the needle,' 'take it to the next level'", "instead": "A 90-day path from first audit to running it on your own."},
-    {"dont": "Vibe-phrases", "example": "'so it clicks,' 'just works,' 'next-level,' 'game-changer'", "instead": "Every time AI touches your work, we tell you where, why, and how."},
-    {"dont": "Filler intensifiers", "example": "'real' work, 'actual' results, 'genuine,' 'truly'", "instead": "The work. The results."},
-    {"dont": "Empty abstractions", "example": "'decisions that matter,' 'real impact,' 'make a difference'", "instead": "A hiring decision."},
-    {"dont": "Spatial metaphors", "example": "'tables,' 'rooms,' 'in the same place'", "instead": "Founders and funders together."},
-    {"dont": "Jargon-flexing", "example": "'human in the loop,' the latest technical term", "instead": "AI is a sharp junior employee with no common sense."},
-    {"dont": "Manufactured lines", "example": "a snappy tagline invented to sound good", "instead": "A real line from the source: 'We built our whole company with AI, and none of us were developers.'"}
+    {
+      "dont": "Contrast framing in prose",
+      "example": "'It's not X, it's Y' / 'most do X, we do Y'",
+      "instead": "We help good people do more with AI."
+    },
+    {
+      "dont": "Significance adjectives",
+      "example": "premier, cutting-edge, world-class, seamless, powerful",
+      "instead": "The fact that earns it: 741 people, 347 organizations."
+    },
+    {
+      "dont": "Abstraction nouns",
+      "example": "'solutions,' 'the future of work,' 'the intersection of innovation and impact'",
+      "instead": "Training, consulting, media, and events."
+    },
+    {
+      "dont": "Throat-clearing openers",
+      "example": "'In an age of AI...', 'Imagine a world where...'",
+      "instead": "AI is rewriting every industry, but it wasn't built for everyone."
+    },
+    {
+      "dont": "Hype verbs",
+      "example": "unlock, supercharge, leverage, harness, transform",
+      "instead": "The three returns: ROI, return on time, decision velocity."
+    },
+    {
+      "dont": "Hollow triads",
+      "example": "three words only for rhythm",
+      "instead": "Pain, Play, Practice."
+    },
+    {
+      "dont": "Generic cliches",
+      "example": "'in the same room,' 'move the needle,' 'take it to the next level'",
+      "instead": "A 90-day path from first audit to running it on your own."
+    },
+    {
+      "dont": "Vibe-phrases",
+      "example": "'so it clicks,' 'just works,' 'next-level,' 'game-changer'",
+      "instead": "Every time AI touches your work, we tell you where, why, and how."
+    },
+    {
+      "dont": "Filler intensifiers",
+      "example": "'real' work, 'actual' results, 'genuine,' 'truly'",
+      "instead": "The work. The results."
+    },
+    {
+      "dont": "Empty abstractions",
+      "example": "'decisions that matter,' 'real impact,' 'make a difference'",
+      "instead": "A hiring decision."
+    },
+    {
+      "dont": "Spatial metaphors",
+      "example": "'tables,' 'rooms,' 'in the same place'",
+      "instead": "Founders and funders together."
+    },
+    {
+      "dont": "Jargon-flexing",
+      "example": "'human in the loop,' the latest technical term",
+      "instead": "AI is a sharp junior employee with no common sense."
+    },
+    {
+      "dont": "Manufactured lines",
+      "example": "a snappy tagline invented to sound good",
+      "instead": "A real line from the source: 'We built our whole company with AI, and none of us were developers.'"
+    }
   ],
   "tone_rules": [
-    {"name": "Accessible and professional", "rule": "Plain is the goal, but not at the cost of credibility."},
-    {"name": "Radical AI transparency", "rule": "Always say when we are using AI, and why and how."},
-    {"name": "Accuracy tolerance", "rule": "Brand and marketing copy right about 90% is fine to refine. Financial, CRM, and data claims must be exact."},
-    {"name": "Real people, not AI images", "rule": "Show actual photographs of people building, over AI-generated graphics."}
-  ]
+    {
+      "name": "Accessible and professional",
+      "rule": "Plain is the goal, but not at the cost of credibility."
+    },
+    {
+      "name": "Radical AI transparency",
+      "rule": "Always say when we are using AI, and why and how."
+    },
+    {
+      "name": "Accuracy tolerance",
+      "rule": "Brand and marketing copy right about 90% is fine to refine. Financial, CRM, and data claims must be exact."
+    },
+    {
+      "name": "Real people, not AI images",
+      "rule": "Show actual photographs of people building, over AI-generated graphics."
+    }
+  ],
+  "verbatim": "What we never do (the anti slop catalogue).\nFrom the manual's patterns table and the twelve locked refinements in DECISIONS Section A.\nSection 1\nWhat we never do (the anti slop catalogue).\nFrom the manual's patterns table and the twelve locked refinements in DECISIONS Section A.\nWe don't Example Instead\nContrast framing in prose \"It's not X, it's Y\" / \"most do X, we do Y\" We help good people do more with AI.\nSignificance adjectives premier, cutting-edge, world-class, seamless, powerful The fact that earns it 741 people, 347 organizations.\nAbstraction nouns \"solutions,\" \"the future of work,\" \"the intersection of innovation and impact\" Training, consulting, media, and events.\nThroat-clearing openers \"In an age of AI...\", \"Imagine a world where...\" AI is rewriting every industry, but it wasn't built for everyone.\nHype verbs unlock, supercharge, leverage, harness, transform The three returns ROI, return on time, decision velocity.\nHollow triads three words only for rhythm Pain, Play, Practice.\nGeneric cliches \"in the same room,\" \"move the needle,\" \"take it to the next level\" A 90-day path from first audit to running it on your own.\nVibe-phrases \"so it clicks,\" \"just works,\" \"next-level,\" \"game-changer\" Every time AI touches your work, we tell you where, why, and how.\nFiller intensifiers \"real\" work, \"actual\" results, \"genuine,\" \"truly\" The work. The results.\nEmpty abstractions \"decisions that matter,\" \"real impact,\" \"make a difference\" A hiring decision.\nSpatial metaphors \"tables,\" \"rooms,\" \"in the same place\" Founders and funders together.\nJargon-flexing \"human in the loop,\" the latest technical term AI is a sharp junior employee with no common sense.\nManufactured lines a snappy tagline invented to sound good A real line from the source We built our whole company with AI, and none of us were developers.\nSection 2\nFour rules for tuning the tone.\nAccessible and professional.\nPlain is the goal, but not at the cost of credibility. \"Not about making it cool, more about making people feel they can actually do this.\" (Rob Richardson, 2026-03-09)\nRadical AI transparency.\nAlways say when we are using AI, and why and how. People are right to be cautious. \"I always disclose that we're using AI, why, and how.\" (Rob Richardson, 2026-05-28)\nAccuracy tolerance.\nBrand and marketing copy that is right about 90% of the way is fine to send out and refine. Financial, CRM, and data claims must be exact. (Rob Richardson, 2026-04-28)\nReal people, not AI images.\nShow actual photographs of people building, over AI-generated graphics. (Rob Richardson, 2026-05-07)",
+  "fetched_at": "2026-10-16T04:34:10.436819+00:00",
+  "note": "verbatim is the exact page text as fetched; the other fields are a structured index of it."
 }

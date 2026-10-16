@@ -4,16 +4,37 @@
   "voice_in_one_sentence": "Our voice is plain, concrete, and human. We say what we mean, we show (don't tell), and we refuse to sound like everyone else. That is how Disruption Now sounds.",
   "the_rule_under_every_rule": "Be disruptive. Generic is the opposite of disruptive. The test above all others: does this line sound like everyone else, or like us?",
   "principles": [
-    {"name": "Disruptive", "rule": "Refuse the generic. If a competitor could paste the exact line and it would be true for them, it is slop. Rewrite it until only we could have written it."},
-    {"name": "Plain", "rule": "A beginner can act on it. No jargon, no flexing the latest term. Every idea gets a literal example beside it."},
-    {"name": "Concrete", "rule": "Name the exact, picturable instance, never a category. 'The small business,' 'a hiring decision,' not 'the people it skips.' If you cannot name the specific instance, cut it."},
-    {"name": "Human", "rule": "A person helping a person. Coach, not consultant; we will not even use the word 'consultant.' Lead with a human story before credentials. Use 'we' and 'you'."},
-    {"name": "Honest", "rule": "Keep the real reason behind a claim (carry the because). Say plainly when and how we use AI. Do not overclaim. Never end up vaguer than the source you started from."},
-    {"name": "Memorable", "rule": "Build language people repeat."}
+    {
+      "name": "Disruptive",
+      "rule": "Refuse the generic. If a competitor could paste the exact line and it would be true for them, it is slop. Rewrite it until only we could have written it."
+    },
+    {
+      "name": "Plain",
+      "rule": "A beginner can act on it. No jargon, no flexing the latest term. Every idea gets a literal example beside it."
+    },
+    {
+      "name": "Concrete",
+      "rule": "Name the exact, picturable instance, never a category. 'The small business,' 'a hiring decision,' not 'the people it skips.' If you cannot name the specific instance, cut it."
+    },
+    {
+      "name": "Human",
+      "rule": "A person helping a person. Coach, not consultant; we will not even use the word 'consultant.' Lead with a human story before credentials. Use 'we' and 'you'."
+    },
+    {
+      "name": "Honest",
+      "rule": "Keep the real reason behind a claim (carry the because). Say plainly when and how we use AI. Do not overclaim. Never end up vaguer than the source you started from."
+    },
+    {
+      "name": "Memorable",
+      "rule": "Build language people repeat."
+    }
   ],
   "three_speakers": {
     "Disruption Now": "The tech-savvy coworker. Explains tech in plain words, shows you on your own screen, stays until you can run it yourself.",
     "MidwestCon": "The host who's also your coach. Homegrown and interactive, opens with a question for you to answer.",
     "Rob Richardson": "The disruptor who became the coach. Human story first, wordplay and metaphor, pop-culture bridges, deep-tech substance said in plain words."
-  }
+  },
+  "verbatim": "How we write.\nThe shared writing standard for all three brands. Disruption Now, MidwestCon, and Rob Richardson each point here from their Personality shelf, so the voice stays one standard and cannot drift apart.\nSection 1\nOur voice in one sentence.\nOur voice is plain, concrete, and human. We say what we mean, we show (don't tell), and we refuse to sound like everyone else. That is how Disruption Now sounds.\nSection 2\nWhy this matters: clarity is the product.\nDisruption Now sells one product above all: making technology clear and usable for the people the industry leaves behind. So the writing has to prove it on every line. A company that helps people understand AI has to be understandable itself. Write a vague sentence and you have failed the pitch in the act of making it.\nThis is sourced, not invented:\n\"This technology is strategy and people more than the technology.\" (Rob Richardson, 2026-05-22)\nThe voice has to relate to people, not sound like \"an AI expert that can't relate to people.\" (Rob Richardson, 2026-05-22)\n\"My specific voice was non-corporate, non-consultant. How do we make it so someone with zero technical experience would understand how they can win. That's the voice.\" (Rob Richardson, 2026-03-09)\nFoundation\nWhat the brand work does.\nHuman vocabulary is vague by default. Even sharp speakers reach for soft phrases when nobody is editing them. The brand work is the discipline that makes vocabulary understandable on every surface where the company appears: Rob Richardson's podcast and keynotes, MidwestCon's stage, founder-signed memos, brand pages like this one, training material, internal processes, and AI assistance directed at this hub. The voice principles below are what the discipline looks like in practice. They are the checks that catch vague language before it goes out.\nSection 3\nThe rule under every other rule: be disruptive.\nThe default in writing right now is AI slop: generic, vague, hedged, the same five adjectives every company reaches for. A brand named Disruption Now cannot sound like that. As the manual puts it, generic is the opposite of disruptive.\nSo this test sits above all the others: does this line sound like everyone else, or like us? The other five principles are the five checks that catch generic writing before it goes out. Plain catches jargon. Concrete catches vagueness. Human catches corporate stiffness. Honest catches hype. Memorable catches the forgettable line. Run all five and it comes out sounding like us, because almost nobody else writes this way.\nSection 4\nThe six principles.\n0\nDisruptive.\nRefuse the generic. If a competitor could paste the exact line and it would be true for them, it is slop. Rewrite it until only we could have written it. (This is question 1 of the four-question line check.)\n1\nPlain.\nA beginner can act on it. No jargon, no flexing the latest term. Rob Richardson dropped \"human in the loop\" on purpose. \"Figure out how we say this in plain language, make people feel like they can actually do this.\" (Rob Richardson, 2026-03-09) Every idea gets a literal example beside it (standing rule).\n2\nConcrete.\nName the exact, picturable instance, never a category. \"The small business,\" \"a hiring decision,\" not \"the people it skips\" or \"decisions that matter.\" If you cannot name the specific instance, cut it. (Gate question 2.)\n3\nHuman.\nA person helping a person. Coach, not consultant; we will not even use the word \"consultant.\" Lead with a human story before credentials, the way Rob Richardson opens with a dog-walking injury before his resume. Use \"we\" and \"you.\"\n4\nHonest.\nKeep the real reason behind a claim (carry the because). Say plainly when and how we use AI. Do not overclaim: \"I don't want to overpromise.\" (Rob Richardson, 2026-03-20) And never end up vaguer than the source you started from.\n5\nMemorable.\nBuild language people repeat. \"I like playing with words that are easy to remember, because I know how people think.\" (Rob Richardson, 2026-03-09) This is where Pain/Play/Practice, the 4 Ds, past the chatbot, and \"AI is a genius with no common sense\" come from.\nSection 5\nOne voice, three speakers.\nThe six principles are shared. Each brand bends them.\nDisruption Now the tech-savvy coworker. Explains the tech in plain words, shows you on your own screen, stays until you can run it yourself.\nMidwestCon the host who's also your coach. Homegrown and interactive, it opens with a question for you to answer.\nRob Richardson the disruptor who became the coach. Human story first, wordplay and metaphor, pop-culture bridges, deep-tech substance said in plain words.\nSection 6\nThe pre-publish check.\nBefore a line goes out, run it.\n01\nDisruptive. Could anyone else have written this? If yes, redo.\n02\nPlain. Can a beginner act on it?\n03\nConcrete. Can you picture exactly what happens?\n04\nHuman. Does it sound like a person, with \"we\" and \"you\"?\n05\nHonest. Is the because still there, and is it true?\n06\nMemorable. Is there a phrase worth repeating, if the line deserves one?\n07\nScan. Anti-slop list and em dashes.\nFor near-final blocks, run /clarity-engine or /clarify-anything.",
+  "fetched_at": "2026-10-16T04:34:10.207321+00:00",
+  "note": "verbatim is the exact page text as fetched; the other fields are a structured index of it."
 }

@@ -17,5 +17,17 @@
     "colon_semicolon": "A colon introduces a genuine list, used sparingly. Do not bolt an explanation on with a colon. Use semicolons sparingly.",
     "no_spatial_metaphors": "No 'tables / rooms / in the same place' metaphors. Name the literal action."
   },
-  "jargon_avoid_list": ["solutions", "needs", "integrated", "seamless", "robust", "leverage", "complex challenges", "ecosystem"]
+  "jargon_avoid_list": [
+    "solutions",
+    "needs",
+    "integrated",
+    "seamless",
+    "robust",
+    "leverage",
+    "complex challenges",
+    "ecosystem"
+  ],
+  "verbatim": "Wording & mechanics.\nThe principles above are the character. This is how the sentence gets built.\nSection 1\nThe eight rules for building a sentence.\nThe principles above are the character. This is how the sentence gets built.\nPerson.\nWrite \"we\" and \"you.\" Say \"we help you build,\" not \"Disruption Now provides.\" Personal pronouns keep it warm.\nVerbs over nouns.\nShow people doing the work. \"We build it with you,\" not \"the build is collaborative.\" Active voice by default; avoid passive constructions.\nOne idea per sentence.\nKeep sentences short. If a sentence holds two ideas, make it two sentences.\nLead with the point.\nPut the point first, then the detail. Organize the text logically.\nContractions are fine.\n\"We'll,\" \"you're,\" \"it's.\" They sound like a person, not a press release.\nPlain American English.\nReadable for any age, level, or background. No insider word without a plain explanation next to it.\nNumbers earn trust.\nUse the real figure (741 participants, 347 organizations, a 90-day path) over a soft word like \"many\" or \"lots.\"\nVerify the number first.\nAnyone can say a stat in a meeting. Speakers round, estimate, or quote a preliminary count, and that includes our own people. Before a number goes out on a brand surface, check it against the authoritative document (the final sponsor report, the published agenda, the official registration list, the audited count). Worked example: Rob on 2025-10-03 cited \"278 organizations\" and \"121 AI credentials.\" The final MidwestCon 2025 sponsor reach report shows 347 organizations and 120 AI Certifications. The brand uses the verified ones. The quote stays as the record of what was said; the proof number stays as the verified count.\nSection 2\nPunctuation.\nEm dashes: none.\nThe long dash is the clearest AI tell. None in any Disruption Now or MidwestCon copy, titles included. Use a period, comma, colon, or parentheses instead. The en dash in number ranges (10–20) and the hyphen in compound words (real-time) are both fine; the rule is about the em dash specifically. (DECISIONS refinement #10, tightened to zero on 2026-09-27. This whole document follows it: zero em dashes.)\nColon and semicolon.\nA colon introduces a genuine list, used sparingly: \"the three Fs: Focus, Feedback, Fix.\" Do not drop a colon in to bolt an explanation onto a sentence. Use the semicolon sparingly too.\nNo spatial-proximity metaphors.\nNo \"tables / rooms / in the same place\" metaphors. Name the literal action.\nSection 3\nThe business-jargon avoid-list.\nName the specific work, product, or process: training, consulting, media, and events.\nsolutions\nneeds\nintegrated\nseamless\nrobust\nleverage\ncomplex challenges\necosystem (as a buzzword)",
+  "fetched_at": "2026-10-16T04:34:10.655347+00:00",
+  "note": "verbatim is the exact page text as fetched; the other fields are a structured index of it."
 }

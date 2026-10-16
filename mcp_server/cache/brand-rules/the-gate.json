@@ -9,15 +9,42 @@
     "Does it sound like us, or like any company?"
   ],
   "two_more_checks": [
-    {"name": "Carry the because", "rule": "If the source gives the reason a claim is true, keep it. The same line without the reason is a bare assertion anyone could make."},
-    {"name": "Clearer than the source", "rule": "Hold your line against the quote it came from. If yours is vaguer or harder to picture, you went backwards."}
+    {
+      "name": "Carry the because",
+      "rule": "If the source gives the reason a claim is true, keep it. The same line without the reason is a bare assertion anyone could make."
+    },
+    {
+      "name": "Clearer than the source",
+      "rule": "Hold your line against the quote it came from. If yours is vaguer or harder to picture, you went backwards."
+    }
   ],
   "opener_catalog": [
-    {"type": "Fortune teller", "use": "where this is going"},
-    {"type": "Experimenter", "use": "I tried it, here is what happened"},
-    {"type": "Teacher", "use": "here is how it works"},
-    {"type": "Magician", "use": "the surprising result"},
-    {"type": "Investigator", "use": "what is really going on"},
-    {"type": "Contrarian", "use": "everyone says X; here is why that's wrong"}
-  ]
+    {
+      "type": "Fortune teller",
+      "use": "where this is going"
+    },
+    {
+      "type": "Experimenter",
+      "use": "I tried it, here is what happened"
+    },
+    {
+      "type": "Teacher",
+      "use": "here is how it works"
+    },
+    {
+      "type": "Magician",
+      "use": "the surprising result"
+    },
+    {
+      "type": "Investigator",
+      "use": "what is really going on"
+    },
+    {
+      "type": "Contrarian",
+      "use": "everyone says X; here is why that's wrong"
+    }
+  ],
+  "verbatim": "What every line must pass.\nLead with what the reader is feeling. Then say what we do about it. Then say what they get.\nSection 1\nFour questions for every line.\nLead with what the reader is feeling. Then say what we do about it. Then say what they get. After the draft, run every sentence through these four questions:\n01\nCould a competitor paste this and have it be true? If yes, it is empty. Make it ours.\n02\nCan a real person picture exactly what happens, or is it a vibe-word?\n03\nDoes this sentence say something the next sentence needs? And does it advance the story? If no, cut it.\n04\nDoes it sound like us, or like any company?\nSection 2\nTwo more checks the four questions don't replace.\nCarry the because.\nIf the source gives the reason a claim is true, keep it. \"We bring policymakers in alongside the builders because I have a background in politics\" is credible. The same line without the reason is a bare assertion anyone could make.\nClearer than the source.\nHold your line against the quote it came from. If yours is vaguer or harder to picture, you went backwards. The raw quote almost always names something concrete (\"get on the laptop and get on the playground\"). Your job is to keep that, not abstract it away.\nSection 3\nFive writing techniques Rob uses. Copy them.\nThese are the specific techniques Rob Richardson uses. Copy them.\nWordplay and memorable names.\nFrameworks get short, sticky names: Pain/Play/Practice, the three Fs, the three returns.\nMetaphor and analogy.\n\"AI is a genius with no common sense or context, a nerd that can tell you equations but can't tie their shoes.\" (Rob Richardson, 2026-04-28)\nSongs and pop-culture bridges.\nAn Oscar win becomes a lesson on being your unique self; test pieces on Michael Jackson and Star Wars. (Rob Richardson, 2026-03-20)\nShow, don't tell.\n\"We can't tell people anymore what you can do with AI. Better to show them.\" (Rob Richardson, 2026-01-16)\nHuman story first.\nOpen on a real, often self-deprecating moment, then make the point.\nSection 4\nSix ways to open a piece (Rob's own opener catalog, 2026-03-20).\nPick one to open a piece.\n01\nFortune teller. where this is going\n02\nExperimenter. I tried it, here is what happened\n03\nTeacher. here is how it works\n04\nMagician. the surprising result\n05\nInvestigator. what is really going on\n06\nContrarian. everyone says X; here is why that's wrong",
+  "fetched_at": "2026-10-16T04:34:10.340404+00:00",
+  "note": "verbatim is the exact page text as fetched; the other fields are a structured index of it."
 }

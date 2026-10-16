@@ -102,6 +102,10 @@ Instagram:
   post (for example #Cincinnati, #Hackathon). Never generic hype tags like 
   #Innovation or #GameChanger.
 
+## Rules
+- Each brand rule includes a verbatim field with DN's exact page text. If a 
+  structured field and the verbatim text ever differ, the verbatim text wins.
+
 ## Output
 Return ONLY this JSON object, with no text before or after it:
 {

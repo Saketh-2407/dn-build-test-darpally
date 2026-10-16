@@ -85,6 +85,10 @@ Be surgical: quote the exact line, name the rule, and say what to change. You
 may suggest a replacement for the offending phrase. Never rewrite a whole 
 paragraph or the whole post. If a number is involved, name the fact id to use.
 
+## Rules
+- Each brand rule includes a verbatim field with DN's exact page text. If a 
+  structured field and the verbatim text ever differ, the verbatim text wins.
+
 ## Output
 Return ONLY this JSON object, with no text before or after it:
 {
