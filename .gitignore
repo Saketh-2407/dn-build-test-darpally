@@ -22,3 +22,6 @@ dist/
 .idea/
 .DS_Store
 Thumbs.db
+
+# Local MCP config, written per OS by bootstrap.py (see .mcp.json.example)
+.mcp.json

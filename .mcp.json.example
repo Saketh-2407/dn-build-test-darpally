@@ -2,7 +2,7 @@
   "mcpServers": {
     "dn-repurposer": {
       "type": "stdio",
-      "command": ".venv/Scripts/python.exe",
+      "command": ".venv/bin/python",
       "args": ["-m", "mcp_server.server"]
     }
   }
