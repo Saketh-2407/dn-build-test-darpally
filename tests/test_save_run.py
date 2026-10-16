@@ -1,0 +1,105 @@
+"""Writes into a temp directory via DN_SAMPLES_DIR. Run from the project root: python -m unittest discover tests -v"""
+
+import copy
+import json
+import os
+import tempfile
+import unittest
+from pathlib import Path
+from unittest import mock
+
+from mcp_server.tools._common import SAMPLES_DIR_ENV
+from mcp_server.tools.save_run import AI_DISCLOSURE, save_run
+
+RUN = {
+    "source": {"url": "https://disruptionnow.com/blog/stub-post-for-tests", "title": "Stub Post"},
+    "brief": {
+        "angle": "Solo builders are welcome.",
+        "facts": [{"fact": "There are 40 student slots.", "source_quote": "Forty student slots are open to teams and solo builders."}],
+    },
+    "drafts": [{"linkedin_text": "First try."}, {"linkedin_text": "Second try."}],
+    "reviews": [{"verdict": "REVISE", "summary": "Tighten the hook."}, {"verdict": "PASS", "summary": "Ready."}],
+    "final": {
+        "verdict": "PASS",
+        "linkedin_text": "AI is a sharp junior employee with no common sense. Give it your direction.",
+        "instagram_caption": "Forty student slots. Come solo or bring a team.",
+        "instagram_hashtags": ["#Cincinnati", "Hackathon"],
+        "visual_note": "Photo of students at laptops, DN logo bottom right.",
+        "flags": [],
+    },
+}
+
+
+def run_with(**final_changes):
+    run = copy.deepcopy(RUN)
+    run["final"].update(final_changes)
+    return run
+
+
+class SaveRunTests(unittest.TestCase):
+    def setUp(self):
+        self.tmp = tempfile.TemporaryDirectory()
+        self.root = Path(self.tmp.name)
+        patcher = mock.patch.dict(os.environ, {SAMPLES_DIR_ENV: self.tmp.name})
+        patcher.start()
+        self.addCleanup(patcher.stop)
+        self.addCleanup(self.tmp.cleanup)
+
+    def assertNothingWritten(self):
+        self.assertEqual(list(self.root.iterdir()), [])
+
+    def test_bad_slug_rejected(self):
+        for slug in ["../escape", "ab", "Has-Caps", "a/b/c", "x" * 81]:
+            with self.subTest(slug=slug):
+                result = save_run(slug, copy.deepcopy(RUN))
+                self.assertIn("error", result)
+                self.assertIn("hint", result)
+        self.assertNothingWritten()
+
+    def test_pass_with_em_dash_refused(self):
+        result = save_run("em-dash-run", run_with(linkedin_text="We train your team — then we leave."))
+        self.assertIn("error", result)
+        self.assertEqual([(f["platform"], f["rule"]) for f in result["hard_failures"]], [("linkedin", "em_dash")])
+        self.assertNothingWritten()
+
+    def test_ship_with_flags_with_jargon_refused(self):
+        result = save_run("jargon-run", run_with(verdict="SHIP_WITH_FLAGS", instagram_caption="Real solutions for nonprofits."))
+        self.assertIn("error", result)
+        self.assertEqual([(f["platform"], f["match"]) for f in result["hard_failures"]], [("instagram", "solutions")])
+        self.assertNothingWritten()
+
+    def test_blocked_with_jargon_saved(self):
+        result = save_run("jargon-run", run_with(verdict="BLOCKED", instagram_caption="Real solutions for nonprofits."))
+        self.assertEqual(result["verdict"], "BLOCKED")
+        final_md = (self.root / "jargon-run" / "final.md").read_text(encoding="utf-8")
+        self.assertIn("**Verdict:** BLOCKED", final_md)
+        self.assertIn('Lint hard failure (instagram): jargon_avoid_list "solutions"', final_md)
+
+    def test_clean_pass_writes_every_file(self):
+        result = save_run("clean-run", copy.deepcopy(RUN))
+        out = self.root / "clean-run"
+        expected = ["brief.json", "draft-r1.json", "draft-r2.json", "review-r1.json", "review-r2.json", "final.md"]
+        self.assertEqual(result, {"saved": [str(out / name) for name in expected], "verdict": "PASS"})
+        self.assertEqual(sorted(p.name for p in out.iterdir()), sorted(expected))
+        self.assertEqual(json.loads((out / "brief.json").read_text(encoding="utf-8")), RUN["brief"])
+        self.assertEqual(json.loads((out / "review-r2.json").read_text(encoding="utf-8")), RUN["reviews"][1])
+
+        final_md = (out / "final.md").read_text(encoding="utf-8")
+        for expected_text in [
+            "# Stub Post",
+            "Source: https://disruptionnow.com/blog/stub-post-for-tests",
+            "**Verdict:** PASS",
+            "## LinkedIn post\n\n" + RUN["final"]["linkedin_text"],
+            "## Instagram caption\n\nForty student slots. Come solo or bring a team.\n\n#Cincinnati #Hackathon",
+            "## Visual note",
+            '1. There are 40 student slots.\n   > "Forty student slots are open to teams and solo builders."',
+            "- Rounds: 2",
+            "- Round 1: REVISE - Tighten the hook.",
+            f"## AI disclosure\n\n{AI_DISCLOSURE}",
+        ]:
+            with self.subTest(expected_text=expected_text[:30]):
+                self.assertIn(expected_text, final_md)
+
+
+if __name__ == "__main__":
+    unittest.main()

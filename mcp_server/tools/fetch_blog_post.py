@@ -7,7 +7,7 @@ from urllib.parse import urljoin
 import httpx
 from bs4 import BeautifulSoup, Tag
 
-from ._common import BLOG_INDEX_PATH, BLOG_URL_PREFIX, HEADERS, TIMEOUT_SECONDS, error, load_json
+from ._common import BLOG_INDEX_PATH, BLOG_URL_PREFIX, HEADERS, TIMEOUT_SECONDS, cache_post, cached_post, error, load_json
 
 MIN_WORDS = 50
 STRIP_TAGS = ["script", "style", "noscript", "template", "svg", "iframe", "nav", "footer", "aside", "form", "button"]
@@ -138,7 +138,8 @@ async def fetch_blog_post(url: str) -> dict[str, Any]:
     Returns {"title", "url", "text", "word_count", "sources"}. text is the article body only:
     navigation, share bars, key-takeaway asides, FAQ, author bio and calls to action are removed.
     sources is the post's cited sources as [{"text", "href"}] (empty if it has none), useful for
-    checking any number before it goes into a draft. On failure returns {"error", "hint"}.
+    checking any number before it goes into a draft. Successful results are cached in-process for
+    15 minutes. On failure returns {"error", "hint"}.
     """
     url = (url or "").strip()
     if not url.startswith(BLOG_URL_PREFIX) or not url[len(BLOG_URL_PREFIX):].strip("/"):
@@ -146,6 +147,9 @@ async def fetch_blog_post(url: str) -> dict[str, Any]:
             f"Refusing to fetch '{url}': only Disruption Now blog post URLs are allowed.",
             f"Pass a full post URL starting with {BLOG_URL_PREFIX}<slug>. Use list_blog_posts to find one.",
         )
+    cached = cached_post(url)
+    if cached is not None:
+        return cached
 
     try:
         async with httpx.AsyncClient(headers=HEADERS, timeout=TIMEOUT_SECONDS, follow_redirects=True) as client:
@@ -175,4 +179,6 @@ async def fetch_blog_post(url: str) -> dict[str, Any]:
             "The page may be rendered client-side or have an unusual layout. Try a different post.",
             title=title,
         )
-    return {"title": title, "url": str(response.url), "text": text, "word_count": word_count, "sources": sources}
+    post = {"title": title, "url": str(response.url), "text": text, "word_count": word_count, "sources": sources}
+    cache_post(url, post)
+    return post
