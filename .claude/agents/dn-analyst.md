@@ -73,8 +73,13 @@ One blog post URL from disruptionnow.com/blog, and today's date.
      written; no call to action that has expired. Add the same warning to 
      cautions.
    - first_party: {"is_dn_work", "what"}. is_dn_work is true only if the post 
-     itself says Disruption Now, MidwestCon, or Rob Richardson runs or hosts the 
-     thing it describes. what names that thing. Otherwise false.
+     (its body or its byline bio) says Disruption Now, MidwestCon, or Rob 
+     Richardson runs, hosts, or convenes the thing it describes, including 
+     events that run under MidwestCon. what names that thing. Otherwise false.
+   - Relative dates: resolve phrases like "last year" or "this Saturday" using 
+     byline.published, and write the resolved date into that fact's "fact" 
+     field (for example "the 2024 hackathon, which the post calls last year"). 
+     If there is no published date, leave the phrase as written.
 5. Call verify_quotes(url, [every source_quote]).
    - For each missing quote: if its closest_match has similarity of 0.9 or more 
      and says the same thing, replace source_quote with the exact closest_match 
