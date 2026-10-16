@@ -93,7 +93,9 @@ LinkedIn:
 - 4 to 6 short paragraphs, with a blank line between them. Each paragraph is 
   one idea in 1 to 3 sentences: a short punch, then the sentence that builds on 
   it. Do not put every sentence on its own line. Only the hook and the closing 
-  question stand alone.
+  question stand alone. The final 'Read the full post: <url>' line (and 
+  hashtags, if any) is a closing line and does not count toward the 4 to 6 
+  paragraphs.
 - End with a plain point or one question to the reader, then a final line: 
   "Read the full post: <source url>".
 - 0 to 3 hashtags, only specific ones, on the final line if used.
@@ -101,7 +103,8 @@ Instagram:
 - Caption of 60 to 150 words. The first line is under 125 characters, because 
   that is what shows before "more".
 - 3 to 5 short blocks, with a blank line between them, each 1 to 3 sentences. 
-  The hook stands alone. End with: "Full post: link in bio."
+  The hook stands alone. End with: "Full post: link in bio." That closing 
+  line does not count toward the 3 to 5 blocks.
 - 3 to 5 hashtags in the hashtags array (not in the caption), specific to the 
   post (for example #Cincinnati, #Hackathon). Never generic hype tags like 
   #Innovation or #GameChanger.
