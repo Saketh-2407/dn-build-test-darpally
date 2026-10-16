@@ -11,6 +11,18 @@ class LintDraftTests(unittest.TestCase):
         self.assertFalse(result["passed"])
         self.assertEqual([f["rule"] for f in result["hard_failures"]], ["em_dash"])
 
+    def test_em_dash_substitutes_are_hard_failures(self):
+        for text, match in [("We train your team – then we leave.", "–"), ("We train your team -- then we leave.", "--")]:
+            with self.subTest(text=text):
+                result = lint_draft(text)
+                self.assertFalse(result["passed"])
+                self.assertEqual([(f["rule"], f["match"]) for f in result["hard_failures"]], [("em_dash_substitute", match)])
+
+    def test_range_en_dash_and_single_hyphen_pass(self):
+        for text in ["Teams of 10–20 people built it.", "A two-day, real-world build.", "Read: https://example.com/a--b"]:
+            with self.subTest(text=text):
+                self.assertTrue(lint_draft(text)["passed"])
+
     def test_jargon_word_is_hard_failure(self):
         result = lint_draft("We deliver AI Solutions for your business.")
         self.assertFalse(result["passed"])

@@ -66,13 +66,40 @@ def _final_lint(final: dict[str, Any]) -> dict[str, dict[str, Any]]:
     }
 
 
-def _facts(brief: dict[str, Any]) -> list[str]:
-    lines = []
-    for i, fact in enumerate(brief.get("facts") or [], start=1):
-        text = fact.get("fact", "") if isinstance(fact, dict) else str(fact)
-        quote = fact.get("source_quote") if isinstance(fact, dict) else None
-        lines.append(f"{i}. {text}\n   > " + (f'"{quote}"' if quote else "(no source quote recorded)"))
-    return lines or ["_The brief lists no facts._"]
+def _fact_line(fact: Any, label: str) -> str:
+    text = fact.get("fact", "") if isinstance(fact, dict) else str(fact)
+    quote = fact.get("source_quote") if isinstance(fact, dict) else None
+    return f"{label}. {text}\n   > " + (f'"{quote}"' if quote else "(no source quote recorded)")
+
+
+def _used_fact_ids(drafts: list[Any]) -> set[str]:
+    """Fact ids the last draft's copy relies on: both platforms' fact_ids plus claims_map, minus "DEF"."""
+    draft = drafts[-1] if drafts and isinstance(drafts[-1], dict) else {}
+    ids: list[Any] = []
+    for platform in ("linkedin", "instagram"):
+        section = draft.get(platform)
+        if isinstance(section, dict):
+            ids += section.get("fact_ids") or []
+    ids += [claim.get("fact_id") for claim in draft.get("claims_map") or [] if isinstance(claim, dict)]
+    return {str(i) for i in ids if i and i != "DEF"}
+
+
+def _fact_sections(run: dict[str, Any]) -> list[str]:
+    """"Facts used" and "Other verified facts in the brief (not used)", or one "Facts in the brief" list
+    when the last draft records no fact ids."""
+    facts = [(fact, str(fact.get("id") or i) if isinstance(fact, dict) else str(i))
+             for i, fact in enumerate(run["brief"].get("facts") or [], start=1)]
+    if not facts:
+        return ["## Facts in the brief\n\n_The brief lists no facts._"]
+    used_ids = _used_fact_ids(run["drafts"])
+    if not used_ids:
+        return ["## Facts in the brief\n\n" + "\n".join(_fact_line(f, label) for f, label in facts)]
+    used = [_fact_line(f, label) for f, label in facts if label in used_ids]
+    other = [_fact_line(f, label) for f, label in facts if label not in used_ids]
+    return [
+        "## Facts used\n\n" + ("\n".join(used) or "_None of the brief's facts match the draft's fact ids._"),
+        "## Other verified facts in the brief (not used)\n\n" + ("\n".join(other) or "_None. The copy uses every fact._"),
+    ]
 
 
 def _review_summary(run: dict[str, Any], lint: dict[str, dict[str, Any]]) -> list[str]:
@@ -101,7 +128,7 @@ def render_final_md(run: dict[str, Any], lint: dict[str, dict[str, Any]], today:
         f"## LinkedIn post\n\n{final['linkedin_text'].strip()}",
         f"## Instagram caption\n\n{final['instagram_caption'].strip()}\n\n{' '.join(_hashtags(final))}".rstrip(),
         f"## Visual note\n\n{final['visual_note'].strip()}",
-        "## Facts used\n\n" + "\n".join(_facts(run["brief"])),
+        *_fact_sections(run),
     ]
     definitions = final.get("definitions") or []
     if definitions:
@@ -123,7 +150,7 @@ def save_run(slug: str, run: dict[str, Any]) -> dict[str, Any]:
     """Write one finished run to samples/<slug>/ so outputs are never copied by hand.
 
     slug: 3-80 chars of a-z, 0-9 and '-' (e.g. "future-of-data-hackathon"); becomes the folder name.
-    run: {"source": {"url", "title"}, "brief": {..., "facts": [{"fact", "source_quote"}]},
+    run: {"source": {"url", "title"}, "brief": {..., "facts": [{"id", "fact", "source_quote"}]},
     "drafts": [one per round], "reviews": [one per round], "final": {"verdict", "linkedin_text",
     "instagram_caption", "instagram_hashtags": [str], "visual_note", "flags": [str],
     "definitions": [{"term", "sentence"}]}}. definitions (optional) are plain-language definitions the
@@ -131,6 +158,8 @@ def save_run(slug: str, run: dict[str, Any]) -> dict[str, Any]:
     verdict is PASS, SHIP_WITH_FLAGS or BLOCKED. Final gate: linkedin_text, and instagram_caption
     with the hashtags, are linted; if either has hard failures the verdict must be BLOCKED, otherwise
     nothing is saved and an error lists the failures.
+    final.md lists the facts the last draft uses (its fact_ids and claims_map) apart from the brief's
+    other facts.
     Writes brief.json, draft-rN.json, review-rN.json and final.md (with the AI disclosure), replacing
     any earlier run saved under the same slug. N is each item's own "round" (0-based list index if absent). Returns {"saved": [paths], "verdict"}.
     On failure returns {"error", "hint"}.

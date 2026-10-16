@@ -7,6 +7,10 @@ from ._common import LINT_RULES_PATH, error, load_json
 
 VALID_PLATFORMS = ["linkedin", "instagram"]
 CONTEXT_CHARS = 40
+# Stand-ins for an em dash: an en dash with space on both sides, or two or more hyphens.
+# An unspaced en dash in a range (10–20) and a single hyphen stay allowed; URLs are skipped.
+EM_DASH_SUBSTITUTE_RE = re.compile(r"(?<=\s)–(?=\s)|-{2,}")
+URL_RE = re.compile(r"https?://\S+")
 
 
 def _term_pattern(term: str) -> re.Pattern[str]:
@@ -42,7 +46,8 @@ def lint_draft(text: str, platform: str = "linkedin") -> dict[str, Any]:
     Only for our own generated copy. Never run it on source blog text: the blog legitimately
     contains em dashes and other patterns, and linting it would produce meaningless failures.
 
-    hard_failures (any one fails the draft): em dashes and banned jargon, hype verbs, significance
+    hard_failures (any one fails the draft): em dashes, em dash substitutes (a spaced en dash or a
+    double hyphen used as a dash; ranges like 10–20 and single hyphens are fine), banned jargon, hype verbs, significance
     adjectives, vibe phrases, cliches and throat-clearing openers. soft_flags (warnings for a human or
     AI reviewer to judge in context): filler intensifiers, 'consultant', and the corporate noun 'needs'.
     Matches inside earned brand phrases (e.g. 'coach, not consultant') are never flagged.
@@ -73,6 +78,12 @@ def lint_draft(text: str, platform: str = "linkedin") -> dict[str, Any]:
             {"rule": "em_dash", "match": em_dash, "context": _context(text, m.start(), m.end())}
             for m in re.finditer(re.escape(em_dash), text)
         ]
+    urls = [(m.start(), m.end()) for m in URL_RE.finditer(text)]
+    hard_failures += [
+        {"rule": "em_dash_substitute", "match": m.group(0), "context": _context(text, m.start(), m.end())}
+        for m in EM_DASH_SUBSTITUTE_RE.finditer(text)
+        if not any(start <= m.start() < end for start, end in urls)
+    ]
     for rule, terms in _term_lists(hard_fail).items():
         hard_failures += _find(text, rule, terms, allowed)
 

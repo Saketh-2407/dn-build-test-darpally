@@ -101,6 +101,45 @@ class SaveRunTests(unittest.TestCase):
             with self.subTest(expected_text=expected_text[:30]):
                 self.assertIn(expected_text, final_md)
         self.assertNotIn(DEFINITIONS_HEADING, final_md)
+        # The stub drafts record no fact ids, so every brief fact is listed under one heading.
+        self.assertIn("## Facts in the brief\n\n1. There are 40 student slots.", final_md)
+        self.assertNotIn("## Facts used", final_md)
+
+    def test_facts_used_split_from_unused(self):
+        run = copy.deepcopy(RUN)
+        run["brief"]["facts"] = [
+            {"id": "F1", "fact": "Forty slots.", "source_quote": "Forty student slots are open."},
+            {"id": "F2", "fact": "Solo builders welcome.", "source_quote": "Solo builders are welcome."},
+            {"id": "F3", "fact": "Teams of four.", "source_quote": "Teams of up to four."},
+            {"id": "F4", "fact": "Held in Cincinnati.", "source_quote": "It is held in Cincinnati."},
+        ]
+        run["drafts"] = [
+            {"linkedin": {"fact_ids": ["F4"]}},  # an earlier round's ids do not count
+            {
+                "linkedin": {"fact_ids": ["F1"]},
+                "instagram": {"fact_ids": ["F1"]},
+                "claims_map": [{"fact_id": "F3"}, {"fact_id": "DEF"}],
+            },
+        ]
+        save_run("facts-run", run)
+        final_md = (self.root / "facts-run" / "final.md").read_text(encoding="utf-8")
+        self.assertIn(
+            '## Facts used\n\nF1. Forty slots.\n   > "Forty student slots are open."\n'
+            'F3. Teams of four.\n   > "Teams of up to four."\n\n'
+            "## Other verified facts in the brief (not used)\n\n"
+            'F2. Solo builders welcome.\n   > "Solo builders are welcome."\n'
+            'F4. Held in Cincinnati.\n   > "It is held in Cincinnati."\n',
+            final_md,
+        )
+        self.assertNotIn("## Facts in the brief", final_md)
+
+    def test_every_fact_used_says_so(self):
+        run = copy.deepcopy(RUN)
+        run["brief"]["facts"] = [{"id": "F1", "fact": "Forty slots.", "source_quote": "Forty student slots are open."}]
+        run["drafts"] = [{"claims_map": [{"fact_id": "F1"}]}]
+        save_run("all-used", run)
+        final_md = (self.root / "all-used" / "final.md").read_text(encoding="utf-8")
+        self.assertIn("## Other verified facts in the brief (not used)\n\n_None. The copy uses every fact._", final_md)
 
     def test_definitions_listed_for_human_check(self):
         definition = {"term": "bundling rules", "sentence": "Bundling rules say which services must be billed as one charge."}

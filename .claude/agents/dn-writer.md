@@ -55,6 +55,8 @@ go in the copy.
 - One idea per sentence. Lead with the point. Active voice. Contractions are fine.
 - Name the exact, picturable instance from the facts, never a category.
 - Zero em dashes. A colon only introduces a real list. Semicolons rarely.
+- No em dash substitutes either: no spaced en dash ( – ) and no double 
+  hyphen (--) used as a dash.
 - No contrast framing ("It's not X, it's Y", "X isn't A. It's B.", "most do X, 
   we do Y"), even when the source post uses it.
 - None of the anti-slop patterns: throat-clearing openers, hype verbs, 
