@@ -1,212 +1,206 @@
 {
   "round": 1,
-  "verdict": "PASS",
+  "verdict": "REVISE",
   "lint": {
     "linkedin": {
       "passed": true,
       "platform": "linkedin",
-      "char_count": 1182,
+      "char_count": 1268,
       "hard_failures": [],
       "soft_flags": []
     },
     "instagram": {
       "passed": true,
       "platform": "instagram",
-      "char_count": 811,
+      "char_count": 763,
       "hard_failures": [],
       "soft_flags": []
     },
     "hashtags": {
       "passed": true,
       "platform": "instagram",
-      "char_count": 51,
+      "char_count": 56,
       "hard_failures": [],
       "soft_flags": []
     }
   },
   "fact_check": {
-    "quotes_verified": 6,
+    "quotes_verified": 5,
     "quotes_missing": [],
     "unsourced_claims": []
   },
-  "violations": [],
+  "violations": [
+    {
+      "id": "V1",
+      "severity": "judgment",
+      "platform": "instagram",
+      "line": "Buy the help, keep the muscle.",
+      "rule": "Carry the because (the-gate, two more checks): if the source gives the reason a claim is true, keep it. Also the Gate lead structure, which ends with what the reader gets.",
+      "category": "the-gate",
+      "fix": "Keep the earned phrase exactly as written, but don't let it stand alone. The caption never says that outside help is something you buy, and it never gives F11's reason for keeping the skill in-house. On LinkedIn this line works because the dependency sentence comes right before it. Insert one F11 sentence directly before it, after the four-jobs sentence. For example: 'If your people never learn the four jobs themselves, you've bought a dependency that walks out the door when the contract ends.' Add F11 to instagram.fact_ids (5 ids total, still within the limit) and add a claims_map entry for the new sentence mapped to F11. Keep the tone toward the vendors fair. Do not add any other change."
+    }
+  ],
   "soft_flags_judged": [],
   "sentence_audit": [
     {
       "platform": "linkedin",
-      "sentence": "On July 2, 2026, Microsoft launched Frontier, a business backed by $2.5 billion and roughly 6,000 engineers, as The Next Web reported.",
+      "sentence": "Look at what the companies selling AI models paid for in 2026, and you'll see where AI projects get stuck.",
       "advances_point": true,
       "picturable": true,
       "competitor_could_paste": false,
-      "issue": ""
+      "issue": "Investigator opener, matches the declared opener type. The F1 dates support 2026."
     },
     {
       "platform": "linkedin",
-      "sentence": "Their job is to sit inside customers' companies and make the AI those customers already bought do its job.",
+      "sentence": "On July 2, 2026, Microsoft launched Frontier, backed by $2.5 billion and roughly 6,000 engineers, The Next Web reported.",
       "advances_point": true,
       "picturable": true,
       "competitor_could_paste": false,
-      "issue": ""
+      "issue": "Matches F1. Keeps the 'roughly' hedge and the attribution, uses past tense and an explicit date."
     },
     {
       "platform": "linkedin",
-      "sentence": "The companies that sell AI models paid to put people next to the customer because selling the model alone didn't move the numbers.",
+      "sentence": "Their job was to sit inside customers' companies and make the AI those customers already paid for work.",
       "advances_point": true,
       "picturable": true,
       "competitor_could_paste": false,
-      "issue": ""
+      "issue": "Matches F1, past tense."
     },
     {
       "platform": "linkedin",
-      "sentence": "If your own pilot gave you a good demo and nothing on the bottom line, you're in the majority.",
+      "sentence": "The companies selling the models put money into people because customers who got the model alone did not see it in their numbers.",
       "advances_point": true,
       "picturable": true,
       "competitor_could_paste": false,
-      "issue": ""
+      "issue": "Carries F4's because. The round-0 fix is in place."
     },
     {
       "platform": "linkedin",
-      "sentence": "MIT's NANDA researchers found that 95% of enterprise generative-AI pilots produce no measurable profit-and-loss impact, across more than 300 deployments.",
+      "sentence": "MIT's NANDA researchers found in 2025 that 95% of enterprise generative-AI pilots showed no measurable profit-and-loss impact, across more than 300 deployments.",
       "advances_point": true,
       "picturable": true,
       "competitor_could_paste": false,
-      "issue": ""
+      "issue": "Matches F5. Keeps the attribution, the year and the 'more than' hedge. Not overstated as 'AI fails'."
     },
     {
       "platform": "linkedin",
-      "sentence": "Rob Richardson's post names four places a pilot usually dies: name the job, fit the workflow, own the handoff, prove the number.",
+      "sentence": "If your pilot got applause in the demo and nothing on the bottom line, look at the work around the tool.",
       "advances_point": true,
       "picturable": true,
       "competitor_could_paste": false,
-      "issue": ""
+      "issue": "Speaks to the reader's feeling from the brief and makes no factual claim. The next paragraph names the work."
     },
     {
       "platform": "linkedin",
-      "sentence": "A person decides all four.",
+      "sentence": "Your team can do four jobs the model can't: name the job, fit the workflow, own the handoff, prove the number.",
       "advances_point": true,
       "picturable": true,
       "competitor_could_paste": false,
-      "issue": ""
+      "issue": "Earned framework. The colon introduces a real list."
     },
     {
       "platform": "linkedin",
-      "sentence": "We'd check them before you blame the tool.",
+      "sentence": "Start by deciding what a win looks like before you switch the tool on.",
       "advances_point": true,
       "picturable": true,
       "competitor_could_paste": false,
-      "issue": ""
+      "issue": "Close to F6's wording."
     },
     {
       "platform": "linkedin",
-      "sentence": "Outside engineers are fine as a jumpstart.",
+      "sentence": "Outside engineers can jumpstart a stalled rollout.",
       "advances_point": true,
       "picturable": true,
       "competitor_could_paste": false,
-      "issue": ""
+      "issue": "Keeps the post's fair tone toward the vendors (F11)."
     },
     {
       "platform": "linkedin",
-      "sentence": "If your own people never learn those four steps, you've bought a dependency that walks out the door when the contract ends.",
+      "sentence": "If your people never learn the four jobs themselves, you've bought a dependency that walks out the door when the contract ends.",
       "advances_point": true,
       "picturable": true,
       "competitor_could_paste": false,
-      "issue": ""
+      "issue": "Matches F11 and gives the reason for the next line."
     },
     {
       "platform": "linkedin",
-      "sentence": "Teach them, and the skill stays with you after the contract ends.",
+      "sentence": "Buy the help, keep the muscle.",
       "advances_point": true,
       "picturable": true,
       "competitor_could_paste": false,
-      "issue": ""
+      "issue": "Earned phrase, and its because comes in the sentence before it. Repeating 'bought' and then 'Buy' is deliberate wordplay on an earned phrase, so voice wins."
     },
     {
       "platform": "linkedin",
-      "sentence": "Which of the four is your pilot missing?",
+      "sentence": "Who on your team owns the handoff on your AI project today?",
       "advances_point": true,
       "picturable": true,
       "competitor_could_paste": false,
-      "issue": ""
+      "issue": "A closing question that uses the framework. Not an expired call to action."
     },
     {
       "platform": "linkedin",
-      "sentence": "Read the full post: https://disruptionnow.com/blog/you-don-t-have-a-model-problem",
+      "sentence": "Read the full post: https://disruptionnow.com/blog/you-don-t-have-a-model-problem/",
       "advances_point": true,
       "picturable": true,
       "competitor_could_paste": false,
-      "issue": ""
+      "issue": "Standard closing link line."
     },
     {
       "platform": "instagram",
-      "sentence": "In July 2026, Microsoft backed a new business with $2.5 billion and roughly 6,000 engineers.",
+      "sentence": "On July 2, 2026, Microsoft launched Frontier, backed by $2.5 billion and roughly 6,000 engineers.",
       "advances_point": true,
       "picturable": true,
       "competitor_could_paste": false,
-      "issue": ""
+      "issue": "Hook matches F1 and keeps the hedge. The next sentence gives the attribution."
     },
     {
       "platform": "instagram",
-      "sentence": "Their job is to sit inside customers' companies and make the AI those customers already bought do its job, as The Next Web reported.",
+      "sentence": "Their job was to sit inside customers' companies and make the AI those customers already paid for work, The Next Web reported.",
       "advances_point": true,
       "picturable": true,
       "competitor_could_paste": false,
-      "issue": ""
+      "issue": "Matches F1, with the attribution present."
     },
     {
       "platform": "instagram",
-      "sentence": "If your AI pilot showed nothing on the bottom line, you're in the majority.",
+      "sentence": "The companies selling the models put money into people because customers who got the model alone did not see it in their numbers.",
       "advances_point": true,
       "picturable": true,
       "competitor_could_paste": false,
-      "issue": ""
+      "issue": "Carries F4's because."
     },
     {
       "platform": "instagram",
-      "sentence": "MIT's NANDA researchers found that 95% of enterprise generative-AI pilots produce no measurable profit-and-loss impact.",
+      "sentence": "MIT's NANDA researchers found in 2025 that 95% of enterprise generative-AI pilots showed no measurable profit-and-loss impact.",
       "advances_point": true,
       "picturable": true,
       "competitor_could_paste": false,
-      "issue": ""
+      "issue": "Matches F5, with the attribution and year kept."
     },
     {
       "platform": "instagram",
-      "sentence": "Rob Richardson's post names four places a pilot usually dies: name the job, fit the workflow, own the handoff, prove the number.",
+      "sentence": "If your pilot looked good in the demo and changed nothing on the bottom line, look at the work around the tool.",
       "advances_point": true,
       "picturable": true,
       "competitor_could_paste": false,
-      "issue": ""
+      "issue": "Speaks to the reader's feeling and makes no factual claim."
     },
     {
       "platform": "instagram",
-      "sentence": "A person decides all four.",
+      "sentence": "Your team can do four jobs the model can't: name the job, fit the workflow, own the handoff, prove the number.",
       "advances_point": true,
       "picturable": true,
       "competitor_could_paste": false,
-      "issue": ""
+      "issue": "Earned framework, with a real list after the colon."
     },
     {
       "platform": "instagram",
-      "sentence": "Those four take a named job and a named owner.",
+      "sentence": "Buy the help, keep the muscle.",
       "advances_point": true,
-      "picturable": true,
+      "picturable": false,
       "competitor_could_paste": false,
-      "issue": ""
-    },
-    {
-      "platform": "instagram",
-      "sentence": "A ten-person shop in Cincinnati can bring both as well as a Fortune 500 can.",
-      "advances_point": true,
-      "picturable": true,
-      "competitor_could_paste": false,
-      "issue": ""
-    },
-    {
-      "platform": "instagram",
-      "sentence": "If winning meant buying the biggest model, whoever had the most money would win.",
-      "advances_point": true,
-      "picturable": true,
-      "competitor_could_paste": false,
-      "issue": ""
+      "issue": "Earned phrase with no setup. The caption never says that outside help is bought, and it never gives F11's reason (a dependency that walks out the door when the contract ends). See V1."
     },
     {
       "platform": "instagram",
@@ -214,8 +208,8 @@
       "advances_point": true,
       "picturable": true,
       "competitor_could_paste": false,
-      "issue": ""
+      "issue": "Standard closing line."
     }
   ],
-  "notes": "Round 0 fixes V1 to V6 are all in place, and no new violations came up. verify_quotes found all 6 source_quotes the draft relies on (F1, F4, F5, F6, F7, F12) word for word in the post. The Writer asked me to check the added Instagram line 'If winning meant buying the biggest model, whoever had the most money would win.' It is not a verbatim quote, but the post body supports it: 'If the winning move were simply buying the biggest model, whoever had the most money would win and everyone else would lose.' The phrase 'whoever had the most money would win' was found word for word. The line is not in quotation marks and F12's fact text states it, so it counts as a properly mapped paraphrase. 'Outside engineers are fine as a jumpstart' paraphrases the body's 'Outside engineers are fine for a jumpstart.' and is mapped to F7, whose fact text says it. The draft keeps the hedges 'roughly 6,000' and 'usually dies'. The vendor moves are dated and in past tense. Nothing states results or outcomes for Frontier. Neither platform has a call to action that has expired. Fact density is 5 ids on LinkedIn and 4 on Instagram. Both platforms address the reader as 'you'. first_party.is_dn_work is false, so the Person rule does not apply to 'Rob Richardson's post'."
+  "notes": "All 6 round-0 fixes are in place, and both F1 sentences now match the fact. The lint is clean on all three texts with no soft flags. All 5 source quotes were found word-for-word. Both platforms use 'you', and fact density is within the limits (LinkedIn 5, Instagram 4). Every time-bound fact is in past tense with an explicit date, and no outcomes or expired calls to action appear. There are no unsourced claims and no definitions. The only open item is V1 (Instagram only, severity judgment), which is why the verdict is REVISE in round 1. LinkedIn passes with no violations."
 }

@@ -1,0 +1,213 @@
+{
+  "round": 2,
+  "verdict": "PASS",
+  "lint": {
+    "linkedin": {
+      "passed": true,
+      "platform": "linkedin",
+      "char_count": 1268,
+      "hard_failures": [],
+      "soft_flags": []
+    },
+    "instagram": {
+      "passed": true,
+      "platform": "instagram",
+      "char_count": 871,
+      "hard_failures": [],
+      "soft_flags": []
+    },
+    "hashtags": {
+      "passed": true,
+      "platform": "instagram",
+      "char_count": 56,
+      "hard_failures": [],
+      "soft_flags": []
+    }
+  },
+  "fact_check": {
+    "quotes_verified": 5,
+    "quotes_missing": [],
+    "unsourced_claims": []
+  },
+  "violations": [],
+  "soft_flags_judged": [],
+  "sentence_audit": [
+    {
+      "platform": "linkedin",
+      "sentence": "Look at what the companies selling AI models paid for in 2026, and you'll see where AI projects get stuck.",
+      "advances_point": true,
+      "picturable": true,
+      "competitor_could_paste": false,
+      "issue": "Investigator opener, matches declared opener_type. Mapped to F4."
+    },
+    {
+      "platform": "linkedin",
+      "sentence": "On July 2, 2026, Microsoft launched Frontier, backed by $2.5 billion and roughly 6,000 engineers, The Next Web reported.",
+      "advances_point": true,
+      "picturable": true,
+      "competitor_could_paste": false,
+      "issue": "F1. Explicit date, 'roughly' hedge kept, attribution kept, past tense."
+    },
+    {
+      "platform": "linkedin",
+      "sentence": "Their job was to sit inside customers' companies and make the AI those customers already paid for work.",
+      "advances_point": true,
+      "picturable": true,
+      "competitor_could_paste": false,
+      "issue": "F1. Past tense. No outcome claimed."
+    },
+    {
+      "platform": "linkedin",
+      "sentence": "The companies selling the models put money into people because customers who got the model alone did not see it in their numbers.",
+      "advances_point": true,
+      "picturable": true,
+      "competitor_could_paste": false,
+      "issue": "F4 with its because carried. Avoids the 'move the numbers' near-variant cliche."
+    },
+    {
+      "platform": "linkedin",
+      "sentence": "MIT's NANDA researchers found in 2025 that 95% of enterprise generative-AI pilots showed no measurable profit-and-loss impact, across more than 300 deployments.",
+      "advances_point": true,
+      "picturable": true,
+      "competitor_could_paste": false,
+      "issue": "F5. Attribution, year, 'no measurable profit-and-loss impact' wording and 'more than 300' hedge kept."
+    },
+    {
+      "platform": "linkedin",
+      "sentence": "If your pilot got applause in the demo and nothing on the bottom line, look at the work around the tool.",
+      "advances_point": true,
+      "picturable": true,
+      "competitor_could_paste": false,
+      "issue": "Reader-feeling line drawn from the brief. Makes no factual claim."
+    },
+    {
+      "platform": "linkedin",
+      "sentence": "Your team can do four jobs the model can't: name the job, fit the workflow, own the handoff, prove the number.",
+      "advances_point": true,
+      "picturable": true,
+      "competitor_could_paste": false,
+      "issue": "Earned four-part framework. The colon comes before a real list. F6."
+    },
+    {
+      "platform": "linkedin",
+      "sentence": "Start by deciding what a win looks like before you switch the tool on.",
+      "advances_point": true,
+      "picturable": true,
+      "competitor_could_paste": false,
+      "issue": "F6. A concrete first action."
+    },
+    {
+      "platform": "linkedin",
+      "sentence": "Outside engineers can jumpstart a stalled rollout.",
+      "advances_point": true,
+      "picturable": true,
+      "competitor_could_paste": false,
+      "issue": "F11. Keeps the post's fair tone toward the vendors."
+    },
+    {
+      "platform": "linkedin",
+      "sentence": "If your people never learn the four jobs themselves, you've bought a dependency that walks out the door when the contract ends.",
+      "advances_point": true,
+      "picturable": true,
+      "competitor_could_paste": false,
+      "issue": "F11, close to the source wording."
+    },
+    {
+      "platform": "linkedin",
+      "sentence": "Buy the help, keep the muscle.",
+      "advances_point": true,
+      "picturable": true,
+      "competitor_could_paste": false,
+      "issue": "Earned phrase from brief.earned_phrases. Protected."
+    },
+    {
+      "platform": "linkedin",
+      "sentence": "Who on your team owns the handoff on your AI project today?",
+      "advances_point": true,
+      "picturable": true,
+      "competitor_could_paste": false,
+      "issue": "Evergreen question CTA tied to one of the four jobs. Not expired."
+    },
+    {
+      "platform": "linkedin",
+      "sentence": "Read the full post: https://disruptionnow.com/blog/you-don-t-have-a-model-problem/",
+      "advances_point": true,
+      "picturable": true,
+      "competitor_could_paste": false,
+      "issue": "Standard pipeline closing line."
+    },
+    {
+      "platform": "instagram",
+      "sentence": "On July 2, 2026, Microsoft launched Frontier, backed by $2.5 billion and roughly 6,000 engineers.",
+      "advances_point": true,
+      "picturable": true,
+      "competitor_could_paste": false,
+      "issue": "F1 hook. Explicit date, hedge kept. The Next Web attribution is in the next sentence about the same report."
+    },
+    {
+      "platform": "instagram",
+      "sentence": "Their job was to sit inside customers' companies and make the AI those customers already paid for work, The Next Web reported.",
+      "advances_point": true,
+      "picturable": true,
+      "competitor_could_paste": false,
+      "issue": "F1 with attribution. Past tense."
+    },
+    {
+      "platform": "instagram",
+      "sentence": "The companies selling the models put money into people because customers who got the model alone did not see it in their numbers.",
+      "advances_point": true,
+      "picturable": true,
+      "competitor_could_paste": false,
+      "issue": "F4 with its because carried."
+    },
+    {
+      "platform": "instagram",
+      "sentence": "MIT's NANDA researchers found in 2025 that 95% of enterprise generative-AI pilots showed no measurable profit-and-loss impact.",
+      "advances_point": true,
+      "picturable": true,
+      "competitor_could_paste": false,
+      "issue": "F5. Attribution, year and exact meaning kept."
+    },
+    {
+      "platform": "instagram",
+      "sentence": "If your pilot looked good in the demo and changed nothing on the bottom line, look at the work around the tool.",
+      "advances_point": true,
+      "picturable": true,
+      "competitor_could_paste": false,
+      "issue": "Reader-feeling line drawn from the brief. Makes no factual claim."
+    },
+    {
+      "platform": "instagram",
+      "sentence": "Your team can do four jobs the model can't: name the job, fit the workflow, own the handoff, prove the number.",
+      "advances_point": true,
+      "picturable": true,
+      "competitor_could_paste": false,
+      "issue": "Earned four-part framework. The colon comes before a real list. F6."
+    },
+    {
+      "platform": "instagram",
+      "sentence": "If your people never learn them, you've bought a dependency that walks out the door when the contract ends.",
+      "advances_point": true,
+      "picturable": true,
+      "competitor_could_paste": false,
+      "issue": "F11. 'them' clearly points to the four jobs in the sentence before. This fixes R1 V1."
+    },
+    {
+      "platform": "instagram",
+      "sentence": "Buy the help, keep the muscle.",
+      "advances_point": true,
+      "picturable": true,
+      "competitor_could_paste": false,
+      "issue": "Earned phrase from brief.earned_phrases. Protected. The F11 dependency line before it now carries its reason."
+    },
+    {
+      "platform": "instagram",
+      "sentence": "Full post: link in bio.",
+      "advances_point": true,
+      "picturable": true,
+      "competitor_could_paste": false,
+      "issue": "Standard pipeline closing line."
+    }
+  ],
+  "notes": "Round 2 review. All three lint runs passed with 0 hard failures and 0 soft flags. All 5 source quotes used (F1, F4, F5, F6, F11) appear word-for-word in the post. Every factual sentence on both platforms maps to a fact that supports it. Hedges kept: 'roughly 6,000' and, on LinkedIn, 'more than 300'. Attributions kept: The Next Web and MIT NANDA (2025). Dates are explicit and in past tense. No outcomes after the July 2026 publish date are claimed, and the CTA has not expired. Each platform uses 5 fact ids, within the limits. Both platforms address the reader as 'you'. is_dn_work is false, so the third-person rule does not apply. The round 1 violation V1 (Instagram 'Buy the help, keep the muscle.' had no F11 because) is fixed, and nothing else changed. The draft obeys every caution: no vendor totals, no ~$10B or ~$1.5B figures, no byline credentials, no MidwestCon CTA, no em dashes, the 95% figure is not overstated, and the vendors are not cast as villains."
+}

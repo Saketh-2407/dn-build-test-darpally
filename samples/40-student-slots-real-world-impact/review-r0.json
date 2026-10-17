@@ -4,25 +4,25 @@
   "lint": {
     "linkedin": {
       "passed": true,
-      "char_count": 1229,
+      "char_count": 1000,
       "hard_failures": [],
       "soft_flags": [
         {
           "rule": "filler_intensifiers",
           "match": "real",
-          "context": "...disruptionnow.com/blog/40-student-slots-real-world-impact"
+          "context": "...disruptionnow.com/blog/40-student-slots-real-world-impact/"
         }
       ]
     },
     "instagram": {
       "passed": true,
-      "char_count": 662,
+      "char_count": 487,
       "hard_failures": [],
       "soft_flags": []
     },
     "hashtags": {
       "passed": true,
-      "char_count": 59,
+      "char_count": 65,
       "hard_failures": [],
       "soft_flags": []
     }
@@ -30,39 +30,45 @@
   "fact_check": {
     "quotes_verified": 5,
     "quotes_missing": [],
-    "unsourced_claims": []
+    "unsourced_claims": [
+      {
+        "platform": "linkedin",
+        "line": "You build something people will use, and someone who hires is watching.",
+        "why": "Not in claims_map. No fact in the ledger says the students' tools were used by anyone, and 'someone who hires' is not what F10 says (F10 says 'decision-makers who show up to see who builds well under pressure')."
+      }
+    ]
   },
   "violations": [
     {
       "id": "V1",
-      "severity": "judgment",
+      "severity": "hard",
       "platform": "linkedin",
-      "line": "It was also large enough to form diverse teams.",
-      "rule": "The Gate Q3: does this sentence say something the next sentence needs, and does it advance the story? If no, cut it.",
-      "category": "the-gate",
-      "fix": "Cut this sentence. The core point is that the cap gave every student mentorship and executive access, and the line before already says that. The next line ('Then we lined up two clients.') does not depend on team diversity. 'Diverse teams' is also generic enough for any hackathon to paste."
+      "line": "You build something people will use, and someone who hires is watching.",
+      "rule": "Unsourced claim (the sentence is missing from claims_map and no fact supports 'something people will use' or 'someone who hires'); voice-principles Honest: do not overclaim. It also breaks One idea per sentence (two ideas joined by 'and'), and a competitor could paste it about any hackathon.",
+      "category": "voice-principles",
+      "fix": "Cut this sentence. 'If you're a student, that's the day you want.' leads straight into 'So for the 2025 hackathon, we opened 40 student slots.' If the Writer wants to keep a line here, it has to be one idea mapped to F10 (for example 'You want a decision-maker to see what you build.') and added to claims_map. Do not claim the tools were used."
     },
     {
       "id": "V2",
       "severity": "judgment",
       "platform": "linkedin",
-      "line": "Each student would build for a client who could use the work, and get direct mentorship while doing it.",
-      "rule": "The Gate Q3 (advance the story); Mechanics: one idea per sentence",
+      "line": "Each team was set to build for a nonprofit.",
+      "rule": "Does this sentence say something the next sentence needs? (repetition: the next sentence repeats 'nonprofit' and 'teams' and already says the teams were solving the nonprofits' problems). Could a competitor paste this? (yes, it fits any nonprofit hackathon).",
       "category": "the-gate",
-      "fix": "This sentence joins two ideas with 'and'. The second idea ('get direct mentorship') repeats 'Forty was small enough that every student could get direct mentorship...' word for word, so it adds nothing new. Cut the clause ', and get direct mentorship while doing it'. Also re-map 'a client who could use the work' in claims_map. It is currently mapped to F4 (which is about mentorship, not use) and F6 alone, but 'each student' covers both tracks. Map it to F6 and F7, or to F11 ('both nonprofits submitted real operational problems for the teams to solve', which needs the Movers & Makers attribution if quoted). That keeps LinkedIn at 6 fact ids or fewer."
+      "fix": "Cut this sentence. In the next sentence, change 'both nonprofit partners' to 'our two nonprofit partners' so the reader learns there were two (F7: 'both nonprofits'). Keep the Movers & Makers attribution."
     }
   ],
   "soft_flags_judged": [
     {
       "match": "real",
       "verdict": "ok",
-      "why": "The match is inside the source URL slug (40-student-slots-real-world-impact) on the required 'Read the full post' closing line. It is not copy and cannot be changed."
+      "why": "Appears only in the source URL slug '40-student-slots-real-world-impact' in the required closing link. It is not prose and cannot be changed."
     }
   ],
   "sentence_audit": [
     {
       "platform": "linkedin",
-      "sentence": "In 2024, a team showed up to our hackathon with nothing but curiosity and a caffeine plan.",
+      "sentence": "At our 2024 Future of Data Hackathon, a team walked in with nothing but curiosity and a caffeine plan.",
       "advances_point": true,
       "picturable": true,
       "competitor_could_paste": false,
@@ -70,7 +76,7 @@
     },
     {
       "platform": "linkedin",
-      "sentence": "By dusk, they'd shipped a working prototype and won thousands of dollars.",
+      "sentence": "By dusk they had shipped a working prototype.",
       "advances_point": true,
       "picturable": true,
       "competitor_could_paste": false,
@@ -78,7 +84,7 @@
     },
     {
       "platform": "linkedin",
-      "sentence": "That's how our Future of Data Hackathon team describes 2024.",
+      "sentence": "If you're a student, that's the day you want.",
       "advances_point": true,
       "picturable": true,
       "competitor_could_paste": false,
@@ -86,7 +92,15 @@
     },
     {
       "platform": "linkedin",
-      "sentence": "If you're a student, you want a day like that.",
+      "sentence": "You build something people will use, and someone who hires is watching.",
+      "advances_point": true,
+      "picturable": true,
+      "competitor_could_paste": true,
+      "issue": "V1: unsourced, missing from claims_map, overclaims use, two ideas in one sentence."
+    },
+    {
+      "platform": "linkedin",
+      "sentence": "So for the 2025 hackathon, we opened 40 student slots.",
       "advances_point": true,
       "picturable": true,
       "competitor_could_paste": false,
@@ -94,7 +108,7 @@
     },
     {
       "platform": "linkedin",
-      "sentence": "You want to build something people will use, with someone who hires watching you work.",
+      "sentence": "We picked 40 because it was small enough for every student to get direct mentorship and time with the executives.",
       "advances_point": true,
       "picturable": true,
       "competitor_could_paste": false,
@@ -102,7 +116,7 @@
     },
     {
       "platform": "linkedin",
-      "sentence": "So the next year, we capped the student field at 40, in teams of four.",
+      "sentence": "It was also large enough to form diverse, high-functioning teams.",
       "advances_point": true,
       "picturable": true,
       "competitor_could_paste": false,
@@ -110,39 +124,23 @@
     },
     {
       "platform": "linkedin",
-      "sentence": "Forty was small enough that every student could get direct mentorship and meaningful access to the executives at the event.",
-      "advances_point": true,
-      "picturable": true,
-      "competitor_could_paste": false,
-      "issue": ""
-    },
-    {
-      "platform": "linkedin",
-      "sentence": "It was also large enough to form diverse teams.",
+      "sentence": "Each team was set to build for a nonprofit.",
       "advances_point": false,
       "picturable": true,
       "competitor_could_paste": true,
-      "issue": "V1: off the core point and generic; the next sentence does not need it."
+      "issue": "V2: repeats what the next sentence says, and it is generic."
     },
     {
       "platform": "linkedin",
-      "sentence": "Then we lined up two clients.",
+      "sentence": "When registration opened, Movers & Makers reported that both nonprofit partners had submitted operational problems for the teams to solve.",
       "advances_point": true,
       "picturable": true,
       "competitor_could_paste": false,
-      "issue": ""
+      "issue": "After V2's cut, change 'both' to 'our two' (see V2 fix)."
     },
     {
       "platform": "linkedin",
-      "sentence": "Beginner Track teams were set to build data and AI tools that support cancer research operations at Wood Hudson Cancer Research Laboratory in Newport, KY.",
-      "advances_point": true,
-      "picturable": true,
-      "competitor_could_paste": false,
-      "issue": ""
-    },
-    {
-      "platform": "linkedin",
-      "sentence": "Founded in 1981, the lab maintains over 2 million tissue specimens.",
+      "sentence": "The executives were decision-makers coming to see who builds well under pressure.",
       "advances_point": true,
       "picturable": true,
       "competitor_could_paste": false,
@@ -150,7 +148,7 @@
     },
     {
       "platform": "linkedin",
-      "sentence": "Experienced Track teams were set to work with the YMCA of Greater Cincinnati on AI for member analytics, program scheduling, and outreach.",
+      "sentence": "With only 40 students, your work stood a fair chance of being seen up close.",
       "advances_point": true,
       "picturable": true,
       "competitor_could_paste": false,
@@ -158,15 +156,7 @@
     },
     {
       "platform": "linkedin",
-      "sentence": "Each student would build for a client who could use the work, and get direct mentorship while doing it.",
-      "advances_point": false,
-      "picturable": true,
-      "competitor_could_paste": false,
-      "issue": "V2: two ideas in one sentence; the mentorship clause repeats an earlier sentence; claims_map mapping does not cover both clients."
-    },
-    {
-      "platform": "linkedin",
-      "sentence": "Which track would you have picked?",
+      "sentence": "What would you build if you knew a decision-maker was watching?",
       "advances_point": true,
       "picturable": true,
       "competitor_could_paste": false,
@@ -174,7 +164,15 @@
     },
     {
       "platform": "linkedin",
-      "sentence": "Read the full post: https://disruptionnow.com/blog/40-student-slots-real-world-impact",
+      "sentence": "Read the full post: https://disruptionnow.com/blog/40-student-slots-real-world-impact/",
+      "advances_point": true,
+      "picturable": true,
+      "competitor_could_paste": false,
+      "issue": "Pipeline closing line."
+    },
+    {
+      "platform": "instagram",
+      "sentence": "A team walked into our 2024 hackathon with nothing but curiosity and a caffeine plan.",
       "advances_point": true,
       "picturable": true,
       "competitor_could_paste": false,
@@ -182,7 +180,7 @@
     },
     {
       "platform": "instagram",
-      "sentence": "Our hackathon asked students to build AI tools for a cancer lab that holds over 2 million tissue specimens.",
+      "sentence": "By dusk they had shipped a working prototype.",
       "advances_point": true,
       "picturable": true,
       "competitor_could_paste": false,
@@ -190,7 +188,7 @@
     },
     {
       "platform": "instagram",
-      "sentence": "The lab is Wood Hudson Cancer Research Laboratory in Newport, KY.",
+      "sentence": "If you're a student, that's the day you want.",
       "advances_point": true,
       "picturable": true,
       "competitor_could_paste": false,
@@ -198,7 +196,7 @@
     },
     {
       "platform": "instagram",
-      "sentence": "Beginner Track teams were set to build data and AI tools that support its research operations.",
+      "sentence": "For our 2025 hackathon, we opened 40 student slots.",
       "advances_point": true,
       "picturable": true,
       "competitor_could_paste": false,
@@ -206,7 +204,7 @@
     },
     {
       "platform": "instagram",
-      "sentence": "Experienced Track teams were set to work with the YMCA of Greater Cincinnati on member analytics, program scheduling, and outreach.",
+      "sentence": "We kept it at 40 so every student could get direct mentorship and time with the executives.",
       "advances_point": true,
       "picturable": true,
       "competitor_could_paste": false,
@@ -214,7 +212,7 @@
     },
     {
       "platform": "instagram",
-      "sentence": "We capped the field at 40 students, in teams of four.",
+      "sentence": "Those executives were decision-makers coming to see who builds well under pressure.",
       "advances_point": true,
       "picturable": true,
       "competitor_could_paste": false,
@@ -222,15 +220,7 @@
     },
     {
       "platform": "instagram",
-      "sentence": "That kept it small enough for every student to get direct mentorship and meaningful access to the executives at the event.",
-      "advances_point": true,
-      "picturable": true,
-      "competitor_could_paste": false,
-      "issue": ""
-    },
-    {
-      "platform": "instagram",
-      "sentence": "If you're a student, which track would you have picked?",
+      "sentence": "A small field meant your work could be seen up close.",
       "advances_point": true,
       "picturable": true,
       "competitor_could_paste": false,
@@ -242,8 +232,8 @@
       "advances_point": true,
       "picturable": true,
       "competitor_could_paste": false,
-      "issue": ""
+      "issue": "Pipeline closing line."
     }
   ],
-  "notes": "Hard-rule checks: no hard failures. All three lint runs passed with zero hard failures. All 5 source_quotes (F1, F4, F5, F6, F7) were found word for word. I also checked the fact-ledger phrases the drafts use ('nothing but curiosity and a caffeine plan', 'teams of four', 'member analytics', 'program scheduling', 'support active cancer research operations'), and all 5 appear word for word in the post. Timeframe: both drafts use past tense for planned work ('were set to') and state no 2025 attendance, winners or outcomes. There is no expired registration call to action. Hedges and attribution: 'over 2 million' is kept, F1 stays tied to 2024 and to the hackathon team, and 'thousands of dollars' is not turned into a specific figure. Person and density: both platforms use 'we/our' and 'you', and neither describes DN in the third person. LinkedIn uses 5 fact ids and Instagram uses 4. Opener: LinkedIn's first line ends on the surprising result (prototype shipped, prize won by dusk), which matches the declared Magician type. Instagram passes every check. Both violations are on LinkedIn and both are judgment calls, so this is REVISE at round 0."
+  "notes": "Round 0 result: REVISE, with 1 hard and 1 judgment violation, both on LinkedIn. Instagram and the hashtags pass with no violations. All 5 source_quotes in use (F8, F3, F4, F7, F10) were verified word for word. Lint has zero hard failures on all three surfaces. Fact density is fine: 5 fact ids on LinkedIn and 4 on Instagram. The because for F3 (F4) is carried on both platforms, the 2024 year on F8 is kept, the Movers & Makers attribution is kept, and the copy stays in past tense with no 2025 results and no expired call to action. 'We' and 'you' appear on both platforms, and there is no third-person DN. The definitions list is empty, and no sentence is mapped to DEF."
 }

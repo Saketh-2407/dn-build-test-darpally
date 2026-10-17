@@ -5,27 +5,27 @@
     "linkedin": {
       "passed": true,
       "platform": "linkedin",
-      "char_count": 1010,
+      "char_count": 902,
       "hard_failures": [],
       "soft_flags": []
     },
     "instagram": {
       "passed": true,
       "platform": "instagram",
-      "char_count": 543,
+      "char_count": 578,
       "hard_failures": [],
       "soft_flags": []
     },
     "hashtags": {
       "passed": true,
       "platform": "instagram",
-      "char_count": 50,
+      "char_count": 55,
       "hard_failures": [],
       "soft_flags": []
     }
   },
   "fact_check": {
-    "quotes_verified": 5,
+    "quotes_verified": 7,
     "quotes_missing": [],
     "unsourced_claims": []
   },
@@ -33,36 +33,52 @@
     {
       "id": "V1",
       "severity": "judgment",
-      "platform": "linkedin",
-      "line": "The AI cross-referenced the charges against CMS Medicare Fee Schedules and bundling rules.",
-      "rule": "Plain American English: no insider word without a plain explanation next to it.",
-      "category": "mechanics",
-      "fix": "'CMS' and 'bundling rules' are insider terms and nothing explains them. Keep the F4 content but explain the terms in place. For example, change 'CMS Medicare Fee Schedules' to 'Medicare's official fee schedules (published by CMS, the federal Medicare agency)' and add a short plain gloss after 'bundling rules', such as '(rules on which services must be billed as one charge)'. Do not add any other claim."
+      "platform": "instagram",
+      "line": "Those four hours came after a fatal heart attack.",
+      "rule": "Does this sentence say something the next sentence needs? (repetition: 'four hours' repeats the phrase from the sentence right before it)",
+      "category": "the-gate",
+      "fix": "Don't repeat 'four hours'. Replace 'Those four hours came after' with 'The visit followed', so the line reads 'The visit followed a fatal heart attack.' (F2)"
     },
     {
       "id": "V2",
       "severity": "judgment",
       "platform": "instagram",
-      "line": "AI flagged $162,000 in likely Medicare violations and duplicate charges on one $195,000 hospital bill.",
-      "rule": "Carry the because / Clearer than the source",
+      "line": "The patient died and left a widow.",
+      "rule": "Does this sentence say something the next sentence needs? ('died' repeats what 'fatal' already said in the sentence before it)",
       "category": "the-gate",
-      "fix": "The F4 source_quote says why the flags are credible: they were 'cross-referenced against CMS Medicare Fee Schedules and bundling rules'. The caption drops this, so the $162,000 becomes a bare assertion. The caption also never mentions the rulebook, which is the core point. Add the basis from F4. For example, add a second sentence after the hook: 'It checked every charge against Medicare's fee schedules and bundling rules.' Keep 'likely'."
+      "fix": "Cut 'died and' so the sentence adds only the new detail: 'The patient left a widow.' (F2). Keep the careful tone. Do not guess the patient's gender."
     },
     {
       "id": "V3",
       "severity": "judgment",
-      "platform": "linkedin",
-      "line": "You can put AI to work the same way.",
-      "rule": "Does this sentence say something the next sentence needs, and does it advance the story? If no, cut it. / Could a competitor paste this and have it be true?",
+      "platform": "instagram",
+      "line": "He printed Claude's analysis and sent the hospital a written challenge.",
+      "rule": "Can a real person picture exactly what happens? / Clearer than the source. 'Claude's analysis' never says what Claude found, so the drop to about $33,000 has no visible reason and the caption never shows the rules the bill broke (brief.core_point).",
       "category": "the-gate",
-      "fix": "This is a generic transition that any AI company could paste. The next sentence already does the work. Cut it, then change 'Let it do the research and drafting on your bill.' to 'Let AI do the research and drafting on your bill.'"
+      "fix": "Before this line, add one sentence from F4 that keeps the hedge 'likely', for example 'Claude checked it against Medicare fee schedules and flagged $162,000 in likely violations and duplicate charges.' Add F4 to instagram fact_ids and claims_map (that makes 5 fact ids, which is still within the Instagram limit). Do not state or compute the savings."
     }
   ],
   "soft_flags_judged": [],
   "sentence_audit": [
     {
       "platform": "linkedin",
-      "sentence": "What was inside a $195,000 hospital bill?",
+      "sentence": "Hospitals, banks, school districts and government agencies all use complexity as a defense.",
+      "advances_point": true,
+      "picturable": true,
+      "competitor_could_paste": false,
+      "issue": "Investigator opener as declared. Sourced to F8, and the four named institutions appear in the post body. F8 is reworded, not echoed as a contrast formula."
+    },
+    {
+      "platform": "linkedin",
+      "sentence": "They count on you running out of time and energy before you can check what they sent you.",
+      "advances_point": true,
+      "picturable": true,
+      "competitor_could_paste": false,
+      "issue": "Puts the reader's feeling first. Carries F8's because (F9, too time-consuming to uncover) in paraphrase. Avoids the 'exhaustion more than force' contrast."
+    },
+    {
+      "platform": "linkedin",
+      "sentence": "One ordinary citizen with an ordinary laptop checked anyway.",
       "advances_point": true,
       "picturable": true,
       "competitor_could_paste": false,
@@ -70,163 +86,147 @@
     },
     {
       "platform": "linkedin",
-      "sentence": "AI flagged $162,000 in likely Medicare violations and duplicate charges.",
+      "sentence": "He uploaded a $195,000 itemized hospital bill to AI.",
       "advances_point": true,
       "picturable": true,
       "competitor_could_paste": false,
-      "issue": ""
+      "issue": "Matches F1 exactly."
     },
     {
       "platform": "linkedin",
-      "sentence": "You've held a bill written in codes you can't check.",
+      "sentence": "The AI compared it against Medicare fee schedules and bundling rules.",
       "advances_point": true,
       "picturable": true,
       "competitor_could_paste": false,
-      "issue": ""
+      "issue": "Consistent with F4. This is the 'read the rulebook' step."
     },
     {
       "platform": "linkedin",
-      "sentence": "It can feel like your only choices are to pay or to plead.",
+      "sentence": "Bundling rules say which related services must be billed together as one charge.",
       "advances_point": true,
       "picturable": true,
       "competitor_could_paste": false,
-      "issue": ""
+      "issue": "DEF, listed in definitions. A correct general definition that adds no claim about the case."
     },
     {
       "platform": "linkedin",
-      "sentence": "An ordinary citizen with an ordinary laptop uploaded the $195,000 itemized hospital bill to AI.",
+      "sentence": "The AI flagged $162,000 in likely Medicare violations and duplicate charges.",
       "advances_point": true,
       "picturable": true,
       "competitor_could_paste": false,
-      "issue": ""
+      "issue": "Hedge 'likely' kept (F4)."
     },
     {
       "platform": "linkedin",
-      "sentence": "The AI cross-referenced the charges against CMS Medicare Fee Schedules and bundling rules.",
+      "sentence": "He printed the analysis and sent the hospital a written challenge, without a lawyer.",
       "advances_point": true,
       "picturable": true,
       "competitor_could_paste": false,
-      "issue": "Insider terms (CMS, bundling rules) have no plain explanation (V1)."
+      "issue": "F5. 'hire a lawyer' was verified in the post body."
     },
     {
       "platform": "linkedin",
-      "sentence": "The man printed the AI's analysis and sent the hospital a written challenge.",
+      "sentence": "Two weeks later, the hospital revised the total to about $33,000.",
       "advances_point": true,
       "picturable": true,
       "competitor_could_paste": false,
-      "issue": ""
+      "issue": "F6 with the hedge 'about'. Its because (F5) is in the sentence before. No savings figure is computed."
     },
     {
       "platform": "linkedin",
-      "sentence": "Two weeks later, the $195,000 bill dropped to approximately $33,000.",
+      "sentence": "You can run the same kind of check on a bill of your own.",
       "advances_point": true,
       "picturable": true,
       "competitor_could_paste": false,
-      "issue": ""
+      "issue": "Points back to the concrete check described above. Makes no outcome promise."
     },
     {
       "platform": "linkedin",
-      "sentence": "This is one case, and nobody can promise your bill the same result.",
+      "sentence": "Verify every flag yourself before anything goes back to the hospital.",
       "advances_point": true,
       "picturable": true,
       "competitor_could_paste": false,
-      "issue": ""
+      "issue": "Honest: matches the post's own verify-before-sending caution."
     },
     {
       "platform": "linkedin",
-      "sentence": "You can put AI to work the same way.",
-      "advances_point": false,
+      "sentence": "Read the full post: https://disruptionnow.com/blog/your-hospital-bill-is-wrong-ai-can-prove-it",
+      "advances_point": true,
+      "picturable": true,
+      "competitor_could_paste": false,
+      "issue": "Standard closing line."
+    },
+    {
+      "platform": "instagram",
+      "sentence": "One hospital charged $195,000 for four hours in an emergency room.",
+      "advances_point": true,
+      "picturable": true,
+      "competitor_could_paste": false,
+      "issue": "Strong concrete hook (F2/F1)."
+    },
+    {
+      "platform": "instagram",
+      "sentence": "Those four hours came after a fatal heart attack.",
+      "advances_point": true,
+      "picturable": true,
+      "competitor_could_paste": false,
+      "issue": "Repeats 'four hours' from the sentence before it (V1)."
+    },
+    {
+      "platform": "instagram",
+      "sentence": "The patient died and left a widow.",
+      "advances_point": true,
+      "picturable": true,
+      "competitor_could_paste": false,
+      "issue": "'died' restates 'fatal' (V2)."
+    },
+    {
+      "platform": "instagram",
+      "sentence": "Her brother-in-law had no healthcare billing expertise.",
+      "advances_point": true,
+      "picturable": true,
+      "competitor_could_paste": false,
+      "issue": "F3."
+    },
+    {
+      "platform": "instagram",
+      "sentence": "He took the papers home and uploaded them to Claude.",
+      "advances_point": true,
+      "picturable": true,
+      "competitor_could_paste": false,
+      "issue": "F3. Claude is named accurately."
+    },
+    {
+      "platform": "instagram",
+      "sentence": "He printed Claude's analysis and sent the hospital a written challenge.",
+      "advances_point": true,
       "picturable": false,
-      "competitor_could_paste": true,
-      "issue": "Generic transition that adds nothing the next sentence needs (V3)."
-    },
-    {
-      "platform": "linkedin",
-      "sentence": "Let it do the research and drafting on your bill.",
-      "advances_point": true,
-      "picturable": true,
       "competitor_could_paste": false,
-      "issue": ""
-    },
-    {
-      "platform": "linkedin",
-      "sentence": "Then check every citation yourself before you send anything, because a single false claim weakens an otherwise airtight case.",
-      "advances_point": true,
-      "picturable": true,
-      "competitor_could_paste": false,
-      "issue": ""
-    },
-    {
-      "platform": "linkedin",
-      "sentence": "What's the last bill you paid without asking which rules govern it?",
-      "advances_point": true,
-      "picturable": true,
-      "competitor_could_paste": false,
-      "issue": ""
-    },
-    {
-      "platform": "linkedin",
-      "sentence": "Read the full post: https://disruptionnow.com/blog/your-hospital-bill-is-wrong-ai-can-prove-it/",
-      "advances_point": true,
-      "picturable": true,
-      "competitor_could_paste": false,
-      "issue": ""
+      "issue": "'Claude's analysis' does not say what was found or which rules were checked (V3)."
     },
     {
       "platform": "instagram",
-      "sentence": "AI flagged $162,000 in likely Medicare violations and duplicate charges on one $195,000 hospital bill.",
+      "sentence": "Two weeks later, the hospital revised the total to about $33,000.",
       "advances_point": true,
       "picturable": true,
       "competitor_could_paste": false,
-      "issue": "Drops the F4 basis (checked against Medicare fee schedules and bundling rules); the caption never names the rulebook (V2)."
+      "issue": "F6 with the hedge 'about'."
     },
     {
       "platform": "instagram",
-      "sentence": "You've held a bill written in codes you can't check.",
+      "sentence": "If a bill like that lands in your mailbox, you can ask AI which rules it has to follow.",
       "advances_point": true,
       "picturable": true,
       "competitor_could_paste": false,
-      "issue": ""
+      "issue": "Plain version of the post's 'What rules govern this?' step. Advice, not a factual claim."
     },
     {
       "platform": "instagram",
-      "sentence": "Paying or pleading can feel like the only choices.",
+      "sentence": "Then check every point yourself before you send anything back.",
       "advances_point": true,
       "picturable": true,
       "competitor_could_paste": false,
-      "issue": ""
-    },
-    {
-      "platform": "instagram",
-      "sentence": "One man printed the AI's analysis and sent the hospital a written challenge.",
-      "advances_point": true,
-      "picturable": true,
-      "competitor_could_paste": false,
-      "issue": ""
-    },
-    {
-      "platform": "instagram",
-      "sentence": "Two weeks later, the $195,000 bill dropped to approximately $33,000.",
-      "advances_point": true,
-      "picturable": true,
-      "competitor_could_paste": false,
-      "issue": ""
-    },
-    {
-      "platform": "instagram",
-      "sentence": "Let AI do the research and drafting.",
-      "advances_point": true,
-      "picturable": true,
-      "competitor_could_paste": false,
-      "issue": ""
-    },
-    {
-      "platform": "instagram",
-      "sentence": "Then check every citation yourself before you send anything, because a single false claim weakens an otherwise airtight case.",
-      "advances_point": true,
-      "picturable": true,
-      "competitor_could_paste": false,
-      "issue": ""
+      "issue": "Honest: matches the post's verify-before-sending caution."
     },
     {
       "platform": "instagram",
@@ -234,8 +234,8 @@
       "advances_point": true,
       "picturable": true,
       "competitor_could_paste": false,
-      "issue": ""
+      "issue": "Standard closing line."
     }
   ],
-  "notes": "All 5 source_quotes for the fact ids used (F2, F4, F5, F6, F12) match the post word for word. Lint passed on the LinkedIn text, the caption, and the hashtags, with no hard failures and no soft flags. Both hedges are kept: 'likely' (F4) and 'approximately $33,000' (F5). Neither draft gives a savings figure, implies that DN handled the case, uses a dated or time-bound claim, or exploits the death. Fact density is within limits (LinkedIn 5, Instagram 4). Both platforms use 'you'. The opener matches the declared Investigator type. There are no hard violations, only 3 judgment fixes."
+  "notes": "All 7 source quotes behind the facts used (F1, F2, F3, F4, F5, F6, F8) were verified word-for-word. I also checked supporting phrases the drafts rely on that sit outside those source quotes, and all were found: 'hire a lawyer', 'hospitals, banks, school districts', and F9's 'they only need to make the truth too expensive or time-consuming to uncover.' The linter found no hard failures and no soft flags on either platform or the hashtags. Hedges are kept ('likely', 'about'). No savings figure is computed. DN is not implied to have run the case. The tone stays respectful. Fact density is within limits (LinkedIn 5, Instagram 4). Both platforms use 'you'. LinkedIn passes every check. Verdict is REVISE because there are three judgment violations, all on Instagram, and this is round 0."
 }

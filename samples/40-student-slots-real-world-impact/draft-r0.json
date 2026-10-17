@@ -1,131 +1,112 @@
 {
-  "source_url": "https://disruptionnow.com/blog/40-student-slots-real-world-impact",
+  "source_url": "https://disruptionnow.com/blog/40-student-slots-real-world-impact/",
   "round": 0,
   "linkedin": {
-    "text": "In 2024, a team showed up to our hackathon with nothing but curiosity and a caffeine plan. By dusk, they'd shipped a working prototype and won thousands of dollars.\n\nThat's how our Future of Data Hackathon team describes 2024.\n\nIf you're a student, you want a day like that. You want to build something people will use, with someone who hires watching you work.\n\nSo the next year, we capped the student field at 40, in teams of four.\n\nForty was small enough that every student could get direct mentorship and meaningful access to the executives at the event. It was also large enough to form diverse teams.\n\nThen we lined up two clients. Beginner Track teams were set to build data and AI tools that support cancer research operations at Wood Hudson Cancer Research Laboratory in Newport, KY.\n\nFounded in 1981, the lab maintains over 2 million tissue specimens.\n\nExperienced Track teams were set to work with the YMCA of Greater Cincinnati on AI for member analytics, program scheduling, and outreach.\n\nEach student would build for a client who could use the work, and get direct mentorship while doing it.\n\nWhich track would you have picked?\n\nRead the full post: https://disruptionnow.com/blog/40-student-slots-real-world-impact",
+    "text": "At our 2024 Future of Data Hackathon, a team walked in with nothing but curiosity and a caffeine plan. By dusk they had shipped a working prototype.\n\nIf you're a student, that's the day you want. You build something people will use, and someone who hires is watching.\n\nSo for the 2025 hackathon, we opened 40 student slots. We picked 40 because it was small enough for every student to get direct mentorship and time with the executives. It was also large enough to form diverse, high-functioning teams.\n\nEach team was set to build for a nonprofit. When registration opened, Movers & Makers reported that both nonprofit partners had submitted operational problems for the teams to solve.\n\nThe executives were decision-makers coming to see who builds well under pressure. With only 40 students, your work stood a fair chance of being seen up close.\n\nWhat would you build if you knew a decision-maker was watching?\n\nRead the full post: https://disruptionnow.com/blog/40-student-slots-real-world-impact/",
     "opener_type": "Magician",
     "fact_ids": [
-      "F1",
+      "F8",
+      "F3",
       "F4",
-      "F5",
-      "F6",
-      "F7"
+      "F7",
+      "F10"
     ]
   },
   "instagram": {
-    "caption": "Our hackathon asked students to build AI tools for a cancer lab that holds over 2 million tissue specimens.\n\nThe lab is Wood Hudson Cancer Research Laboratory in Newport, KY.\nBeginner Track teams were set to build data and AI tools that support its research operations.\n\nExperienced Track teams were set to work with the YMCA of Greater Cincinnati on member analytics, program scheduling, and outreach.\n\nWe capped the field at 40 students, in teams of four.\nThat kept it small enough for every student to get direct mentorship and meaningful access to the executives at the event.\n\nIf you're a student, which track would you have picked?\n\nFull post: link in bio.",
+    "caption": "A team walked into our 2024 hackathon with nothing but curiosity and a caffeine plan.\n\nBy dusk they had shipped a working prototype. If you're a student, that's the day you want.\n\nFor our 2025 hackathon, we opened 40 student slots. We kept it at 40 so every student could get direct mentorship and time with the executives.\n\nThose executives were decision-makers coming to see who builds well under pressure. A small field meant your work could be seen up close.\n\nFull post: link in bio.",
     "hashtags": [
-      "#Cincinnati",
+      "#FutureOfData",
       "#Hackathon",
-      "#NewportKY",
+      "#Cincinnati",
       "#MidwestCon",
-      "#FutureOfData"
+      "#StudentBuilders"
     ],
     "fact_ids": [
+      "F8",
+      "F3",
       "F4",
-      "F5",
-      "F6",
-      "F7"
+      "F10"
     ]
   },
   "claims_map": [
     {
       "platform": "linkedin",
-      "snippet": "In 2024, a team showed up to our hackathon with nothing but curiosity and a caffeine plan.",
-      "fact_id": "F1"
+      "snippet": "At our 2024 Future of Data Hackathon, a team walked in with nothing but curiosity and a caffeine plan.",
+      "fact_id": "F8"
     },
     {
       "platform": "linkedin",
-      "snippet": "By dusk, they'd shipped a working prototype and won thousands of dollars.",
-      "fact_id": "F1"
+      "snippet": "By dusk they had shipped a working prototype.",
+      "fact_id": "F8"
     },
     {
       "platform": "linkedin",
-      "snippet": "That's how our Future of Data Hackathon team describes 2024.",
-      "fact_id": "F1"
+      "snippet": "So for the 2025 hackathon, we opened 40 student slots.",
+      "fact_id": "F3"
     },
     {
       "platform": "linkedin",
-      "snippet": "So the next year, we capped the student field at 40, in teams of four.",
-      "fact_id": "F5"
-    },
-    {
-      "platform": "linkedin",
-      "snippet": "Forty was small enough that every student could get direct mentorship and meaningful access to the executives at the event.",
+      "snippet": "We picked 40 because it was small enough for every student to get direct mentorship and time with the executives.",
       "fact_id": "F4"
     },
     {
       "platform": "linkedin",
-      "snippet": "It was also large enough to form diverse teams.",
+      "snippet": "It was also large enough to form diverse, high-functioning teams.",
       "fact_id": "F4"
     },
     {
       "platform": "linkedin",
-      "snippet": "Then we lined up two clients.",
-      "fact_id": "F6"
-    },
-    {
-      "platform": "linkedin",
-      "snippet": "Then we lined up two clients.",
+      "snippet": "Each team was set to build for a nonprofit.",
       "fact_id": "F7"
     },
     {
       "platform": "linkedin",
-      "snippet": "Beginner Track teams were set to build data and AI tools that support cancer research operations at Wood Hudson Cancer Research Laboratory in Newport, KY.",
-      "fact_id": "F6"
-    },
-    {
-      "platform": "linkedin",
-      "snippet": "Founded in 1981, the lab maintains over 2 million tissue specimens.",
-      "fact_id": "F6"
-    },
-    {
-      "platform": "linkedin",
-      "snippet": "Experienced Track teams were set to work with the YMCA of Greater Cincinnati on AI for member analytics, program scheduling, and outreach.",
+      "snippet": "When registration opened, Movers & Makers reported that both nonprofit partners had submitted operational problems for the teams to solve.",
       "fact_id": "F7"
     },
     {
       "platform": "linkedin",
-      "snippet": "Each student would build for a client who could use the work, and get direct mentorship while doing it.",
+      "snippet": "The executives were decision-makers coming to see who builds well under pressure.",
+      "fact_id": "F10"
+    },
+    {
+      "platform": "linkedin",
+      "snippet": "With only 40 students, your work stood a fair chance of being seen up close.",
       "fact_id": "F4"
     },
     {
-      "platform": "linkedin",
-      "snippet": "Each student would build for a client who could use the work, and get direct mentorship while doing it.",
-      "fact_id": "F6"
+      "platform": "instagram",
+      "snippet": "A team walked into our 2024 hackathon with nothing but curiosity and a caffeine plan.",
+      "fact_id": "F8"
     },
     {
       "platform": "instagram",
-      "snippet": "Our hackathon asked students to build AI tools for a cancer lab that holds over 2 million tissue specimens.",
-      "fact_id": "F6"
+      "snippet": "By dusk they had shipped a working prototype.",
+      "fact_id": "F8"
     },
     {
       "platform": "instagram",
-      "snippet": "The lab is Wood Hudson Cancer Research Laboratory in Newport, KY.",
-      "fact_id": "F6"
+      "snippet": "For our 2025 hackathon, we opened 40 student slots.",
+      "fact_id": "F3"
     },
     {
       "platform": "instagram",
-      "snippet": "Beginner Track teams were set to build data and AI tools that support its research operations.",
-      "fact_id": "F6"
+      "snippet": "We kept it at 40 so every student could get direct mentorship and time with the executives.",
+      "fact_id": "F4"
     },
     {
       "platform": "instagram",
-      "snippet": "Experienced Track teams were set to work with the YMCA of Greater Cincinnati on member analytics, program scheduling, and outreach.",
-      "fact_id": "F7"
+      "snippet": "Those executives were decision-makers coming to see who builds well under pressure.",
+      "fact_id": "F10"
     },
     {
       "platform": "instagram",
-      "snippet": "We capped the field at 40 students, in teams of four.",
-      "fact_id": "F5"
-    },
-    {
-      "platform": "instagram",
-      "snippet": "That kept it small enough for every student to get direct mentorship and meaningful access to the executives at the event.",
+      "snippet": "A small field meant your work could be seen up close.",
       "fact_id": "F4"
     }
   ],
-  "visual_note": "Use a real photograph of students building at laptops in teams, or of the 1819 Innovation Hub, instead of an AI-generated image. If a logo is used, the white lockup goes on dark backgrounds and the dark lockup on light ones, the purple 'Now' stays unchanged, and no effects are added.",
+  "definitions": [],
+  "visual_note": "Use a real photo of students building at the 1819 Innovation Hub or of the hackathon itself, not an AI-generated image. If a logo is used: white lockup on dark backgrounds, dark lockup on light, purple 'Now' unchanged, no effects.",
   "self_lint": {
     "linkedin_passed": true,
     "instagram_passed": true,
@@ -134,7 +115,7 @@
         "platform": "linkedin",
         "rule": "filler_intensifiers",
         "match": "real",
-        "reason": "The match sits inside the source URL slug (40-student-slots-real-world-impact) on the required 'Read the full post' line. It can't be changed and isn't copy."
+        "reason": "Appears only inside the required source URL slug (40-student-slots-real-world-impact), which cannot be changed."
       }
     ]
   },

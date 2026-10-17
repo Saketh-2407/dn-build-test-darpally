@@ -1,26 +1,26 @@
 {
   "source": {
-    "url": "https://disruptionnow.com/blog/you-don-t-have-a-model-problem",
+    "url": "https://disruptionnow.com/blog/you-don-t-have-a-model-problem/",
     "title": "You Don’t Have a Model Problem — You Have a Workflow Problem"
   },
-  "core_point": "Enterprise AI rarely fails because the model is weak; it fails because nobody named the job, redesigned the workflow, owned the human-machine handoff, or defined a win, and in July 2026 the biggest AI vendors put billions behind that same idea by paying for people and process instead of better models.",
-  "reader_feeling": "Leaders who paid for AI tools and ran pilots are seeing a good demo and nothing on the bottom line. They suspect the tool is the problem and feel stuck after spending.",
-  "what_we_do": "Treat it as a people-and-process problem: name the specific job, fit the AI into the workflow people already run, put one human owner on every handoff, and pick and baseline the metric before switching the tool on. Outside help is fine as a jumpstart, but build those skills in-house so you aren't renting a dependency.",
-  "what_they_get": "Pilots that show a measurable result, ownership that stays inside your own walls after any contract ends, and a game that a ten-person shop in Cincinnati can win as well as a Fortune 500, because winning depends on clarity and ownership, not on who can buy the biggest model.",
+  "core_point": "Most business AI projects stall because nobody did the human work around the tool, not because the model is weak, and the biggest AI vendors are now paying billions to put people inside customer companies to do that work.",
+  "reader_feeling": "Leaders paid for AI, ran pilots, got applause in the demo, and still see nothing on the bottom line. They suspect they bought the wrong model.",
+  "what_we_do": "Do the four human jobs the model cannot do: name the job, fit the workflow, own the handoff, and prove the number. Set the metric before you start, put one person's name on every AI task, and build that skill inside your own team instead of renting it forever.",
+  "what_they_get": "AI that shows up in the numbers, ownership that stays inside your own walls when an outside contract ends, and a game any team can win. The post says this is open to a ten-person shop in Cincinnati as much as to a Fortune 500, not only to whoever buys the biggest model.",
   "facts": [
     {
       "id": "F1",
       "kind": "number",
-      "fact": "On July 2, 2026, Microsoft launched a new operating business called Frontier, backed by $2.5 billion and roughly 6,000 engineers whose job is to sit inside customers' companies and make the AI those customers already paid for actually work.",
+      "fact": "On July 2 (2026), Microsoft launched a new operating business called Frontier, backed by $2.5 billion and roughly 6,000 engineers whose job is to sit inside customers' companies and make the AI those customers already paid for actually work.",
       "source_quote": "On July 2, Microsoft launched a new operating business called Frontier, backed by $2.5 billion and roughly 6,000 engineers whose job is to sit inside customers’ companies and make the AI those customers already paid for actually work, as The Next Web reported.",
       "attribution": "The Next Web, per the post",
-      "because": null,
+      "because": "F4",
       "priority": "core"
     },
     {
       "id": "F2",
       "kind": "number",
-      "fact": "Two days before Microsoft's July 2, 2026 launch, Amazon committed $1 billion to the same idea of putting deployment help inside customers.",
+      "fact": "Two days before Microsoft's July 2 launch (so June 30, 2026, a date the post does not state outright), Amazon committed $1 billion to the same idea.",
       "source_quote": "Two days earlier, Amazon committed $1 billion to the same idea.",
       "attribution": "The Next Web, per the post",
       "because": null,
@@ -29,7 +29,7 @@
     {
       "id": "F3",
       "kind": "claim",
-      "fact": "OpenAI and Anthropic stood up their own versions in May 2026 (the post says 'in May'; it was published July 11, 2026). The industry calls this forward-deployed engineering.",
+      "fact": "OpenAI and Anthropic set up their own versions of this in May (May 2026). The post says the industry calls this forward-deployed engineering.",
       "source_quote": "OpenAI and Anthropic stood up their own versions in May.",
       "attribution": "The Next Web, per the post",
       "because": null,
@@ -38,7 +38,7 @@
     {
       "id": "F4",
       "kind": "reason",
-      "fact": "The companies that sell the models are now paying to put humans next to the customer, because selling the model alone did not move the numbers.",
+      "fact": "The companies that sell the models now pay to place people next to the customer, because selling the model alone did not move the numbers.",
       "source_quote": "The companies that sell the models are now paying to place humans next to the customer, because selling the model alone did not move the numbers.",
       "attribution": null,
       "because": null,
@@ -47,35 +47,35 @@
     {
       "id": "F5",
       "kind": "number",
-      "fact": "MIT's NANDA researchers found that 95% of enterprise generative-AI pilots produce no measurable profit-and-loss impact, based on more than 300 deployments, 52 interviews, and 153 leadership surveys. The post adds that only 5% capture real value.",
+      "fact": "MIT's NANDA researchers found that 95% of enterprise generative-AI pilots produce no measurable profit-and-loss impact. The finding draws on more than 300 deployments, 52 interviews, and 153 leadership surveys. The post dates it 2025.",
       "source_quote": "MIT’s NANDA researchers found that 95% of enterprise generative-AI pilots produce no measurable profit-and-loss impact, drawn from more than 300 deployments, 52 interviews, and 153 leadership surveys.",
-      "attribution": "MIT NANDA researchers (2025), per the post, citing Virtualization Review coverage",
+      "attribution": "MIT NANDA researchers (2025), per the post; the post cites Virtualization Review's coverage",
       "because": null,
       "priority": "core"
     },
     {
       "id": "F6",
       "kind": "claim",
-      "fact": "When a pilot dies, it usually dies in one of four places, and none of them is the model: name the job, fit the workflow, own the handoff, prove the number. All four are things a person decides.",
-      "source_quote": "When a pilot dies, it usually dies in one of four places.",
+      "fact": "Enterprise AI fails because nobody named the job, redesigned the workflow, owned the human-machine handoff, or defined what a win looked like before switching the tool on. These are the post's four failure points: name the job, fit the workflow, own the handoff, prove the number.",
+      "source_quote": "It fails because nobody named the job, redesigned the workflow, owned the human-machine handoff, or defined what a win looked like before switching the tool on.",
       "attribution": null,
       "because": null,
       "priority": "core"
     },
     {
       "id": "F7",
-      "kind": "reason",
-      "fact": "If your people never learn to name the job, fit the workflow, own the handoff, and prove the number, you have bought a dependency that walks out the door when the contract ends. The post says outside engineers are fine as a jumpstart, but renting the capability forever is the trap.",
-      "source_quote": "If your people never learn to name the job, fit the workflow, own the handoff, and prove the number, you have bought a dependency that walks out the door when the contract ends.",
+      "kind": "example",
+      "fact": "Fit the workflow: a model that lives in a separate tab is a model nobody uses. The post says the win comes when the tool sits inside a process people already run, and names the intake form, the ticket queue, and the Monday report as examples.",
+      "source_quote": "A model that lives in a separate tab is a model nobody uses.",
       "attribution": null,
-      "because": "F6",
+      "because": null,
       "priority": "supporting"
     },
     {
       "id": "F8",
-      "kind": "example",
-      "fact": "A model that lives in a separate tab is a model nobody uses. It pays off when it sits inside a process people already run, like the intake form, the ticket queue, or the Monday report.",
-      "source_quote": "A model that lives in a separate tab is a model nobody uses.",
+      "kind": "reason",
+      "fact": "Own the handoff: every AI task has a moment where the machine hands work back to a person, or the reverse. When nobody owns that seam, work falls through the crack and trust collapses. The post adds that naming an owner costs nothing.",
+      "source_quote": "When nobody owns that seam, work falls through the crack and trust collapses.",
       "attribution": null,
       "because": null,
       "priority": "supporting"
@@ -83,26 +83,26 @@
     {
       "id": "F9",
       "kind": "reason",
-      "fact": "Every AI task has a moment where the machine hands work back to a human, or the reverse. When nobody owns that seam, work falls through the crack and trust collapses. The post says naming an owner costs nothing.",
-      "source_quote": "When nobody owns that seam, work falls through the crack and trust collapses.",
-      "attribution": null,
-      "because": null,
-      "priority": "supporting"
-    },
-    {
-      "id": "F10",
-      "kind": "reason",
-      "fact": "The post argues the 95% failure is really a measurement failure: most teams never defined what a win looked like, so they cannot tell whether they got one. Its fix is to pick the metric before you start and baseline it.",
+      "fact": "Prove the number: most teams never defined what a win looked like, so they cannot tell whether they got one. The post calls the 95% figure (F5) really a measurement failure and says to pick the metric and baseline it before starting.",
       "source_quote": "Most teams never defined what a win looked like, so they cannot tell whether they got one.",
       "attribution": null,
       "because": null,
       "priority": "supporting"
     },
     {
-      "id": "F11",
+      "id": "F10",
       "kind": "claim",
-      "fact": "Rob's take: for two years the industry said intelligence was the scarce thing. Intelligence is becoming abundant and cheap. What stays scarce is the human work of pointing it at the right problem and rebuilding how we work around it.",
-      "source_quote": "What stays scarce is the human work of pointing it at the right problem and rebuilding how we work around it.",
+      "fact": "The author estimates that the model license is roughly 10% of the work. In the same passage he says the other 90% is clarity, workflow, and ownership.",
+      "source_quote": "The license is roughly 10% of the work.",
+      "attribution": "Author's own estimate (Rob Richardson), not a sourced statistic",
+      "because": null,
+      "priority": "supporting"
+    },
+    {
+      "id": "F11",
+      "kind": "reason",
+      "fact": "The trap is renting the capability forever. If your people never learn to name the job, fit the workflow, own the handoff, and prove the number, you have bought a dependency that walks out the door when the contract ends. The post still calls outside help a fair offer and a useful jumpstart for a stalled rollout.",
+      "source_quote": "If your people never learn to name the job, fit the workflow, own the handoff, and prove the number, you have bought a dependency that walks out the door when the contract ends.",
       "attribution": null,
       "because": null,
       "priority": "core"
@@ -110,10 +110,10 @@
     {
       "id": "F12",
       "kind": "claim",
-      "fact": "The game is clarity, ownership, and the discipline to redesign your own workflows, and those are available to a ten-person shop in Cincinnati as much as to a Fortune 500. The post calls this good news: if winning meant buying the biggest model, whoever had the most money would win.",
+      "fact": "The author is optimistic. The winning moves of clarity, ownership, and redesigning your own workflows are open to a ten-person shop in Cincinnati as much as to a Fortune 500. His reason: if buying the biggest model were the winning move, whoever had the most money would win.",
       "source_quote": "those are available to a ten-person shop in Cincinnati as much as to a Fortune 500.",
       "attribution": null,
-      "because": "F11",
+      "because": null,
       "priority": "supporting"
     }
   ],
@@ -123,36 +123,44 @@
   },
   "opener": {
     "type": "Investigator",
-    "why": "The post's own move is to read what the vendors did instead of what they said. It looks at where billions in Microsoft, Amazon, OpenAI and Anthropic money went (people placed inside customers, not better models) and shows what is really going on: the bottleneck is the work around the model."
+    "why": "The post frames itself as reading what the vendors did instead of what they said. Billions spent on people instead of better models are evidence of what is really going on: the bottleneck was never the model."
   },
-  "linkedin_angle": "When the companies that sell AI models spend billions putting engineers inside customers' businesses, that tells leaders their stalled pilots are a people-and-process problem they can fix and own: name the job, fit the workflow, own the handoff, prove the number.",
-  "instagram_hook_idea": "Lead with Microsoft putting $2.5 billion and roughly 6,000 engineers inside customers' companies to make AI they already paid for actually work.",
-  "earned_phrases": [],
-  "cautions": [
-    "The title contains an em dash and the 'You Don't Have X, You Have Y' pattern. Never quote it or copy its shape. Many body sentences also contain em dashes, so rewrite any line taken from them rather than quoting it.",
-    "Do not copy the post's 'it's not X, it's Y' contrasts: 'The bottleneck was never the model. It was everything around it.', 'Their money went to people and process, not to a better model.', 'All four are things a person decides, not things a model computes.', 'Not a small impact for the rest. Zero.', 'That is not the game. The game is...', 'being sold as innovation. I read it as an honest correction.' Make the point directly.",
-    "Estimates: Microsoft's engineer count is 'roughly 6,000'. Keep 'roughly'. The post's table also lists OpenAI ~$10B and Anthropic ~$1.5B. Those are approximate and are not in the facts, so do not use them.",
-    "Third-party attribution: the 95% figure is MIT NANDA's (2025), via Virtualization Review. It covers enterprise generative-AI PILOTS with no measurable P&L impact. Don't widen it to 'all AI projects fail' or 'AI doesn't work', and don't present the post's 'measurement failure' reading (F10) as MIT's finding. The Frontier, Amazon, OpenAI and Anthropic moves are reported by The Next Web, per the post.",
-    "The four steps (name the job, fit the workflow, own the handoff, prove the number) are this post's own sequence, not established DN canon. Use them as the post states them in F6 and F7, without presenting them as a long-standing DN framework.",
-    "Timing: the vendor moves date from May through July 2026 and the post was published 2026-07-11. Today is 2026-10-16, so the news is about three months old. Don't write 'just', 'this week' or 'this month'. Give the dates (for example 'in July 2026'). Describe only what the post says was launched, committed or planned, in past tense. Never state results, outcomes or progress of Frontier or the other units, which the post could not know. Use no call to action that has expired.",
-    "The author bio (chairs the Ascend 2030 AI Task Force; teams have delivered 330+ AI projects; invitation to MidwestCon or a working session) is not in the article body and is not a verified fact. Do not use those claims in copy.",
-    "Avoid the word 'consultant' (brand rule), even when describing the vendors' outside engineering teams."
+  "linkedin_angle": "The reader should come away seeing that the vendors' billion-dollar deployment teams (F1-F4) prove AI stalls on human work, not model quality. They should also see that their own team can do that work (name the job, fit the workflow, own the handoff, prove the number) instead of renting it.",
+  "instagram_hook_idea": "Lead with the contrast between Microsoft putting $2.5 billion and roughly 6,000 engineers inside customer companies and MIT NANDA's finding that 95% of enterprise generative-AI pilots show no measurable profit-and-loss impact.",
+  "earned_phrases": [
+    "Name the job. / Fit the workflow. / Own the handoff. / Prove the number. (the post's four-part framework, coined in this post)",
+    "Unowned AI is abandoned AI.",
+    "Buy the help, keep the muscle.",
+    "It is a human story wearing a technology costume."
   ],
-  "visual_note": "Use a real photograph of people working together at a desk or whiteboard, mapping a process or handing off work, rather than an AI-generated image (the post itself uses Pexels photos of people). If a logo is used: white lockup on dark backgrounds, dark lockup on light backgrounds, the purple 'Now' left unchanged, and no effects.",
+  "cautions": [
+    "Em dashes: the title ('You Don’t Have a Model Problem — You Have a Workflow Problem') contains an em dash. Never quote it, and rewrite it if you refer to it. Several body lines also contain em dashes, for example 'telling business leaders the same thing — without ever saying it out loud' and 'the process people already run — the intake form, the ticket queue, the Monday report'. Rewrite them; do not quote them.",
+    "Do not copy the post's 'not X, it's Y' style lines: 'Their money went to people and process, not to a better model.'; 'The bottleneck was never the model. It was everything around it.'; 'All four are things a person decides, not things a model computes.'; 'Not a small impact for the rest. Zero.'; 'That is not the game. The game is...'. State the point directly.",
+    "Keep these hedges and estimates: 'roughly 6,000 engineers' (F1); 'more than 300 deployments' (F5). The license figure, 'roughly 10% of the work' (F10), is the author's own estimate and not a researched statistic, so present it as his estimate.",
+    "Attribution is required. The 95% figure belongs to MIT's NANDA researchers (2025). The Frontier, Amazon, OpenAI and Anthropic figures come from The Next Web's reporting. Do not present them as Disruption Now findings.",
+    "The 95% stat means 'no measurable profit-and-loss impact', not that the technology broke. Do not turn it into '95% of AI fails' or 'AI doesn't work'.",
+    "Tone toward the vendors: the post calls Microsoft's offer 'a fair offer' and outside engineers 'a useful jumpstart'. Do not frame the vendors as villains. The warning is only about renting the capability forever.",
+    "'Forward-deployed engineering' is industry jargon. If you use it, explain it in plain words: engineers who sit inside the customer's company.",
+    "Time-sensitive: the post was published 2026-07-11, and today is 2026-10-16. Lines like 'just spent', 'in a single week this month' and 'two days earlier' are stale. Give the moves their dates (July 2, 2026 for Frontier; Amazon two days earlier; OpenAI and Anthropic in May 2026) and use past tense. Describe only what the post says was launched or committed. Never say whether Frontier or the other efforts have worked since, and add no outcomes the post could not know.",
+    "The byline bio's credentials (Ascend 2030 AI Task Force, 330+ AI projects) and its call to action ('join us at MidwestCon or book a working session') are not in the post body and are not verified facts in this brief. Do not use them. The post gives no MidwestCon date, so never invent one.",
+    "The post's table also lists OpenAI's joint venture at ~$10B and Anthropic's effort at ~$1.5B. These are deliberately not in the fact list. Do not add them or any other figure not listed above.",
+    "Do not combine the vendor dollar figures into a total. The post never adds them up."
+  ],
+  "visual_note": "Use a real photograph of people at work redesigning a process, such as a team around a whiteboard mapping a workflow or two people at one screen handing off a task, instead of an AI-generated image. If a logo is used: white lockup on dark backgrounds, dark lockup on light backgrounds, purple 'Now' unchanged, no effects.",
   "timeframe": {
     "time_bound": true,
     "key_dates": [
-      "2026-05 (OpenAI and Anthropic stood up their forward-deployed units; the post says 'in May')",
-      "2026-06-30 (Amazon's $1 billion commitment; the post says 'two days earlier' than July 2)",
-      "2026-07-02 (Microsoft launched Frontier)",
+      "2026-05 (OpenAI and Anthropic deployment efforts)",
+      "2026-06-30 (Amazon $1B, derived from 'two days earlier' than July 2)",
+      "2026-07-02 (Microsoft Frontier launch)",
       "2026-07-11 (post published)"
     ],
     "status": "past",
-    "handling": "The news hook is past, though the argument about workflows is evergreen. Describe only what the post says was launched, committed or planned, in past tense. Never state attendance, results or outcomes the post could not know when it was written (for example how Frontier performed). Use no call to action that has expired. Date the vendor moves explicitly (May to July 2026) instead of 'this month' or 'just'."
+    "handling": "The news peg (May to July 2026) is past, but the argument itself (name the job, fit the workflow, own the handoff, prove the number) is evergreen. Describe only what the post says was launched or committed, in past tense, with explicit dates instead of 'this month' or 'just'. Never state attendance, results, or outcomes the post could not know when it was written. Use no call to action that has expired."
   },
   "first_party": {
     "is_dn_work": false,
-    "what": "The post is Rob Richardson's commentary on vendor forward-deployed engineering units (Microsoft Frontier, Amazon, OpenAI, Anthropic) and the MIT NANDA finding. Neither the body nor the byline says Disruption Now, MidwestCon or Rob runs, hosts or convenes those things."
+    "what": "The post is commentary on Microsoft Frontier, Amazon, OpenAI and Anthropic's deployment efforts and MIT NANDA's research. It does not describe anything that Disruption Now, MidwestCon, or Rob Richardson runs, hosts, or convenes. The MidwestCon mention appears only in the byline bio's call to action."
   },
   "quote_check": {
     "checked": 12,

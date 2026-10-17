@@ -1,72 +1,77 @@
 # Your Hospital Bill Is Wrong. AI Can Prove It.
 
-Source: https://disruptionnow.com/blog/your-hospital-bill-is-wrong-ai-can-prove-it/  
+Source: https://disruptionnow.com/blog/your-hospital-bill-is-wrong-ai-can-prove-it  
 Date: 2026-10-16
 
 **Verdict:** PASS
 
 ## LinkedIn post
 
-What was inside a $195,000 hospital bill? AI flagged $162,000 in likely Medicare violations and duplicate charges.
+Hospitals, banks, school districts and government agencies all use complexity as a defense.
 
-You've held a bill written in codes you can't check. It can feel like your only choices are to pay or to plead.
+They count on you running out of time and energy before you can check what they sent you. One ordinary citizen with an ordinary laptop checked anyway.
 
-An ordinary citizen with an ordinary laptop uploaded the $195,000 itemized hospital bill to AI. The AI cross-referenced the charges against Medicare's official fee schedules and bundling rules. Bundling rules say which services must be billed as one charge.
+He uploaded a $195,000 itemized hospital bill to AI. The AI compared it against Medicare fee schedules and bundling rules. Bundling rules say which related services must be billed together as one charge.
 
-The man printed the AI's analysis and sent the hospital a written challenge. Two weeks later, the $195,000 bill dropped to approximately $33,000. This is one case, and nobody can promise your bill the same result.
+The AI flagged $162,000 in likely Medicare violations and duplicate charges. He printed the analysis and sent the hospital a written challenge, without a lawyer. Two weeks later, the hospital revised the total to about $33,000.
 
-Let AI do the research and drafting on your bill. Then check every citation yourself before you send anything, because a single false claim weakens an otherwise airtight case.
+You can run the same kind of check on a bill of your own. Verify every flag yourself before anything goes back to the hospital.
 
-What's the last bill you paid without asking which rules govern it?
-
-Read the full post: https://disruptionnow.com/blog/your-hospital-bill-is-wrong-ai-can-prove-it/
+Read the full post: https://disruptionnow.com/blog/your-hospital-bill-is-wrong-ai-can-prove-it
 
 ## Instagram caption
 
-AI flagged $162,000 in likely Medicare violations and duplicate charges on one $195,000 hospital bill.
+One hospital charged $195,000 for four hours in an emergency room.
 
-You've held a bill written in codes you can't check. Paying or pleading can feel like the only choices.
+The visit followed a fatal heart attack. The patient left a widow.
 
-The AI checked those charges against Medicare's fee schedules and bundling rules. Bundling rules say which services must be billed as one charge.
+Her brother-in-law had no healthcare billing expertise. He took the papers home and uploaded them to Claude.
 
-One man printed the AI's analysis and sent the hospital a written challenge. Two weeks later, the $195,000 bill dropped to approximately $33,000.
+Claude checked the bill against Medicare fee schedules and flagged $162,000 in likely violations and duplicate charges. He printed Claude's analysis and sent the hospital a written challenge. Two weeks later, the hospital revised the total to about $33,000.
 
-Let AI do the research and drafting. Then check every citation yourself before you send anything, because a single false claim weakens an otherwise airtight case.
+If a bill like that lands in your mailbox, you can ask AI which rules it has to follow. Then check every point yourself before you send anything back.
 
 Full post: link in bio.
 
-#MedicalBills #HospitalBill #Medicare #MedicalDebt
+#MedicalBills #HospitalBills #Medicare #PatientAdvocacy
 
 ## Visual note
 
-Use a real photograph of the literal activity, such as hands holding an itemized hospital bill next to a laptop at a kitchen table, rather than an AI-generated image. Do not stage it as the actual family. If the logo is used, put the white lockup on dark backgrounds and the dark lockup on light ones, keep the purple 'Now' unchanged, and add no effects.
+Use a real photograph of the literal activity, such as a person at a kitchen table going through a printed itemized bill beside a laptop, or of Rob training people, rather than an AI-generated image. Do not present a stock photo as the actual family. If a logo is used: white lockup on dark backgrounds, dark lockup on light backgrounds, the purple 'Now' unchanged, no effects.
 
 ## Facts used
 
-1. The widow's brother-in-law, described as a quiet analytical type with no healthcare billing expertise, took the hospital papers home and uploaded them to Claude.
-   > "The widow's brother-in-law, a quiet analytical type with no healthcare billing expertise, took the papers home and uploaded them to Claude."
-2. An ordinary citizen with an ordinary laptop uploaded a $195,000 itemized hospital bill to AI.
+F1. An ordinary citizen with an ordinary laptop uploaded a $195,000 itemized hospital bill to AI.
    > "An ordinary citizen with an ordinary laptop uploaded a $195,000 itemized hospital bill to AI."
-3. The charge covered four hours in an emergency room after a fatal heart attack.
+F2. The $195,000 charge was for four hours in an emergency room after a fatal heart attack. The patient died and left a widow.
    > "The charge was for four hours in an emergency room after a fatal heart attack."
-4. The AI flagged $162,000 in likely Medicare violations and duplicate charges, cross-referenced against CMS Medicare Fee Schedules and bundling rules.
+F3. The widow's brother-in-law, described as a quiet analytical type with no healthcare billing expertise, took the papers home and uploaded them to Claude.
+   > "The widow's brother-in-law, a quiet analytical type with no healthcare billing expertise, took the papers home and uploaded them to Claude."
+F4. The AI flagged $162,000 in likely Medicare violations and duplicate charges by checking the bill against CMS Medicare Fee Schedules and bundling rules. The post says 'likely'. These are flagged, not confirmed, violations.
    > "It flagged $162,000 in likely Medicare violations and duplicate charges (cross-referenced against CMS Medicare Fee Schedules and bundling rules)."
-5. Two weeks later, the $195,000 bill dropped to approximately $33,000.
-   > "Two weeks later, the $195,000 bill dropped to approximately $33,000"
-6. He printed the AI's analysis and submitted a written challenge to the hospital.
+F5. He printed the AI's analysis and sent the hospital a written challenge. The post also says he did not threaten, beg, or hire a lawyer.
    > "He printed the AI's analysis and submitted a written challenge to the hospital."
-7. The post places the case inside a broader pattern documented by KFF Health News in its Diagnosis: Debt series: 41% of U.S. adults carry medical debt.
-   > "the broader pattern KFF Health News documented in Diagnosis: Debt, where 41% of U.S. adults carry medical debt."
-8. Across hospitals, banks, school districts, and government agencies, complexity is a defense mechanism.
-   > "Across hospitals, banks, school districts, and government agencies, complexity is a defense mechanism."
-9. Rob Richardson on the brother-in-law: he did not ask what he should do, he asked what rules govern this, and that single question changed everything.
+F6. Two weeks later the hospital revised the total to $33,000. Elsewhere the post calls it 'approximately $33,000' and '~$33,000', so keep the hedge 'about'.
+   > "Two weeks later, the hospital revised the total to $33,000."
+F8. Across hospitals, banks, school districts and government agencies, complexity works as a defense. Institutions rely on exhaustion more than force.
+   > "Institutions rely on exhaustion more than force."
+
+## Other verified facts in the brief (not used)
+
+F7. The post calls this case one specific example of the broader pattern KFF Health News documented in its Diagnosis: Debt series, which found that 41% of U.S. adults carry medical debt.
+   > "one specific case inside the broader pattern KFF Health News documented in Diagnosis: Debt, where 41% of U.S. adults carry medical debt."
+F9. Institutions don't have to lie outright. They only have to make the truth too expensive or too time-consuming to uncover.
+   > "they only need to make the truth too expensive or time-consuming to uncover."
+F10. Rob Richardson says the turning point was the question the brother-in-law asked: he didn't ask 'What should I do?', he asked 'What rules govern this?', and that one question changed everything.
    > "He didn't ask 'What should I do?' He asked 'What rules govern this?' That single question changed everything."
-10. Principle 3 (adopt the institutional register): instead of writing 'This seems unfair,' the letter reads 'This billing structure appears inconsistent with CMS bundling regulations.'
-   > "Instead of 'This seems unfair,' your letter reads 'This billing structure appears inconsistent with CMS bundling regulations.'"
-11. The investigator's mindset has three parts: investigate before you negotiate, control the frame, treat every response as data.
+F11. The post's investigator's mindset has three parts: investigate before you negotiate, control the frame, and treat every response as data. The post's reason for the first part is that emotional appeals are easy to dismiss and documentation is not.
    > "The investigator's mindset: investigate before you negotiate, control the frame, treat every response as data."
-12. Principle 7: let AI do the research and drafting, but verify citations manually before sending anything, because a single false claim weakens an otherwise airtight case.
-   > "But verify citations manually before sending anything. A single false claim weakens an otherwise airtight case."
+F12. Principle 3, adopt the institutional register: AI can help you write like a professional. Instead of 'This seems unfair,' the letter says 'This billing structure appears inconsistent with CMS bundling regulations.' The post adds that language signals competence and institutions respond to it.
+   > "Instead of 'This seems unfair,' your letter reads 'This billing structure appears inconsistent with CMS bundling regulations.'"
+
+## Definitions added (not from the source post; a human should confirm)
+
+- **bundling rules:** Bundling rules say which related services must be billed together as one charge.
 
 ## Review summary
 

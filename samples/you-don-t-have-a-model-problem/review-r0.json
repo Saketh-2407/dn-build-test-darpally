@@ -5,91 +5,101 @@
     "linkedin": {
       "passed": true,
       "platform": "linkedin",
-      "char_count": 1165,
+      "char_count": 1244,
       "hard_failures": [],
       "soft_flags": []
     },
     "instagram": {
       "passed": true,
       "platform": "instagram",
-      "char_count": 692,
+      "char_count": 739,
       "hard_failures": [],
       "soft_flags": []
     },
     "hashtags": {
       "passed": true,
       "platform": "instagram",
-      "char_count": 51,
+      "char_count": 56,
       "hard_failures": [],
       "soft_flags": []
     }
   },
   "fact_check": {
-    "quotes_verified": 6,
+    "quotes_verified": 5,
     "quotes_missing": [],
-    "unsourced_claims": []
+    "unsourced_claims": [
+      "linkedin + instagram: 'Those engineers sit inside customers' companies and make the AI those customers already paid for work' states as a present-tense outcome what F1's source gives only as the engineers' job ('whose job is to sit ... and make the AI ... actually work'). The hedge was dropped."
+    ]
   },
   "violations": [
     {
       "id": "V1",
-      "severity": "judgment",
+      "severity": "hard",
       "platform": "linkedin",
-      "line": "Their job is to sit inside customers' companies and make the AI those customers already paid for work.",
-      "rule": "Clearer than the source",
-      "category": "the-gate",
-      "fix": "Dropping 'actually' from the F1 source quote leaves 'already paid for work', which first reads as 'paid for work'. That makes the line harder to parse than the source. Replace 'make the AI those customers already paid for work' with 'make the AI those customers already bought do its job'. Keep F1."
+      "line": "Those engineers sit inside customers' companies and make the AI those customers already paid for work.",
+      "rule": "Honest: dropped hedge, and an outcome the post could not know (timeframe.status is past)",
+      "category": "voice-principles",
+      "fix": "F1's source says the engineers' JOB is to sit inside customers' companies and make the AI work. It does not say they do it. As written, the line claims Frontier is succeeding, and the brief forbids saying whether Frontier has worked. Restore the hedge and keep it in the past tense: 'Their job was to sit inside customers' companies and make the AI those customers already paid for work.' (F1)"
     },
     {
       "id": "V2",
-      "severity": "judgment",
+      "severity": "hard",
       "platform": "instagram",
-      "line": "Their job is to sit inside customers' companies and make the AI those customers already paid for work, as The Next Web reported.",
-      "rule": "Clearer than the source",
-      "category": "the-gate",
-      "fix": "Same misreading as V1. Replace 'make the AI those customers already paid for work' with 'make the AI those customers already bought do its job'. Keep ', as The Next Web reported.'"
+      "line": "Those engineers sit inside customers' companies and make the AI those customers already paid for work, The Next Web reported.",
+      "rule": "Honest: dropped hedge, and an outcome the post could not know (timeframe.status is past)",
+      "category": "voice-principles",
+      "fix": "Same problem as V1. Change to: 'Their job was to sit inside customers' companies and make the AI those customers already paid for work, The Next Web reported.' (F1)"
     },
     {
       "id": "V3",
       "severity": "judgment",
       "platform": "linkedin",
-      "line": "Teach them, and the skill stays with you after that.",
-      "rule": "Clearer than the source / Concrete",
-      "category": "the-gate",
-      "fix": "'after that' points vaguely back. The F7 source names the moment: 'when the contract ends'. Replace 'after that' with 'after the contract ends'."
+      "line": "The companies selling the models paid for people because selling the model alone did not move the numbers.",
+      "rule": "Generic cliches: 'move the numbers' is a near-variant of 'move the needle'",
+      "category": "anti-slop-catalog",
+      "fix": "Replace 'did not move the numbers' with a concrete phrase that stays inside F4, for example '...because customers who got the model alone did not see it in their numbers.' Make this change together with V5's fix for the same sentence."
     },
     {
       "id": "V4",
       "severity": "judgment",
       "platform": "instagram",
-      "line": "If your AI pilot stalled, you're in the majority.",
-      "rule": "Honest / Clearer than the source",
-      "category": "voice-principles",
-      "fix": "F5 measures pilots with 'no measurable profit-and-loss impact'. It does not measure pilots that stalled. 'stalled' is vaguer than the stat that follows it and does not match it. Replace 'stalled' with 'showed nothing on the bottom line', the wording the LinkedIn draft uses. Keep F5."
+      "line": "The companies selling the models paid for people because selling the model alone did not move the numbers.",
+      "rule": "Generic cliches: 'move the numbers' is a near-variant of 'move the needle'",
+      "category": "anti-slop-catalog",
+      "fix": "Same as V3. Replace 'did not move the numbers' with, for example, 'customers who got the model alone did not see it in their numbers' (F4). Make this change together with V6's fix."
     },
     {
       "id": "V5",
       "severity": "judgment",
-      "platform": "instagram",
-      "line": "Those four take clarity and ownership.",
-      "rule": "Gate Q2: can a real person picture exactly what happens (abstraction nouns)",
+      "platform": "linkedin",
+      "line": "...make the AI those customers already paid for work. The companies selling the models paid for people because...",
+      "rule": "Does this sentence say something the next sentence needs? ('paid for' is repeated in neighboring sentences; it also appears in the opener)",
       "category": "the-gate",
-      "fix": "'clarity and ownership' turns the four concrete steps into abstract nouns, so the line is vaguer than the list right above it. Replace 'clarity and ownership' with 'a named job and a named owner' (from F6: name the job, own the handoff). The next sentence's 'both' still works."
+      "fix": "Keep 'already paid for' in the F1 sentence. In the F4 sentence, change 'paid for people' to 'put money into people'. Combined with V3, the result is: 'The companies selling the models put money into people because customers who got the model alone did not see it in their numbers.' (F4)"
     },
     {
       "id": "V6",
       "severity": "judgment",
       "platform": "instagram",
-      "line": "A ten-person shop in Cincinnati can bring both as well as a Fortune 500 can.",
-      "rule": "Carry the because",
+      "line": "...make the AI those customers already paid for work, The Next Web reported. The companies selling the models paid for people because...",
+      "rule": "Does this sentence say something the next sentence needs? ('paid for' is repeated in neighboring sentences)",
       "category": "the-gate",
-      "fix": "F12's because (F11, plus F12's own reason) is dropped, so the small-shop claim is a bare assertion. After this line, add F12's stated reason as one short sentence: 'If winning meant buying the biggest model, whoever had the most money would win.' Run verify_quotes on the exact source wording before using it. If you would rather use F11's reason, keep the Instagram total at 5 fact ids or fewer."
+      "fix": "Same as V5. Change 'paid for people' to 'put money into people' in the F4 sentence, together with V4's fix."
     }
   ],
   "soft_flags_judged": [],
   "sentence_audit": [
     {
       "platform": "linkedin",
-      "sentence": "On July 2, 2026, Microsoft launched Frontier, a business backed by $2.5 billion and roughly 6,000 engineers, as The Next Web reported.",
+      "sentence": "Look at what the companies selling AI models paid for in 2026, and you'll see where AI projects get stuck.",
+      "advances_point": true,
+      "picturable": true,
+      "competitor_could_paste": false,
+      "issue": "Investigator opener, matching the declared opener type. The 'paid for' it opens with comes back in two of the next three sentences (see V5)."
+    },
+    {
+      "platform": "linkedin",
+      "sentence": "On July 2, 2026, Microsoft launched Frontier, backed by $2.5 billion and roughly 6,000 engineers, The Next Web reported.",
       "advances_point": true,
       "picturable": true,
       "competitor_could_paste": false,
@@ -97,31 +107,23 @@
     },
     {
       "platform": "linkedin",
-      "sentence": "Their job is to sit inside customers' companies and make the AI those customers already paid for work.",
+      "sentence": "Those engineers sit inside customers' companies and make the AI those customers already paid for work.",
       "advances_point": true,
       "picturable": true,
       "competitor_could_paste": false,
-      "issue": "'paid for work' first reads as 'paid for work' (V1)"
+      "issue": "Dropped hedge ('whose job is to'). Claims an outcome. See V1."
     },
     {
       "platform": "linkedin",
-      "sentence": "The companies that sell AI models paid to put people next to the customer because selling the model alone didn't move the numbers.",
+      "sentence": "The companies selling the models paid for people because selling the model alone did not move the numbers.",
       "advances_point": true,
       "picturable": true,
       "competitor_could_paste": false,
-      "issue": ""
+      "issue": "'move the numbers' cliche (V3). 'paid for' repeated (V5)."
     },
     {
       "platform": "linkedin",
-      "sentence": "If your own pilot gave you a good demo and nothing on the bottom line, you're in the majority.",
-      "advances_point": true,
-      "picturable": true,
-      "competitor_could_paste": false,
-      "issue": ""
-    },
-    {
-      "platform": "linkedin",
-      "sentence": "MIT's NANDA researchers found that 95% of enterprise generative-AI pilots produce no measurable profit-and-loss impact, across more than 300 deployments.",
+      "sentence": "MIT's NANDA researchers found in 2025 that 95% of enterprise generative-AI pilots showed no measurable profit-and-loss impact, across more than 300 deployments.",
       "advances_point": true,
       "picturable": true,
       "competitor_could_paste": false,
@@ -129,7 +131,7 @@
     },
     {
       "platform": "linkedin",
-      "sentence": "Rob Richardson's post names four places a pilot usually dies: name the job, fit the workflow, own the handoff, prove the number.",
+      "sentence": "If your pilot got applause in the demo and nothing on the bottom line, look at the work around the tool.",
       "advances_point": true,
       "picturable": true,
       "competitor_could_paste": false,
@@ -137,7 +139,15 @@
     },
     {
       "platform": "linkedin",
-      "sentence": "A person decides all four.",
+      "sentence": "Your team can do four jobs the model can't: name the job, fit the workflow, own the handoff, prove the number.",
+      "advances_point": true,
+      "picturable": true,
+      "competitor_could_paste": false,
+      "issue": "Earned framework, protected."
+    },
+    {
+      "platform": "linkedin",
+      "sentence": "Start by deciding what a win looks like before you switch the tool on.",
       "advances_point": true,
       "picturable": true,
       "competitor_could_paste": false,
@@ -145,7 +155,7 @@
     },
     {
       "platform": "linkedin",
-      "sentence": "We'd check them before you blame the tool.",
+      "sentence": "Outside engineers can jumpstart a stalled rollout.",
       "advances_point": true,
       "picturable": true,
       "competitor_could_paste": false,
@@ -153,7 +163,7 @@
     },
     {
       "platform": "linkedin",
-      "sentence": "Outside engineers are fine as a jumpstart.",
+      "sentence": "If your people never learn the four jobs themselves, you've bought a dependency that walks out the door when the contract ends.",
       "advances_point": true,
       "picturable": true,
       "competitor_could_paste": false,
@@ -161,7 +171,15 @@
     },
     {
       "platform": "linkedin",
-      "sentence": "If your own people never learn those four steps, you've bought a dependency that walks out the door when the contract ends.",
+      "sentence": "Buy the help, keep the muscle.",
+      "advances_point": true,
+      "picturable": true,
+      "competitor_could_paste": false,
+      "issue": "Earned phrase, protected."
+    },
+    {
+      "platform": "linkedin",
+      "sentence": "Who on your team owns the handoff on your AI project today?",
       "advances_point": true,
       "picturable": true,
       "competitor_could_paste": false,
@@ -169,63 +187,39 @@
     },
     {
       "platform": "linkedin",
-      "sentence": "Teach them, and the skill stays with you after that.",
-      "advances_point": true,
-      "picturable": false,
-      "competitor_could_paste": false,
-      "issue": "'after that' is vaguer than the source's 'when the contract ends' (V3)"
-    },
-    {
-      "platform": "linkedin",
-      "sentence": "Which of the four is your pilot missing?",
+      "sentence": "Read the full post: https://disruptionnow.com/blog/you-don-t-have-a-model-problem/",
       "advances_point": true,
       "picturable": true,
       "competitor_could_paste": false,
-      "issue": ""
-    },
-    {
-      "platform": "linkedin",
-      "sentence": "Read the full post: https://disruptionnow.com/blog/you-don-t-have-a-model-problem",
-      "advances_point": true,
-      "picturable": true,
-      "competitor_could_paste": false,
-      "issue": "Link label, closing line"
+      "issue": "Standard closing line."
     },
     {
       "platform": "instagram",
-      "sentence": "In July 2026, Microsoft backed a new business with $2.5 billion and roughly 6,000 engineers.",
+      "sentence": "On July 2, 2026, Microsoft launched Frontier, backed by $2.5 billion and roughly 6,000 engineers.",
       "advances_point": true,
       "picturable": true,
       "competitor_could_paste": false,
-      "issue": ""
+      "issue": "The Next Web attribution comes in the next sentence, which is acceptable."
     },
     {
       "platform": "instagram",
-      "sentence": "Their job is to sit inside customers' companies and make the AI those customers already paid for work, as The Next Web reported.",
+      "sentence": "Those engineers sit inside customers' companies and make the AI those customers already paid for work, The Next Web reported.",
       "advances_point": true,
       "picturable": true,
       "competitor_could_paste": false,
-      "issue": "'paid for work' first reads as 'paid for work' (V2)"
+      "issue": "Dropped hedge. Claims an outcome. See V2."
     },
     {
       "platform": "instagram",
-      "sentence": "If your AI pilot stalled, you're in the majority.",
+      "sentence": "The companies selling the models paid for people because selling the model alone did not move the numbers.",
       "advances_point": true,
       "picturable": true,
       "competitor_could_paste": false,
-      "issue": "'stalled' does not match F5's 'no measurable profit-and-loss impact' (V4)"
+      "issue": "'move the numbers' cliche (V4). 'paid for' repeated (V6)."
     },
     {
       "platform": "instagram",
-      "sentence": "MIT's NANDA researchers found that 95% of enterprise generative-AI pilots produce no measurable profit-and-loss impact.",
-      "advances_point": true,
-      "picturable": true,
-      "competitor_could_paste": false,
-      "issue": ""
-    },
-    {
-      "platform": "instagram",
-      "sentence": "Rob Richardson's post names four places a pilot usually dies: name the job, fit the workflow, own the handoff, prove the number.",
+      "sentence": "MIT's NANDA researchers found in 2025 that 95% of enterprise generative-AI pilots showed no measurable profit-and-loss impact.",
       "advances_point": true,
       "picturable": true,
       "competitor_could_paste": false,
@@ -233,7 +227,7 @@
     },
     {
       "platform": "instagram",
-      "sentence": "A person decides all four.",
+      "sentence": "If your pilot looked good in the demo and changed nothing on the bottom line, look at the work around the tool.",
       "advances_point": true,
       "picturable": true,
       "competitor_could_paste": false,
@@ -241,19 +235,19 @@
     },
     {
       "platform": "instagram",
-      "sentence": "Those four take clarity and ownership.",
-      "advances_point": true,
-      "picturable": false,
-      "competitor_could_paste": false,
-      "issue": "Abstraction nouns, vaguer than the four steps (V5)"
-    },
-    {
-      "platform": "instagram",
-      "sentence": "A ten-person shop in Cincinnati can bring both as well as a Fortune 500 can.",
+      "sentence": "Your team can do four jobs the model can't: name the job, fit the workflow, own the handoff, prove the number.",
       "advances_point": true,
       "picturable": true,
       "competitor_could_paste": false,
-      "issue": "Because dropped (V6)"
+      "issue": "Earned framework, protected."
+    },
+    {
+      "platform": "instagram",
+      "sentence": "Buy the help, keep the muscle.",
+      "advances_point": true,
+      "picturable": true,
+      "competitor_could_paste": false,
+      "issue": "Earned phrase, protected. The help it refers to is the engineers placed inside customer companies two sentences earlier."
     },
     {
       "platform": "instagram",
@@ -261,8 +255,8 @@
       "advances_point": true,
       "picturable": true,
       "competitor_could_paste": false,
-      "issue": "Link label, closing line"
+      "issue": "Standard closing line."
     }
   ],
-  "notes": "Round 0, so judgment-only violations mean REVISE. Lint is clean on all three surfaces: no hard failures and no soft flags. All 6 source quotes for the fact ids used (F1, F4, F5, F6, F7, F12) verified word-for-word. Every factual sentence is in claims_map and backed by its mapped fact. 'roughly' is kept, MIT NANDA is named, the 95% stays limited to enterprise generative-AI pilots, and the four steps are credited to Rob Richardson's post. Time handling meets brief.timeframe: vendor moves are dated and in past tense, no outcomes for Frontier are claimed, and there is no expired call to action. Fact density is LinkedIn 5 and Instagram 4. Both platforms address the reader as 'you'. first_party.is_dn_work is false, so the third-person Person rule does not apply. The first LinkedIn line matches the declared Investigator opener: it reads what the vendors spent before saying what that spending shows. The colons in 'Read the full post:' and 'Full post:' are treated as the pipeline's link-label closing line, and the colons before the four-step list introduce a real list. No earned phrases were in the brief."
+  "notes": "Round 0 verdict is REVISE because of 2 hard violations (V1, V2) and 4 judgment violations (V3-V6). The linter passed on the LinkedIn text, the Instagram caption and the hashtags: no hard failures and no soft flags. verify_quotes found all 5 source quotes the draft relies on (F1, F4, F5, F6, F11). Facts used: 5 on LinkedIn and 4 on Instagram, both within the limits. The draft lists no definitions and maps nothing to DEF. The draft keeps the hedges ('roughly 6,000', 'more than 300 deployments'), the attributions to The Next Web and MIT NANDA, and the date of each move. It adds no vendor figures that are not in the brief and does not add the figures up. It has no expired call to action. The earned phrases ('Name the job / Fit the workflow / Own the handoff / Prove the number', 'Buy the help, keep the muscle') are protected. The F4 sentence on both platforms carries three violations (V3-V6). The suggested replacement fixes all of them at once: 'The companies selling the models put money into people because customers who got the model alone did not see it in their numbers.'"
 }

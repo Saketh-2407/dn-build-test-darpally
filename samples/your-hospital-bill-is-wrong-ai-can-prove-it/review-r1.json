@@ -5,27 +5,27 @@
     "linkedin": {
       "passed": true,
       "platform": "linkedin",
-      "char_count": 1044,
+      "char_count": 902,
       "hard_failures": [],
       "soft_flags": []
     },
     "instagram": {
       "passed": true,
       "platform": "instagram",
-      "char_count": 690,
+      "char_count": 680,
       "hard_failures": [],
       "soft_flags": []
     },
     "hashtags": {
       "passed": true,
       "platform": "instagram",
-      "char_count": 50,
+      "char_count": 55,
       "hard_failures": [],
       "soft_flags": []
     }
   },
   "fact_check": {
-    "quotes_verified": 5,
+    "quotes_verified": 7,
     "quotes_missing": [],
     "unsourced_claims": []
   },
@@ -34,187 +34,179 @@
   "sentence_audit": [
     {
       "platform": "linkedin",
-      "sentence": "What was inside a $195,000 hospital bill?",
+      "sentence": "Hospitals, banks, school districts and government agencies all use complexity as a defense.",
       "advances_point": true,
       "picturable": true,
       "competitor_could_paste": false,
-      "issue": "Investigator opener, matches the declared opener_type. Number matches F2."
+      "issue": "None. Investigator opener (what is really going on), matching the declared opener_type. It names the four institution types from F8 and is clearer than the source quote 'Institutions rely on exhaustion more than force.' The four nouns are a literal list from the post, not a hollow triad."
     },
     {
       "platform": "linkedin",
-      "sentence": "AI flagged $162,000 in likely Medicare violations and duplicate charges.",
+      "sentence": "They count on you running out of time and energy before you can check what they sent you.",
       "advances_point": true,
       "picturable": true,
       "competitor_could_paste": false,
-      "issue": "Matches F4. Keeps the 'likely' hedge."
+      "issue": "None. It states what F8 means by exhaustion and carries F9's because (truth made too time-consuming to uncover). It leads with the reader's feeling, as the Gate's lead structure asks."
     },
     {
       "platform": "linkedin",
-      "sentence": "You've held a bill written in codes you can't check.",
+      "sentence": "One ordinary citizen with an ordinary laptop checked anyway.",
       "advances_point": true,
       "picturable": true,
       "competitor_could_paste": false,
-      "issue": "Reader-feeling line taken from brief.reader_feeling. Not a factual claim."
+      "issue": "None. F1 wording. 'checked anyway' answers 'check' in the sentence before on purpose: it is the turn of the story, not a redundant restatement."
     },
     {
       "platform": "linkedin",
-      "sentence": "It can feel like your only choices are to pay or to plead.",
+      "sentence": "He uploaded a $195,000 itemized hospital bill to AI.",
       "advances_point": true,
       "picturable": true,
       "competitor_could_paste": false,
-      "issue": "Finishes the feeling from brief.reader_feeling. No contrast framing."
+      "issue": "None. F1, number exact."
     },
     {
       "platform": "linkedin",
-      "sentence": "An ordinary citizen with an ordinary laptop uploaded the $195,000 itemized hospital bill to AI.",
+      "sentence": "The AI compared it against Medicare fee schedules and bundling rules.",
       "advances_point": true,
       "picturable": true,
       "competitor_could_paste": false,
-      "issue": "Close to verbatim F2. The repeated 'ordinary' comes from the source."
+      "issue": "None. F4 method, matches 'cross-referenced against CMS Medicare Fee Schedules and bundling rules'."
     },
     {
       "platform": "linkedin",
-      "sentence": "The AI cross-referenced the charges against Medicare's official fee schedules and bundling rules.",
+      "sentence": "Bundling rules say which related services must be billed together as one charge.",
       "advances_point": true,
       "picturable": true,
       "competitor_could_paste": false,
-      "issue": "F4 basis. 'Medicare's official fee schedules' accurately renders 'CMS Medicare Fee Schedules'. The CMS acronym was removed per the round 0 fix."
+      "issue": "None. Listed in definitions. A correct, general plain-language definition of Medicare bundling that adds no claim about the case. It explains the insider term right next to it, as Plain American English requires."
     },
     {
       "platform": "linkedin",
-      "sentence": "Bundling rules say which services must be billed as one charge.",
+      "sentence": "The AI flagged $162,000 in likely Medicare violations and duplicate charges.",
       "advances_point": true,
       "picturable": true,
       "competitor_could_paste": false,
-      "issue": "Plain explanation of an insider term, required by Mechanics (Plain American English). It defines a term and says nothing new about the case. See notes."
+      "issue": "None. F4, the hedge 'likely' is kept, number exact."
     },
     {
       "platform": "linkedin",
-      "sentence": "The man printed the AI's analysis and sent the hospital a written challenge.",
+      "sentence": "He printed the analysis and sent the hospital a written challenge, without a lawyer.",
       "advances_point": true,
       "picturable": true,
       "competitor_could_paste": false,
-      "issue": "Matches F6. This is the 'because' for F5, and it comes right before F5."
+      "issue": "None. F5. 'without a lawyer' is covered by F5's fact (he did not hire a lawyer). No contrast formula."
     },
     {
       "platform": "linkedin",
-      "sentence": "Two weeks later, the $195,000 bill dropped to approximately $33,000.",
+      "sentence": "Two weeks later, the hospital revised the total to about $33,000.",
       "advances_point": true,
       "picturable": true,
       "competitor_could_paste": false,
-      "issue": "Matches F5. Keeps 'approximately'. No savings figure is worked out."
+      "issue": "None. F6, the hedge 'about' is kept, and it follows its because (F5). No savings figure is computed."
     },
     {
       "platform": "linkedin",
-      "sentence": "This is one case, and nobody can promise your bill the same result.",
+      "sentence": "You can run the same kind of check on a bill of your own.",
       "advances_point": true,
       "picturable": true,
       "competitor_could_paste": false,
-      "issue": "Honest hedge required by the brief's no-overclaiming caution. Not a factual claim."
+      "issue": "None. It speaks to the reader with 'you' and ties back to the case's check. It promises no outcome, so the overclaim caution holds."
     },
     {
       "platform": "linkedin",
-      "sentence": "Let AI do the research and drafting on your bill.",
+      "sentence": "Verify every flag yourself before anything goes back to the hospital.",
       "advances_point": true,
       "picturable": true,
       "competitor_could_paste": false,
-      "issue": "Matches F12. Round 0 fix V3 applied."
+      "issue": "None. It carries the post's Principle 7 caution (check citations manually) from the brief's cautions."
     },
     {
       "platform": "linkedin",
-      "sentence": "Then check every citation yourself before you send anything, because a single false claim weakens an otherwise airtight case.",
+      "sentence": "Read the full post: https://disruptionnow.com/blog/your-hospital-bill-is-wrong-ai-can-prove-it",
       "advances_point": true,
       "picturable": true,
       "competitor_could_paste": false,
-      "issue": "Matches F12 and keeps its 'because'."
-    },
-    {
-      "platform": "linkedin",
-      "sentence": "What's the last bill you paid without asking which rules govern it?",
-      "advances_point": true,
-      "picturable": true,
-      "competitor_could_paste": false,
-      "issue": "Closing question that echoes the 'What rules govern this?' idea and points back to core_point. Not a factual claim."
-    },
-    {
-      "platform": "linkedin",
-      "sentence": "Read the full post: https://disruptionnow.com/blog/your-hospital-bill-is-wrong-ai-can-prove-it/",
-      "advances_point": true,
-      "picturable": true,
-      "competitor_could_paste": false,
-      "issue": "Standard pipeline closing line, which the closing-line convention allows."
+      "issue": "None. Standard closing line under pipeline conventions."
     },
     {
       "platform": "instagram",
-      "sentence": "AI flagged $162,000 in likely Medicare violations and duplicate charges on one $195,000 hospital bill.",
+      "sentence": "One hospital charged $195,000 for four hours in an emergency room.",
       "advances_point": true,
       "picturable": true,
       "competitor_could_paste": false,
-      "issue": "Number-led hook as brief.instagram_hook_idea asks. Matches F4 and F5 and keeps 'likely'."
+      "issue": "None. F2. A concrete hook under 125 characters, matching instagram_hook_idea."
     },
     {
       "platform": "instagram",
-      "sentence": "You've held a bill written in codes you can't check.",
+      "sentence": "The visit followed a fatal heart attack.",
       "advances_point": true,
       "picturable": true,
       "competitor_could_paste": false,
-      "issue": "Reader-feeling line from brief.reader_feeling."
+      "issue": "None. F2, respectful tone (the round 0 fix landed)."
     },
     {
       "platform": "instagram",
-      "sentence": "Paying or pleading can feel like the only choices.",
+      "sentence": "The patient left a widow.",
       "advances_point": true,
       "picturable": true,
       "competitor_could_paste": false,
-      "issue": "Reader-feeling line from brief.reader_feeling."
+      "issue": "None. F2, no invented details (the round 0 fix landed)."
     },
     {
       "platform": "instagram",
-      "sentence": "The AI checked those charges against Medicare's fee schedules and bundling rules.",
+      "sentence": "Her brother-in-law had no healthcare billing expertise.",
       "advances_point": true,
       "picturable": true,
       "competitor_could_paste": false,
-      "issue": "Gives F4's basis, added per the round 0 fix V2. Does not claim that every charge was checked."
+      "issue": "None. F3."
     },
     {
       "platform": "instagram",
-      "sentence": "Bundling rules say which services must be billed as one charge.",
+      "sentence": "He took the papers home and uploaded them to Claude.",
       "advances_point": true,
       "picturable": true,
       "competitor_could_paste": false,
-      "issue": "Plain explanation of an insider term, required by Mechanics. See notes."
+      "issue": "None. F3. Claude is named accurately."
     },
     {
       "platform": "instagram",
-      "sentence": "One man printed the AI's analysis and sent the hospital a written challenge.",
+      "sentence": "Claude checked the bill against Medicare fee schedules and flagged $162,000 in likely violations and duplicate charges.",
       "advances_point": true,
       "picturable": true,
       "competitor_could_paste": false,
-      "issue": "Matches F6. This is the 'because' for F5, and it comes right before F5. Handles the family with care."
+      "issue": "None. F4, the hedge 'likely' is kept, number exact. This is the round 0 fix V3, applied with a clearer referent."
     },
     {
       "platform": "instagram",
-      "sentence": "Two weeks later, the $195,000 bill dropped to approximately $33,000.",
+      "sentence": "He printed Claude's analysis and sent the hospital a written challenge.",
       "advances_point": true,
       "picturable": true,
       "competitor_could_paste": false,
-      "issue": "Matches F5 and keeps 'approximately'."
+      "issue": "None. F5."
     },
     {
       "platform": "instagram",
-      "sentence": "Let AI do the research and drafting.",
+      "sentence": "Two weeks later, the hospital revised the total to about $33,000.",
       "advances_point": true,
       "picturable": true,
       "competitor_could_paste": false,
-      "issue": "Matches F12. As specific as the source."
+      "issue": "None. F6, the hedge 'about' is kept, and it follows its because (F5)."
     },
     {
       "platform": "instagram",
-      "sentence": "Then check every citation yourself before you send anything, because a single false claim weakens an otherwise airtight case.",
+      "sentence": "If a bill like that lands in your mailbox, you can ask AI which rules it has to follow.",
       "advances_point": true,
       "picturable": true,
       "competitor_could_paste": false,
-      "issue": "Matches F12 and keeps its 'because'."
+      "issue": "None. It turns the post's 'What rules govern this?' question into an action for the reader, with 'you' present. It makes no factual claim and promises no outcome."
+    },
+    {
+      "platform": "instagram",
+      "sentence": "Then check every point yourself before you send anything back.",
+      "advances_point": true,
+      "picturable": true,
+      "competitor_could_paste": false,
+      "issue": "None. It carries the Principle 7 verification caution."
     },
     {
       "platform": "instagram",
@@ -222,8 +214,8 @@
       "advances_point": true,
       "picturable": true,
       "competitor_could_paste": false,
-      "issue": "Standard pipeline closing line, which the closing-line convention allows."
+      "issue": "None. Standard Instagram closing line under pipeline conventions."
     }
   ],
-  "notes": "All three round 0 fixes are in place: V1 (CMS removed and the bundling term explained on LinkedIn), V2 (F4's basis added to Instagram) and V3 (the 'You can put AI to work the same way' line cut). The five quotes behind the fact ids the draft uses (F2, F4, F5, F6, F12) all verified word-for-word. The hedges 'likely' and 'approximately' are kept on both platforms. No savings figure is worked out. Neither draft says DN or Rob handled the case. The death and the family are not used as a hook. Both platforms use 'you'. Fact density is 5 ids on LinkedIn and 4 on Instagram, within the limits. The timeframe is evergreen, so no date or recency claim was checked. On the bundling explanation ('Bundling rules say which services must be billed as one charge.'): verify_quotes shows the post never defines bundling, so this sentence is not in the ledger. I did not count it as an unsourced claim. It is the plain explanation that Mechanics ('No insider word without a plain explanation next to it') requires for an insider term in F4. It says nothing new about the case, its numbers or its people. It is an accurate plain description of how Medicare bundling works. The Writer disclosed it openly in changes_made. Counting it as a hard violation would conflict with the doctrine rule that required it."
+  "notes": "Round 1 re-review. All three round 0 Instagram fixes (V1, V2, V3) landed correctly, and the Writer's change of 'it' to 'the bill' in the V3 sentence is a valid clarity improvement. All three lints are clean (no hard failures, no soft flags). All 7 source quotes (F1 to F6, F8) verified word-for-word with no misses. Every claims_map entry maps to a fact that says it. The one DEF sentence is listed in definitions and is a correct, general definition. Hedges are kept: 'likely' on $162,000 and 'about' on $33,000. No savings figure is computed. Neither draft implies DN or Rob ran the case. Fact density: LinkedIn uses 5 fact ids and Instagram uses 5, both within limits. Both platforms address the reader as 'you'. The timeframe is evergreen, so there are no time issues. The hashtag count is 4. No open violations."
 }

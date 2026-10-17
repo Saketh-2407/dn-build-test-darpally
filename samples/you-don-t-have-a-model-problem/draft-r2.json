@@ -1,0 +1,131 @@
+{
+  "source_url": "https://disruptionnow.com/blog/you-don-t-have-a-model-problem/",
+  "round": 2,
+  "linkedin": {
+    "text": "Look at what the companies selling AI models paid for in 2026, and you'll see where AI projects get stuck.\n\nOn July 2, 2026, Microsoft launched Frontier, backed by $2.5 billion and roughly 6,000 engineers, The Next Web reported. Their job was to sit inside customers' companies and make the AI those customers already paid for work. The companies selling the models put money into people because customers who got the model alone did not see it in their numbers.\n\nMIT's NANDA researchers found in 2025 that 95% of enterprise generative-AI pilots showed no measurable profit-and-loss impact, across more than 300 deployments. If your pilot got applause in the demo and nothing on the bottom line, look at the work around the tool.\n\nYour team can do four jobs the model can't: name the job, fit the workflow, own the handoff, prove the number. Start by deciding what a win looks like before you switch the tool on.\n\nOutside engineers can jumpstart a stalled rollout. If your people never learn the four jobs themselves, you've bought a dependency that walks out the door when the contract ends. Buy the help, keep the muscle.\n\nWho on your team owns the handoff on your AI project today?\n\nRead the full post: https://disruptionnow.com/blog/you-don-t-have-a-model-problem/",
+    "opener_type": "Investigator",
+    "fact_ids": [
+      "F1",
+      "F4",
+      "F5",
+      "F6",
+      "F11"
+    ]
+  },
+  "instagram": {
+    "caption": "On July 2, 2026, Microsoft launched Frontier, backed by $2.5 billion and roughly 6,000 engineers.\n\nTheir job was to sit inside customers' companies and make the AI those customers already paid for work, The Next Web reported. The companies selling the models put money into people because customers who got the model alone did not see it in their numbers.\n\nMIT's NANDA researchers found in 2025 that 95% of enterprise generative-AI pilots showed no measurable profit-and-loss impact. If your pilot looked good in the demo and changed nothing on the bottom line, look at the work around the tool.\n\nYour team can do four jobs the model can't: name the job, fit the workflow, own the handoff, prove the number. If your people never learn them, you've bought a dependency that walks out the door when the contract ends. Buy the help, keep the muscle.\n\nFull post: link in bio.",
+    "hashtags": [
+      "#AIPilots",
+      "#WorkflowDesign",
+      "#MicrosoftFrontier",
+      "#Cincinnati"
+    ],
+    "fact_ids": [
+      "F1",
+      "F4",
+      "F5",
+      "F6",
+      "F11"
+    ]
+  },
+  "claims_map": [
+    {
+      "platform": "linkedin",
+      "snippet": "Look at what the companies selling AI models paid for in 2026, and you'll see where AI projects get stuck.",
+      "fact_id": "F4"
+    },
+    {
+      "platform": "linkedin",
+      "snippet": "On July 2, 2026, Microsoft launched Frontier, backed by $2.5 billion and roughly 6,000 engineers, The Next Web reported.",
+      "fact_id": "F1"
+    },
+    {
+      "platform": "linkedin",
+      "snippet": "Their job was to sit inside customers' companies and make the AI those customers already paid for work.",
+      "fact_id": "F1"
+    },
+    {
+      "platform": "linkedin",
+      "snippet": "The companies selling the models put money into people because customers who got the model alone did not see it in their numbers.",
+      "fact_id": "F4"
+    },
+    {
+      "platform": "linkedin",
+      "snippet": "MIT's NANDA researchers found in 2025 that 95% of enterprise generative-AI pilots showed no measurable profit-and-loss impact, across more than 300 deployments.",
+      "fact_id": "F5"
+    },
+    {
+      "platform": "linkedin",
+      "snippet": "Your team can do four jobs the model can't: name the job, fit the workflow, own the handoff, prove the number.",
+      "fact_id": "F6"
+    },
+    {
+      "platform": "linkedin",
+      "snippet": "Start by deciding what a win looks like before you switch the tool on.",
+      "fact_id": "F6"
+    },
+    {
+      "platform": "linkedin",
+      "snippet": "Outside engineers can jumpstart a stalled rollout.",
+      "fact_id": "F11"
+    },
+    {
+      "platform": "linkedin",
+      "snippet": "If your people never learn the four jobs themselves, you've bought a dependency that walks out the door when the contract ends.",
+      "fact_id": "F11"
+    },
+    {
+      "platform": "linkedin",
+      "snippet": "Buy the help, keep the muscle.",
+      "fact_id": "F11"
+    },
+    {
+      "platform": "instagram",
+      "snippet": "On July 2, 2026, Microsoft launched Frontier, backed by $2.5 billion and roughly 6,000 engineers.",
+      "fact_id": "F1"
+    },
+    {
+      "platform": "instagram",
+      "snippet": "Their job was to sit inside customers' companies and make the AI those customers already paid for work, The Next Web reported.",
+      "fact_id": "F1"
+    },
+    {
+      "platform": "instagram",
+      "snippet": "The companies selling the models put money into people because customers who got the model alone did not see it in their numbers.",
+      "fact_id": "F4"
+    },
+    {
+      "platform": "instagram",
+      "snippet": "MIT's NANDA researchers found in 2025 that 95% of enterprise generative-AI pilots showed no measurable profit-and-loss impact.",
+      "fact_id": "F5"
+    },
+    {
+      "platform": "instagram",
+      "snippet": "Your team can do four jobs the model can't: name the job, fit the workflow, own the handoff, prove the number.",
+      "fact_id": "F6"
+    },
+    {
+      "platform": "instagram",
+      "snippet": "If your people never learn them, you've bought a dependency that walks out the door when the contract ends.",
+      "fact_id": "F11"
+    },
+    {
+      "platform": "instagram",
+      "snippet": "Buy the help, keep the muscle.",
+      "fact_id": "F11"
+    }
+  ],
+  "definitions": [],
+  "visual_note": "Use a photograph of people at work on a process, such as a team at a whiteboard mapping a workflow or two people at one screen handing off a task. Do not use an AI-generated image. If you use a logo, put the white lockup on dark backgrounds and the dark lockup on light backgrounds. Leave the purple 'Now' unchanged and add no effects.",
+  "self_lint": {
+    "linkedin_passed": true,
+    "instagram_passed": true,
+    "soft_flags_kept": []
+  },
+  "changes_made": [
+    {
+      "violation_id": "V1",
+      "change": "Instagram: inserted the F11 sentence 'If your people never learn them, you've bought a dependency that walks out the door when the contract ends.' right after the four-jobs sentence and before 'Buy the help, keep the muscle.' in the same block, which now has 3 sentences. I used 'them' (it points to the four jobs named in the sentence before) in place of the Reviewer's example wording 'the four jobs themselves'. That keeps the caption at 150 words including the closing line, the top of the 60 to 150 limit. The Reviewer's exact example would have made it 153. Added F11 to instagram.fact_ids (5 total) and added a claims_map entry for the new sentence mapped to F11. Nothing else changed. LinkedIn and hashtags are unchanged."
+    }
+  ]
+}
